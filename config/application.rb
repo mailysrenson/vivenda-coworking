@@ -23,6 +23,6 @@ module VivendaCoworking
 
     config.i18n.available_locales = [:en, :fr, :nl]
     config.i18n.default_locale = :en
-    # config.i18n.fallbacks = true
+    config.i18n.fallbacks = true
   end
 end
