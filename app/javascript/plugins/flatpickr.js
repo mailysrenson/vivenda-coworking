@@ -5,6 +5,7 @@ const initFlatPicker = () => {
     altInput: true,
     altFormat: "d-m-Y",
     dateFormat: "Y-m-d",
+    minDate: "today"
   });
 };
 
