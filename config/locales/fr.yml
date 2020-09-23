@@ -3,3 +3,11 @@ fr:
   bookings:
     new:
       baby_bed: "Lit bébé"
+
+    activerecord:
+      attributes:
+        booking: #always singular
+          first_name: "Prénom"
+          last_name: "Nom"
+
+          

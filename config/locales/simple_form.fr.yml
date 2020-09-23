@@ -1,0 +1,29 @@
+fr:
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Please review the problems below:"
+    # Examples
+    labels:
+      booking:
+        first_name: "Prénom"
+        last_name: "Nom"
+        email: "Adresse mail"
+        phone: "Numéro de téléphone"
+        adults: "Nombre d'adultes"
+        childrens: "Nombre d'enfants"
+        baby_bed: "Cochez la case si vous souhaitez un lit pour bébé"
+        street: "Rue et numéro"
+        city: "Ville"
+        zipcode: "Code postal"
+        country: "Pays"
+        comment: "Demandes spéciales?"
+        arrival_date: "Date d'arrivée"
+        departure_date: "Date de départ"

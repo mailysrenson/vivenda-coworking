@@ -11,7 +11,22 @@ en:
     error_notification:
       default_message: "Please review the problems below:"
     # Examples
-    # labels:
+    labels:
+      booking:
+        first_name: "Firsty name"
+        last_name: "Lasty name"
+        email: "Email address"
+        phone: "Phone number"
+        adults: "Number of adults"
+        childrens: "Number of "
+        baby_bed: "Do you need a baby bed?"
+        street: "Street name and house number"
+        city: "City"
+        zipcode: "Postal code"
+        country: "Country"
+        comment: "Insert any additional comments"
+        arrival_date: "Arrival date"
+        departure_date: "Departure date"
     #   defaults:
     #     password: 'Password'
     #   user:
@@ -19,9 +34,12 @@ en:
     #       email: 'E-mail to sign in.'
     #     edit:
     #       email: 'E-mail.'
-    # hints:
-    #   defaults:
-    #     username: 'User name to sign in.'
+    hints:
+      defaults:
+        city: 'Please input your city'
+
+    error_notification:
+      defaults: "Crotte"
     #     password: 'No special characters, please.'
     # include_blanks:
     #   defaults:

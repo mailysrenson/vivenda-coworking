@@ -1,18 +1,20 @@
-<%= simple_form_for [@booking] do |f| %>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.input :email %>
-  <%= f.input :phone %>
-  <%= f.input :adults, collection: 1..5 %>
-  <%= f.input :childrens, collection: 1..5 %>
-  <%=f.input_field :baby_bed, as: :boolean, boolean_style: :inline, label: t(".baby_bed")  %>
-  <%= f.input :street %>
-  <%= f.input :city %>
-  <%= f.input :zipcode %>
-  <%= f.input :country %>
-  <%= f.input :comment %>
-  <%= f.input :arrival_date, as: :string, input_html: {class: "datepicker"} %>
-  <%= f.input :departure_date, as: :string, input_html: {class: "datepicker"} %>
+<div class="container">
+  <%= simple_form_for [@booking] do |f| %>
+    <%= f.input :arrival_date, as: :string, input_html: {class: "datepicker"} %>
+    <%= f.input :departure_date, as: :string, input_html: {class: "datepicker"} %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :email %>
+    <%= f.input :phone %>
+    <%= f.input :adults, collection: 1..5 %>
+    <%= f.input :childrens, collection: 1..5 %>
+    <%= f.input :baby_bed, as: :boolean, boolean_style: :inline %>
+    <%= f.input :street %>
+    <%= f.input :city %>
+    <%= f.input :zipcode %>
+    <%= f.input :country %>
+    <%= f.input :comment %>
 
-  <%= f.submit class: "btn btn-red-own-activities" %>
-<% end %>
+    <%= f.submit class: "btn btn-red-own-activities" %>
+  <% end %>
+</div>
