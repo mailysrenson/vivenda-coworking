@@ -11,13 +11,26 @@ en:
   #translating models
 
   activerecord:
+    errors:
+      models:
+        formsubmission:
+          attributes:
+            email:
+              blank: "cannot be empty"
     attributes:
       booking: #always singular
-        first_name: "First name"
-        last_name: "Last name"
-
-
-  
+        email: "Email address"
+        phone: "Phone number"
+        adults: "Number of adults"
+        childrens: "Number of children "
+        baby_bed: "Do you need a baby bed?"
+        street: "Street name and house number"
+        city: "City"
+        zipcode: "Postal code"
+        country: "Country"
+        comment: "Insert any additional comments"
+        arrival_date: "Arrival date"
+        departure_date: "Departure date"
 
   # <%= f.input :email %>
   # <%= f.input :phone %>

@@ -4,10 +4,28 @@ fr:
     new:
       baby_bed: "Lit bébé"
 
-    activerecord:
-      attributes:
-        booking: #always singular
-          first_name: "Prénom"
-          last_name: "Nom"
+  activerecord:
+    errors:
+      models:
+        formsubmission:
+          attributes:
+            email:
+              blank: "ne peut pas être vide"
+    attributes:
+      booking: #always singular
+        first_name: "Prénom"
+        last_name: "Nom"
+        email: "Adresse mail"
+        phone: "Numéro de téléphone"
+        adults: "Nombre d'adultes"
+        childrens: "Nombre d'enfants"
+        baby_bed: "Cochez la case si vous souhaitez un lit pour bébé"
+        street: "Rue et numéro"
+        city: "Ville"
+        zipcode: "Code postal"
+        country: "Pays"
+        comment: "Demandes spéciales?"
+        arrival_date: "Date d'arrivée"
+        departure_date: "Date de départ"
 
-          
+
