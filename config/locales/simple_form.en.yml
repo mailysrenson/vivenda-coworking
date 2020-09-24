@@ -8,7 +8,7 @@ en:
       
     error_notification:
       default_message: "Please review the problems below:"
-    
+      
     labels:
       booking:
         first_name: "First name"
