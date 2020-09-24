@@ -17,14 +17,16 @@ const initFlatPicker = () => {
       month = parseInt(month, 10) - 1;
       year = parseInt(year, 10);
       let dateDeparture = new Date(year, month, day);
+      if (month === 6 || month === 7 ){
       dateDeparture.setDate(dateDeparture.getDate() + 7);
-
-
+    } else {
+      dateDeparture.setDate(dateDeparture.getDate() + 3);
+    }
   flatpickr(".datepicker-departure", {
     altInput: true,
     altFormat: "d-m-Y",
     dateFormat: "Y-m-d",
-    minDate: new Date(),
+    minDate: dateDeparture,
     disable: [ function(date) {
       if (date < dateDeparture ) {
         return true
