@@ -1,18 +1,13 @@
 fr:
-  welcome: "coucou"
-  bookings:
-    new:
-      baby_bed: "Lit bébé"
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
 
-  activerecord:
-    errors:
-      models:
-        formsubmission:
-          attributes:
-            email:
-              blank: "ne peut pas être vide"
-    attributes:
-      booking: #always singular
+    labels:
+      booking:
         first_name: "Prénom"
         last_name: "Nom"
         email: "Adresse mail"
@@ -27,5 +22,3 @@ fr:
         comment: "Demandes spéciales?"
         arrival_date: "Date d'arrivée"
         departure_date: "Date de départ"
-
-

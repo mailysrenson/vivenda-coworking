@@ -16,7 +16,7 @@
   <%= f.input :phone %>
   <%= f.input :adults, input_html: {id: "booking_adults"}, selected: 0, collection: 0..amountParents %>
   <%= f.input :childrens, input_html: {class: "people-limit"}, selected: 0, collection: 0..amountChildren %>
-  <%=f.input_field :baby_bed, as: :boolean, boolean_style: :inline, label: t(".baby_bed")  %>
+  <%=f.input_field :baby_bed, as: :boolean, boolean_style: :inline  %>
   <%= f.input :street %>
   <%= f.input :city %>
   <%= f.input :zipcode %>
