@@ -24,7 +24,7 @@ const initFlatPicker = () => {
     altInput: true,
     altFormat: "d-m-Y",
     dateFormat: "Y-m-d",
-    minDate: [function(date)],
+    minDate: new Date(),
     disable: [ function(date) {
       if (date < dateDeparture ) {
         return true
