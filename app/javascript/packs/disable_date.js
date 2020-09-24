@@ -1,11 +1,11 @@
 const disableDate = () => {
 const arrivalDateCalendar = document.getElementById("arrival-date")
-const arrivalDate = document.getElementsByClassName("form-control string required datepicker input");
+const arrivalDate = document.getElementsByClassName("form-control string required datepicker-arrival input");
 
 if (arrivalDate != null) {
   arrivalDate[0].addEventListener("blur", ($event) => {
     const dateSelected = $event.target.value;
-    console.log(dateSelected)
+
 
   // Verifier si dateSeleted est en juillet - aout
   // {
@@ -25,5 +25,7 @@ if (arrivalDate != null) {
 })
 }
 }
+
+
 // pas oublier d'importer
 export { disableDate }

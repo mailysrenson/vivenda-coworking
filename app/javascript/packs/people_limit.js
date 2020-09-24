@@ -6,6 +6,4 @@ window.onload = function(){
     console.log(numberSelected)
     return numberSelected
   })
-
 }
-
