@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
+# State Machine
+gem 'state_machine', '~> 1.2'
 # Country Select
 gem 'country_select', '~> 3.1', '>= 3.1.1'
 # Devise
