@@ -3,6 +3,7 @@ fr:
   bookings:
     new:
       baby_bed: "Lit bébé"
+  admin-form: "Nouvelle réservation"
 
   activerecord:
     errors:
@@ -19,7 +20,7 @@ fr:
         phone: "Numéro de téléphone"
         adults: "Nombre d'adultes"
         childrens: "Nombre d'enfants"
-        baby_bed: "Cochez la case si vous souhaitez un lit pour bébé"
+        baby_bed: " Cochez la case si vous souhaitez un lit pour bébé"
         street: "Rue et numéro"
         city: "Ville"
         zipcode: "Code postal"

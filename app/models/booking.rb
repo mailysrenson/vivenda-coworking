@@ -2,6 +2,8 @@ class Booking < ApplicationRecord
   validates :last_name, :first_name, :email, :phone, :adults, :childrens, :arrival_date, :departure_date, :street, :city, :zipcode, :country, presence: true
   validates :adults, :childrens, inclusion: { in: (0..5).to_a}
 
+  STATE = ['pending', 'waiting_for_deposit', 'confirmed', 'refund_pending', 'cancelled', 'denied', 'closed']
+
   # States: :pending, :waiting_for_deposit, :confirmed, :refund_pending, :cancelled, :denied, :closed
 
   state_machine :state, initial: :pending do
@@ -15,7 +17,7 @@ class Booking < ApplicationRecord
       transition pending: :waiting_for_deposit
     end
 
-    event :deny do 
+    event :deny do
       transition pending: :denied
     end
 
@@ -27,16 +29,16 @@ class Booking < ApplicationRecord
       transition confirmed: :closed
     end
 
-    event :refund_asked do 
+    event :refund_asked do
       transition confirmed: :refund_pending
     end
 
-    event :cancel do 
+    event :cancel do
       transition [:waiting_for_deposit, :refund_pending] => :cancelled
     end
   end
 
-  
+
 
 
 end
