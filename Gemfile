@@ -2,7 +2,11 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
-
+gem 'activeadmin'
+# integrations with :
+gem 'cancancan'
+gem 'draper'
+gem 'devise'
 # State Machine
 gem 'state_machine', '~> 1.2'
 # Country Select
