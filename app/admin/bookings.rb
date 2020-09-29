@@ -8,8 +8,9 @@ ActiveAdmin.register Booking do
     end
   end
 
-    action_item :request_deposit, only: :show do
-    link_to "Demande d'acompte", request_deposit_admin_booking_path(booking), method: :put
+    action_item :request_deposit, only: :show,
+    if: proc{booking.state == 'pending'} do
+    link_to "Demander l'acompte", request_deposit_admin_booking_path(booking), method: :put
     end
 
     member_action :request_deposit, method: :put  do
@@ -19,7 +20,8 @@ ActiveAdmin.register Booking do
     redirect_to admin_booking_path(booking)
     end
 
-    action_item :request_deny, only: :show do
+    action_item :request_deny, only: :show,
+    if: proc{booking.state == 'pending'}  do
     link_to 'Refuser la demande', request_deny_admin_booking_path(booking), method: :put
     end
 
@@ -30,7 +32,8 @@ ActiveAdmin.register Booking do
     redirect_to admin_booking_path(booking)
     end
 
-    action_item :booking_confirm, only: :show do
+    action_item :booking_confirm, only: :show,
+    if: proc{booking.state == 'waiting_for_deposit'}  do
     link_to 'Acompte reçu', booking_confirm_admin_booking_path(booking), method: :put
     end
 
@@ -41,7 +44,8 @@ ActiveAdmin.register Booking do
     redirect_to admin_booking_path(booking)
     end
 
-    action_item :booking_close, only: :show do
+    action_item :booking_close, only: :show,
+    if: proc{booking.state == 'confirmed'}  do
     link_to 'Clôturer la réservation', booking_close_admin_booking_path(booking), method: :put
     end
 
@@ -52,7 +56,8 @@ ActiveAdmin.register Booking do
     redirect_to admin_booking_path(booking)
     end
 
-    action_item :request_refund, only: :show do
+    action_item :request_refund, only: :show,
+    if: proc{booking.state == 'confirmed'}  do
     link_to 'Rembourser', request_refund_admin_booking_path(booking), method: :put
     end
 
@@ -63,7 +68,8 @@ ActiveAdmin.register Booking do
     redirect_to admin_booking_path(booking)
     end
 
-    action_item :booking_cancel, only: :show do
+    action_item :booking_cancel, only: :show,
+    if: proc{booking.state == 'waiting_for_deposit' || booking.state == 'refund_pending'}  do
     link_to 'Annuler la réservation', booking_cancel_admin_booking_path(booking), method: :put
     end
 
