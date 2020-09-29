@@ -1,10 +1,6 @@
 <%= javascript_pack_tag 'people_limit' %>
 <%= javascript_pack_tag 'disable_date' %>
-<% @adultsNumber = 0 %>
-<% amountParents = 5 %>
-<% amountChildren = 5 %>
-<% amountParents = 5 - 0%>
-<% amountChildren = 5 - @adultsNumber %>
+
 
 
 
@@ -14,8 +10,8 @@
   <%= f.input :last_name %>
   <%= f.input :email %>
   <%= f.input :phone %>
-  <%= f.input :adults, input_html: {id: "booking_adults"}, selected: 0, collection: 0..amountParents %>
-  <%= f.input :childrens, input_html: {class: "people-limit"}, selected: 0, collection: 0..amountChildren %>
+  <%= f.input :adults, input_html: {id: "booking_adults"}, selected: 0, collection: 0..5 %>
+  <%= f.input :childrens, input_html: {id: "booking_children"}, selected: 0, collection: 0..5 %>
   <%=f.input_field :baby_bed, as: :boolean, boolean_style: :inline  %>
   <%= f.input :street %>
   <%= f.input :city %>
