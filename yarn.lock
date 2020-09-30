@@ -4037,6 +4037,11 @@ js-base64@^2.1.8:
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.6.4.tgz#f4e686c5de1ea1f867dbcad3d46d969428df98c4"
   integrity sha512-pZe//GGmwJndub7ZghVHz7vjb2LgC1m8B07Au3eYqeqv9emhESByMXxaEgkUkEqJe87oBbSniGYoQNIBklc7IQ==
 
+js-responsive-waterfall@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/js-responsive-waterfall/-/js-responsive-waterfall-1.1.1.tgz#4a89e2ab2d7d57808a084d0ef6606bf263a87b05"
+  integrity sha512-VwTpnPEz9//tduOl5YRhKcprUREWbRhMehJSGhgLwr68hR78lFAA2S7CJYgZJQUH5lqUSavoMmoLI8vkzmmgJA==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -7385,6 +7390,11 @@ watchpack@^1.7.4:
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.0"
+
+waterfall@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/waterfall/-/waterfall-3.0.1.tgz#9ecf9cd29cdc9e607c819c52d4848f010f83669a"
+  integrity sha512-xI7LkehNtP4X6mQ/trRf3EkbDslPQ+h79XLWAHHi9sH2QUj5mzEJ/nRb2lv7EBWaNGBnaf/fhf7PDkXt62IwcQ==
 
 wbuf@^1.1.0, wbuf@^1.7.3:
   version "1.7.3"
