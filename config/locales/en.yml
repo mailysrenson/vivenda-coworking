@@ -1,7 +1,12 @@
 en:
   global: #to use this full notation needs to be used as we don't use existing routes (global.navbar.test)
     navbar:
-      test: "testing again"
+      home: "Home"
+      about: "About us"
+      contact: "Contact"
+      book: "Book"
+      language: "flag"
+
 
   pages: #controller (plural)
     home: #view

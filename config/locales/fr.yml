@@ -1,4 +1,12 @@
 fr:
+  global: #to use this full notation needs to be used as we don't use existing routes (global.navbar.test)
+    navbar:
+      home: "Accueil"
+      about: "A propos"
+      contact: "Contact"
+      book: "Réserver"
+      lamguage: "petit drapeau"
+
   welcome: "coucou"
   bookings:
     new:

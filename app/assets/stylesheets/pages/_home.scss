@@ -1,1 +1,28 @@
 // Specific CSS for your home-page
+.img-home {
+  height: 100vh
+}
+
+
+* {
+  background-color:transparent;
+}
+
+body {
+
+}
+
+.navbar {
+  position:absolute !important;
+  z-index: 60 !important;
+    right: 0 !important;
+  left: 0 !important;
+}
+
+.card-main-position {
+  position:relative;
+}
+
+.card-position {
+  position: absolute;
+}
