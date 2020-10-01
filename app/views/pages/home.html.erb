@@ -1,38 +1,57 @@
 
 <body>
 
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon nav-general">
-  <div class="container">
-  <di class="col-sm-3">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="col-sm-6"><h3>Vivenda a Nossa Coroa</h3></div>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"> <%= link_to t("global.navbar.home") , new_booking_path %> </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><%= link_to t("global.navbar.about") , new_booking_path %></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><%= link_to t("global.navbar.contact") , new_booking_path %></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><%= link_to t("global.navbar.book") , new_booking_path %></a>
-        </li>
-      </ul>
+<nav class="navbar navbar-expand-lg navbar-light sticky ">
+  <div class="container-nav">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <a class="nav-item nav-link dropdown-item" href="#">About us <span class="sr-only">(current)</span></a>
+    <a class="nav-item nav-link dropdown-item" href="#">Tarifs</a>
+    <div class="dropdown-item">
+      <i class="fas fa-phone"></i>
+      <i class="far fa-envelope"></i>
+      <i class="fas fa-flag"></i>
     </div>
   </div>
-  <div class="col-sm-3">
-    <a class="navbar-brand" href="#">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
-    </a>
+</div>
+
+<!--       <div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="column-nav">
+            <a class="nav-item nav-link active" href="#">About us <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Tarifs</a>
+            <div>
+              <i class="fas fa-phone"></i>
+              <i class="far fa-envelope"></i>
+              <i class="fas fa-flag"></i>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    <div>
+      <%= link_to root_path, class: "navbar-brand" do  %>
+      <h1><%= " Vivenda " %> </h1>
+      <h2> <%="- a Nossa Coroa -"  %> </h2>
+      <% end %>
+    </div>
+    <div>
+      <%= link_to root_path, class: "nav-item reserver" do  %>
+      <h2> <%="Reservez"%> </h2>
+      <% end %>
+    </div>
   </div>
-</div>
-</div>
+</nav>
+
+
 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -41,27 +60,22 @@
     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner ">
-    <div class="carousel-item active">
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/242/242275939.jpg" class="d-block  img-home img-fluid" alt="Responsive image">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
+
+        <div class="carousel-item active ">
+      <%= image_tag "DSC_0151.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+
     </div>
-    <div class="carousel-item">
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/242/242275980.jpg" class="d-block  img-home img-fluid" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+
+    <div class="carousel-item ">
+      <%= image_tag "Praia_Fluvia.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+
     </div>
-    <div class="carousel-item">
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="d-block img-home img-fluid" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
+
+            <div class="carousel-item ">
+      <%= image_tag "DSC_0036.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+
     </div>
+
   </div>
   <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
