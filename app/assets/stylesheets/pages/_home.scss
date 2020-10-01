@@ -28,6 +28,20 @@ body {
 }
 
 .item {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
+}
+
+.carouselExampleCaptions{
+  margin-top: 0px;
+}
+
+.carousel-inner > .carousel-item > img {
+  top: 0px;
+  left: 0px;
+  width: 100vh;
+  min-width: 1278px;
+  height: 100vh;
+  /*height: auto;
+  min-height: 500px;
+  max-height: 1000px;*/
 }

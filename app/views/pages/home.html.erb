@@ -3,7 +3,7 @@
 
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon nav-general">
   <div class="container">
-  <di class="col-sm-3"v>
+  <di class="col-sm-3">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -75,7 +75,7 @@
 
 <div class="container">
   <div class="my-grid">
-    <div class="col-4 item">
+    <div class="item">
       <div class="card card-position" style="width: 20rem;">
         <img src="https://mailysrenson.github.io/vivenda-2/css/images/part_3_vivenda.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -85,7 +85,7 @@
       </div>
     </div>
 
-    <div class="col-4 item">
+    <div class="item">
       <div class="card card-position" style="width: 20rem;">
       <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -94,7 +94,7 @@
       </div>
     </div>
   </div>
-      <div class="col-4 item">
+      <div class="item">
       <div class="card card-position" style="width: 20rem;">
       <img src="https://mailysrenson.github.io/vivenda-2/css/images/casa-bambu.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -103,7 +103,7 @@
       </div>
     </div>
   </div>
-  <div class="col-4 item">
+  <div class="item">
       <div class="card card-position" style="width: 20rem;">
       <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468330.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -112,7 +112,7 @@
       </div>
     </div>
   </div>
-    <div class="col-4 item">
+    <div class="item">
       <div class="card card-position" style="width: 20rem;">
       <img src="https://cf.bstatic.com/images/hotel/max1024x768/242/242275980.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -121,7 +121,7 @@
       </div>
     </div>
   </div>
-      <div class="col-4 item">
+      <div class="item">
       <div class="card card-position" style="width: 20rem;">
       <img src="https://mailysrenson.github.io/vivenda-2/css/images/casa-azulejos.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -131,7 +131,7 @@
     </div>
   </div>
 
-      <div class="col-4 item">
+      <div class="item">
       <div class="card card-position" style="width: 20rem;">
       <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -144,9 +144,19 @@
 </div>
 
 
-<script src="https://unpkg.com/js-responsive-waterfall@1.0.8/dist/waterfall.min.js"></script>
-<script></script>
-<script> waterfall.min('.my-grid')</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"></script>
+
+<script>
+
+  waterfall('.my-grid');
+
+
+  window.addEventListener('resize', () => {
+      waterfall('.my-grid');
+  });
+
+</script>
+
 
 
 
