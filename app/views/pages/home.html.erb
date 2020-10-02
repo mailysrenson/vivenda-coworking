@@ -1,10 +1,11 @@
 
 <body>
+<%= javascript_pack_tag 'navbar' %>
 
-<nav class="navbar navbar-expand-lg navbar-light sticky ">
+<nav class="navbar navbar-expand-lg navbar-light sticky" id="navbar-container">
   <div class="container-nav">
     <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary dropdown-toggle font-text drop-menu" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Menu
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -39,19 +40,19 @@
 
     <div>
       <%= link_to root_path, class: "navbar-brand" do  %>
-      <h1><%= " Vivenda " %> </h1>
-      <h2> <%="- a Nossa Coroa -"  %> </h2>
+      <h1 class="font-text"> <%= " Vivenda " %> </h1>
+      <h2 class="font-text"> <%="- a Nossa Coroa -"  %> </h2>
       <% end %>
+
     </div>
+
     <div>
       <%= link_to root_path, class: "nav-item reserver" do  %>
-      <h2> <%="Reservez"%> </h2>
+      <h2 class="font-text"> <%="Reservez"%> </h2>
       <% end %>
     </div>
   </div>
 </nav>
-
-
 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -61,19 +62,16 @@
   </ol>
   <div class="carousel-inner ">
 
-        <div class="carousel-item active ">
+    <div class="carousel-item active ">
       <%= image_tag "DSC_0151.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
-
     </div>
 
     <div class="carousel-item ">
       <%= image_tag "Praia_Fluvia.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
-
     </div>
 
-            <div class="carousel-item ">
+    <div class="carousel-item ">
       <%= image_tag "DSC_0036.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
-
     </div>
 
   </div>
@@ -86,6 +84,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 
 <div class="container">
   <div class="my-grid">
