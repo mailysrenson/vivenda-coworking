@@ -1,23 +1,26 @@
 
 <body>
 <%= javascript_pack_tag 'navbar' %>
+<%= javascript_pack_tag 'mapbox_description' %>
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light sticky" id="navbar-container">
   <div class="container-nav">
     <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle font-text drop-menu" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Menu
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <a class="nav-item nav-link dropdown-item" href="#">About us <span class="sr-only">(current)</span></a>
-    <a class="nav-item nav-link dropdown-item" href="#">Tarifs</a>
-    <div class="dropdown-item">
-      <i class="fas fa-phone"></i>
-      <i class="far fa-envelope"></i>
-      <i class="fas fa-flag"></i>
+      <button class="btn btn-secondary dropdown-toggle font-text drop-menu" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Menu
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <a class="nav-item nav-link dropdown-item" href="#">About us <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link dropdown-item" href="#">Tarifs</a>
+        <div class="dropdown-item">
+          <i class="fas fa-phone"></i>
+          <i class="far fa-envelope"></i>
+          <i class="fas fa-flag"></i>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 <!--       <div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -155,6 +158,88 @@
   </div>
   </div>
 </div>
+
+
+<div class="activities-map container-activite">
+
+  <div class='sidebar pad2'>
+      <div class="li-item" id="acti-description">
+
+<div class="">
+      <div class="card card-position" style="max-height: 33rem;" >
+      <%= image_tag "DSC_0036.JPG", class: "card-img-top" %>
+      <div class="card-body">
+        <h5 class="card-title">Bem vindo a Vivenda a Nossa Coroa </h5>
+        <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
+          ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
+            sequi facilis corrupti distinctio quibusdam similique molestias.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+      </div>
+  </div>
+
+
+  <div id='map' class='map pad2' style="">Map</div>
+</div>
+
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibmlrbzExMDAiLCJhIjoiY2tkYTVkcXd2MTZ1MjJxdGd3cWYyaWtqZCJ9.-E_TJRjcNNxpIW-l7LOHIw';
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-7.995078, 40.267689],
+  zoom: 12
+});
+var cojaIcon = document.createElement('div');
+cojaIcon.classList.add('coja-icon');
+var CojaCenter = new mapboxgl.Marker(cojaIcon)
+.setLngLat([-7.98861, 40.269045])
+.addTo(map);
+
+var praiaPopup = new mapboxgl.Popup({
+  anchor:'bottom',
+  offset: [0, -64]
+})
+.setHTML(`<div id="praia-popup">
+      <div class="card card-position" >
+      <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="card-img-top praia-popup" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Praia fluvial do caneiro</h5>
+      </div>
+    </div>
+  </div>`);
+
+var praiaIcon = document.createElement('div');
+praiaIcon.classList.add('praia-icon');
+var praiaFluvia = new mapboxgl.Marker(praiaIcon)
+.setLngLat([-7.995078, 40.267689])
+.setPopup(praiaPopup)
+.addTo(map);
+
+
+var vivendaIcon = document.createElement('div');
+vivendaIcon.classList.add('vivenda-icon');
+var vivendaLocation = new mapboxgl.Marker(vivendaIcon)
+.setLngLat([-8.010888, 40.256])
+.addTo(map);
+
+
+
+var trail01Icon = document.createElement('div');
+trail01Icon.classList.add('trail01-icon');
+var trail01Location = new mapboxgl.Marker(trail01Icon)
+.setLngLat([-7.998077, 40.258227])
+.addTo(map);
+
+</script>
+
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"></script>
