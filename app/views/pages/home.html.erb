@@ -240,13 +240,14 @@ var trail01Location = new mapboxgl.Marker(trail01Icon)
 
 </script>
 
-
-
 <script src="//cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"></script>
-
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script>
 
-  waterfall('.my-grid');
+
+imagesLoaded( document.querySelector('.container'), () => {
+  waterfall('.my-grid')
+});
 
 
   window.addEventListener('resize', () => {
