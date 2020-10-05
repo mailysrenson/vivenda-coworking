@@ -8,9 +8,12 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky" id="navbar-container">
   <div class="container-nav">
     <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle font-text drop-menu" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Menu
+      <button class="btn btn-secondary font-text drop-menu text-white" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+      <div id="menu-btn-white" class="menu-bar-white"> </div>
+
       </button>
+
       <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
         <a class="nav-item nav-link dropdown-item" href="#">About us <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link dropdown-item" href="#">Tarifs</a>
@@ -21,25 +24,6 @@
         </div>
       </div>
     </div>
-
-<!--       <div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="column-nav">
-            <a class="nav-item nav-link active" href="#">About us <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Tarifs</a>
-            <div>
-              <i class="fas fa-phone"></i>
-              <i class="far fa-envelope"></i>
-              <i class="fas fa-flag"></i>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
     <div>
       <%= link_to root_path, class: "navbar-brand" do  %>
