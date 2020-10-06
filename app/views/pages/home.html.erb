@@ -12,13 +12,11 @@
       <img src="<%= image_path 'menuBarWhite.png' %>"  id="menu-btn-white" class="menu-bar-white" alt="">
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <a class="nav-item nav-link dropdown-item" href="#">About us <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link dropdown-item" href="#">Tarifs</a>
-        <div class="dropdown-item">
-          <i class="fas fa-phone"></i>
-          <i class="far fa-envelope"></i>
-          <i class="fas fa-flag"></i>
-        </div>
+        <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.rates') %></a>
+        <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.about_us') %></a>
+        <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.book') %></a>
+        <div class="dropdown-divider"></div>
+        <a class="nav-item nav-link dropdown-item" href="#"><%= "FR - EN - PT" %></a>
       </div>
     </div>
 
