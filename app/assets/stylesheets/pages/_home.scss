@@ -239,19 +239,16 @@ color: #3a3a3a;
   background-color:#3B4336;
 }
 
-.menu-bar-white {
+.menu-bar{
   height:50px;
   width:50px;
   object-fit:fill;
-
 }
 
-.menu-bar-green {
-  height: 50px;
-
-  width:50px;
-  object-fit:fill;
+.menu-bar-hidden{
+  display:none;
 }
+
 // ----------------- MAPBOX ----------
 body {
   background: #404040;

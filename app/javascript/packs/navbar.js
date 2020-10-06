@@ -5,13 +5,12 @@ function scrollFunction() {
     let background = document.getElementById("navbar-container");
     let fontText = document.getElementsByClassName("font-text");
     let menuBarWhite = document.getElementById("menu-btn-white");
+    let menuBarGreen = document.getElementById("menu-btn-green");
+    console.log(menuBarWhite);
 
-
-console.log(menuBarWhite);
   if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     background.classList.remove('navbar-trans')
     background.classList.add('navbar-white')
-
 
     fontText[0].classList.remove('color-to-white');
     fontText[1].classList.remove('color-to-white', 'vivenda-size-big');
@@ -22,8 +21,9 @@ console.log(menuBarWhite);
     fontText[2].classList.add('color-to-green', 'nossa-size-small');
     fontText[3].classList.add('btn-call');
 
-    menuBarWhite.classList.remove('menu-bar-white');
-    menuBarWhite.classList.add('menu-bar-green');
+    menuBarGreen.classList.remove('menu-bar-hidden');
+    menuBarWhite.classList.add('menu-bar-hidden');
+
 
 
   } else {
@@ -37,8 +37,8 @@ console.log(menuBarWhite);
     fontText[2].classList.add('color-to-white', 'nossa-size-big');
     fontText[3].classList.remove('btn-call');
     // menuBarWhite.innerHTML = `<img src="menuBarGreen.png" alt="coucou">`
-    menuBarWhite.classList.remove('menu-bar-green');
-    menuBarWhite.classList.add('menu-bar-white');
+    menuBarWhite.classList.remove('menu-bar-hidden');
+    menuBarGreen.classList.add('menu-bar-hidden');
 
   }
 }
