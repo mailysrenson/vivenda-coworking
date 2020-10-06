@@ -1,4 +1,15 @@
+
 // Specific CSS for your home-page
+
+* {
+ font-family: 'Literata', serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+
 .img-home {
   height: 100vh
 }
@@ -12,38 +23,87 @@
   z-index: 60 !important;
   right: 0 !important;
   left: 0 !important;
+  transition:all 0.3s;
 }
 
+.navbar-white {
+border-bottom:solid 1px lightgrey;
+background-color:white;
+transition:background-color 0.3s;
+}
+
+.navbar-trans {
+border-bottom:solid 0px lightgrey;
+background-color:transparent;
+transition:background-color 0.3s;
+}
 .nav-item {
   color: white;
-  font-family: 'Playfair Display', serif;
   font-size: 18px;
 }
 
 .nav-item h2 {
   color: white;
-  font-family: 'Playfair Display', serif;
   font-size: 18px;
 }
 
 .navbar-brand {
   text-decoration: none;
 }
+.side-element {
+  //flex: 1;
+}
+.dropdown.side-element {
+  margin-top:20px;
 
+}
+.title-center {
+  margin:0 auto;
+
+}
+.reservez {
+
+}
+
+#dropdownMenu2{
+  padding:0px;
+}
+
+#navbar-container{
+  padding: 0 25px;
+}
 .navbar-brand h1 {
   font-family: 'Permanent Marker', cursive !important;
   text-align:center;
   color:white;
-  font-size:64px;
   padding-bottom:0px;
   margin-bottom: 0px;
+  text-shadow:1px 1px 2px rgba(59,67,54,0.5);
 }
 .navbar-brand h2 {
-font-family: 'Roboto', sans-serif;
-font-family: 'Playfair Display', serif;
-font-size: 24px;
+font-family: 'Literata', serif;
 text-align:center;
 color:white;
+text-shadow:1px 1px 2px rgba(59,67,54,0.5);
+}
+
+.vivenda-size-big {
+   font-size:64px;
+   transition:all 0.3s;
+}
+
+.nossa-size-big {
+ font-size: 24px;
+ transition:all 0.3s;
+}
+.vivenda-size-small {
+ font-size: 50px;
+ transition:all 0.3s;
+}
+
+.nossa-size-small {
+ font-size: 20px;
+ transition:all 0.3s;
 }
 
 .card-main-position {
@@ -71,15 +131,22 @@ color:white;
 }
 
 .container-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+ // display: flex;
+ // justify-content: space-between;
+ // align-items: center;
   width: 100% !important;
+  display:grid;
+  grid-template-columns:10% auto 10%;
+
 }
 
 .column-nav {
   flex-direction: column;
   text-align:center;
+}
+
+.column-center{
+flex-flow: column wrap;
 }
 
 .fas, .far {
@@ -88,7 +155,7 @@ color:white;
 }
 
 .dropdown-item {
-  color:black !important;
+  color:#3B4336 !important;
 }
 
 #dropdownMenu2 {
@@ -97,29 +164,33 @@ color:white;
   box-shadow: none
 }
 
-.show {
-  background-color:transparent  !important;
-  color:white !important;
-}
-
-.show a, i {
-  color:white !important;
+.dropdown-menu.show {
+   background-color:rgba(255,255,255,0.5);
 }
 
 .reserver h2 {
   border-radius:4px;
-  border:solid 1px white;
-  padding:7px;
+  border:solid 1px rgba(255,255,255,0.8);
+  padding:9px;
   text-decoration: none !important;
-  background-color:white;
-  color: grey;
+  background-color:rgba(255,255,255,1);
+  color:#3B4336;
+  font-size: 20px;
+  font-family: 'Literata', serif;
+  text-align:center;
 }
 
 .reserver h2:hover {
   border-radius:4px;
-  border:solid 1px white;
+  border:solid 1px $green;
   padding:7px;
-  background-color:#534C4C;
+  background-color:$green;
+  color: white;
+  text-decoration: none !important;
+  box-shadow: 1px 1px 2px #3B4336;
+}
+.nav-item {
+  text-decoration: none !important;
 }
 
 .sticky {
@@ -127,7 +198,6 @@ color:white;
   position: sticky !important;
   top: 0px !important;
   padding-top: 0px !important;
-
 }
 
 h5 {
@@ -137,21 +207,20 @@ color: black;
 }
 
 p {
-font-family: 'Playfair Display', serif;
+font-family: 'Literata', serif;
 color: #3a3a3a;
 }
 
 // --------------------------
 
-.color-to-black {
+.color-to-green {
   color:#678649 !important;
-  transition:all 1s;
 }
 
 .btn-call {
   color:white !important;
   background-color: #678649 !important;
-  transition:all 1s;
+
 }
 
 .drop-menu {
@@ -165,9 +234,6 @@ color: #3a3a3a;
   transition:all 1s;
 }
 
-#dropdownMenu2 {
-  font-family: 'Playfair Display', serif;
-}
 
 .activities-map {
   background-color:#3B4336;
@@ -185,9 +251,7 @@ color: #3a3a3a;
   background-image: url('menuBarGreen.png');
   width:50px;
   object-fit:fill;
-
 }
-
 // ----------------- MAPBOX ----------
 body {
   background: #404040;
@@ -212,6 +276,7 @@ body {
   margin-bottom:50px;
   border-radius:4px;
   box-shadow:2px 3px rgba(5,5,5,0.1);
+
   //pointer-events: none;
 }
 
@@ -226,6 +291,7 @@ body {
   display:flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 60;
 }
 
 .pad2 {
@@ -278,4 +344,71 @@ body {
   cursor: pointer;
 }
 
+
+// -- FOOTER -----------
+
+.icon-footer {
+  color: white;
+  font-size: 24px;
+}
+.circle-icon {
+    //background: $green;
+    //padding:7px;
+    border-radius: 50%;
+    width:40px;
+    text-align:right;
+    margin-right:10px;
+    color: #3B4336;
+}
+
+footer {
+ background-color:white;
+ padding:30px 0 0 50px;
+}
+
+.footer-font {
+  color: #3B4336;
+
+
+}
+.icon {
+  text-align:center;
+  padding-top:0px;
+}
+
+// Media
+@media screen and (max-width: 600px) {
+  .container-nav {
+  grid-template-columns:25% auto 25%;
+}
+  .vivenda-size-big {
+   font-size:36px;
+   transition:all 0.3s;
+}
+  .nossa-size-big {
+   font-size: 18px;
+   transition:all 0.3s;
+  }
+  .vivenda-size-small {
+   font-size: 36px;
+   transition:all 0.3s;
+  }
+
+  .nossa-size-small {
+   font-size: 18px;
+   transition:all 0.3s;
+  }
+
+  .reserver h2 {
+    font-size:15px;
+  }
+
+  .sidebar.pad2{
+    display:none;
+  }
+
+  .map.pad2 {
+    width:100vw;
+  }
+}
 
