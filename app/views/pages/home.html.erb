@@ -71,8 +71,7 @@
 
   <!-- Cards alltogether-->
   <div class="container">
-    <h2 class="text-center">Notre domaine</h2>
-    <div class="my-grid-1">
+    <div class="my-grid">
       <div class="item">
         <div class="card card-position" style="width: 20rem;">
           <%= image_tag 'domain.JPG', class:"card-img-top", alt:"#{t('.domain_alt')}"%>
@@ -124,7 +123,17 @@
     </div>
   </div>
 
+  <!-- Description  -->
+  <div class="container">
+    <h2>Le domaine</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti optio ipsum saepe culpa possimus sapiente doloribus incidunt! Rem, autem molestias dolorum fugit ullam qui cum quibusdam eaque accusantium, voluptates iusto!</p>
+
+    <h2>Les casas</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, sapiente tempora, quisquam corrupti velit rerum facere eos quo consequuntur dicta nostrum vero ipsum dolore possimus numquam ducimus eius eligendi maxime.</p>
+  </div>
+  
   <!-- Map of activities -->
+  
 
   <div class="activities-map container-activite">
     <div class='sidebar pad2'>
@@ -292,13 +301,11 @@
 
 
   imagesLoaded( document.querySelector('.container'), () => {
-    waterfall('.my-grid-1');
-    waterfall('.my-grid-2');
+    waterfall('.my-grid');
   });
 
     window.addEventListener('resize', () => {
         waterfall('.my-grid-1');
-        waterfall('.my-grid-2');
     });
 
   </script>
