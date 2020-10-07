@@ -370,8 +370,11 @@ footer {
   padding-top:0px;
 }
 
+  .mapboxgl-popup-content {
+    display:none;
+  }
 // Media
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1050px) {
   .container-nav {
   grid-template-columns:25% auto 25%;
 }
@@ -403,6 +406,10 @@ footer {
 
   .map.pad2 {
     width:100vw;
+  }
+
+  .mapboxgl-popup-content {
+    display:initial;
   }
 }
 

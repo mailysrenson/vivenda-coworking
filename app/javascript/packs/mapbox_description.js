@@ -3,24 +3,6 @@ let praiaPopup = document.getElementsByClassName("praia-icon")
 let actiDescription = document.getElementById("acti-description")
 
 
-
-
-// let vivendaPopup = document.getElementsByClassName("vivenda-icon")
-// vivendaPopup = vivendaPopup[0]
-// vivendaPopup.addEventListener('click', (event) => { 
-//   actiDescription.innerHTML = `      <div class="card card-position" style="max-height: 33rem;" >
-//       <img src="https://img3.oastatic.com/img2/51216872/834x417r/acor-mountain-mtb-centre.jpg" class="card-img-top" alt="...">
-
-//       <div class="card-body">
-//         <h5 class="card-title">Bem vindo a Vivenda a Nossa Coroa </h5>
-//         <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
-//           ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
-//             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
-//       </div>
-//     </div>`
-// });
-
-
 let santaComba = document.getElementsByClassName("santa-comba-card")
 santaComba = santaComba[0]
 santaComba.addEventListener('click', (event) => { 
@@ -57,7 +39,7 @@ rio.addEventListener('click', (event) => { 
         <img src="rioSalva.jpg" alt="" class="card-img-top card-img-mapbox">
 
       <div class="card-body">
-        <h5 class="card-title">Rio</h5>
+        <h5 class="card-title">Praya Fluvial Coja</h5>
         <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
           ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
@@ -72,7 +54,7 @@ casca.addEventListener('click', (event) => { 
        <img src="casca.jpg" alt="" class="card-img-top card-img-mapbox">
 
       <div class="card-body">
-        <h5 class="card-title">Casca </h5>
+        <h5 class="card-title">Praya fluvial Cascalheira</h5>
         <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
           ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
@@ -87,7 +69,7 @@ sera.addEventListener('click', (event) => { 
        <img src="estrella.jpg" alt="" class="card-img-top card-img-mapbox">
 
       <div class="card-body">
-        <h5 class="card-title">Sera </h5>
+        <h5 class="card-title">National park Serra da Estrela</h5>
         <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
           ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
@@ -101,7 +83,7 @@ carvahal.addEventListener('click', (event) => { 
   actiDescription.innerHTML = `      <div class="card card-position card-map " >
       <img src="caminhos.jpg" alt="" class="card-img-top card-img-mapbox">
       <div class="card-body">
-        <h5 class="card-title">Carvahal </h5>
+        <h5 class="card-title">Caminhos Cruzados Winery</h5>
         <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
           ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
@@ -115,7 +97,7 @@ quinta.addEventListener('click', (event) => { 
   actiDescription.innerHTML = `      <div class="card card-position card-map " >
        <img src="lemos.jpg" alt="" class="card-img-top card-img-mapbox">
       <div class="card-body">
-        <h5 class="card-title">Quinta </h5>
+        <h5 class="card-title">Quinta de Lemos</h5>
         <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
           ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
@@ -129,7 +111,7 @@ fraga.addEventListener('click', (event) => { 
   actiDescription.innerHTML = `      <div class="card card-position card-map " >
       <img src="fraga.jpg" alt="" class="card-img-top card-img-mapbox">
       <div class="card-body">
-        <h5 class="card-title">Fraga </h5>
+        <h5 class="card-title">Fraga da Pena</h5>
         <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
           ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
@@ -143,7 +125,7 @@ cabriz.addEventListener('click', (event) => { 
   actiDescription.innerHTML = `      <div class="card card-position card-map " >
       <img src="cabriz.jpg" alt="" class="card-img-top card-img-mapbox">
       <div class="card-body">
-        <h5 class="card-title">Cabriz </h5>
+        <h5 class="card-title">Quinta de Cabriz</h5>
         <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
           ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
@@ -179,13 +161,5 @@ avo.addEventListener('click', (event) => { 
       </div>
     </div>`
 });
-
-
-
-
-
-
-
-
 
 }

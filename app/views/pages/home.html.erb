@@ -214,39 +214,15 @@ var CojaCenter = new mapboxgl.Marker(cojaIcon)
 .setLngLat([-7.98861, 40.269045])
 .addTo(map);
 
-var praiaPopup = new mapboxgl.Popup({
-  anchor:'bottom',
-  offset: [0, -64]
-})
-.setHTML(`<div id="praia-popup">
-      <div class="card card-position" >
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="card-img-top praia-popup" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Praia fluvial do caneiro</h5>
-      </div>
-    </div>
-  </div>`);
-var praiaIcon = document.createElement('img');
-praiaIcon.src = `<%= image_path 'beach_icon.png' %>`
-praiaIcon.classList.add('map-icon');
-var praiaFluvia = new mapboxgl.Marker(praiaIcon)
-.setLngLat([-7.995078, 40.267689])
-.setPopup(praiaPopup)
-.addTo(map);
-
-
-
 
 var santaCombaPopup = new mapboxgl.Popup({
   anchor:'bottom',
   offset: [0, -64]
 })
 .setHTML(`<div id="praia-popup">
-      <div class="card card-position" >
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="card-img-top praia-popup" alt="...">
+      <img src="santaComba.jpg" alt="" class="card-img-top card-img-mapbox">
       <div class="card-body">
-        <h5 class="card-title">Praia fluvial do caneiro</h5>
-      </div>
+        <h5 class="card-title">Santa Comba Dão</h5>
     </div>
   </div>`);
 var santaComba = document.createElement('img');
@@ -255,9 +231,22 @@ santaComba.classList.add('map-icon');
 santaComba.classList.add('santa-comba-card');
 var santaCombaLocation = new mapboxgl.Marker(santaComba)
 .setLngLat([-8.1597634,40.3924813])
+
 .setPopup(santaCombaPopup)
+
 .addTo(map);
 
+
+var kayakPopup = new mapboxgl.Popup({
+  anchor:'bottom',
+  offset: [0, -64]
+})
+.setHTML(`<div id="praia-popup">
+        <img src="kayak.jpg" alt="" class="card-img-top card-img-mapbox">
+      <div class="card-body">
+        <h5 class="card-title">Kayak tour O Pioneiro Do Mondego</h5>
+    </div>
+  </div>`);
 var kayak = document.createElement('img');
 kayak.src = `<%= image_path 'kayak_icon.png' %>`
 kayak.classList.add('map-icon');
@@ -267,6 +256,17 @@ var kayakLocation = new mapboxgl.Marker(kayak)
 .setPopup(kayakPopup)
 .addTo(map);
 
+
+var rioAlvaPopup = new mapboxgl.Popup({
+  anchor:'bottom',
+  offset: [0, -64]
+})
+.setHTML(`<div id="praia-popup">
+      <img src="rioSalva.jpg" alt="" class="card-img-top card-img-mapbox">
+      <div class="card-body">
+        <h5 class="card-title">Praya Fluvial Coja</h5>
+    </div>
+  </div>`);
 var rioAlva = document.createElement('img');
 rioAlva.src = `<%= image_path 'beach_icon.png' %>`
 rioAlva.classList.add('map-icon');
@@ -276,6 +276,16 @@ var rioAlvaLocation = new mapboxgl.Marker(rioAlva)
 .setPopup(rioAlvaPopup)
 .addTo(map);
 
+var cascaPopup = new mapboxgl.Popup({
+  anchor:'bottom',
+  offset: [0, -64]
+})
+.setHTML(`<div id="praia-popup">
+      <img src="casca.jpg" alt="" class="card-img-top card-img-mapbox">
+      <div class="card-body">
+        <h5 class="card-title">Praya fluvial Cascalheira</h5>
+    </div>
+  </div>`);
 var casca = document.createElement('img');
 casca.src = `<%= image_path 'beach_icon.png' %>`
 casca.classList.add('map-icon');
@@ -291,11 +301,9 @@ var seraEstrelaPopup = new mapboxgl.Popup({
   offset: [0, -64]
 })
 .setHTML(`<div id="praia-popup">
-      <div class="card card-position" >
       <img src="estrella.jpg" alt="" class="card-img-top card-img-mapbox">
       <div class="card-body">
-        <h5 class="card-title">Praia fluvial do caneiro</h5>
-      </div>
+        <h5 class="card-title">National park Serra da Estrela</h5>
     </div>
   </div>`);
 var seraEstrela = document.createElement('img');
@@ -307,6 +315,16 @@ var seraEstrelaLocation = new mapboxgl.Marker(seraEstrela)
 .setPopup(seraEstrelaPopup)
 .addTo(map);
 
+var avoPopup = new mapboxgl.Popup({
+  anchor:'bottom',
+  offset: [0, -64]
+})
+.setHTML(`<div id="praia-popup">
+      <img src="estrella.jpg" alt="" class="card-img-top card-img-mapbox">
+      <div class="card-body">
+        <h5 class="card-title">Praia Fluvial de Avô</h5>
+    </div>
+  </div>`);
 var avo = document.createElement('img');
 avo.src = `<%= image_path 'beach_icon.png' %>`
 avo.classList.add('map-icon');
@@ -316,6 +334,16 @@ var avoLocation = new mapboxgl.Marker(avo)
 .setPopup(avoPopup)
 .addTo(map);
 
+var carvahalPopup = new mapboxgl.Popup({
+  anchor:'bottom',
+  offset: [0, -64]
+})
+.setHTML(`<div id="praia-popup">
+       <img src="caminhos.jpg" alt="" class="card-img-top card-img-mapbox">
+      <div class="card-body">
+        <h5 class="card-title">Caminhos Cruzados Winery</h5>
+    </div>
+  </div>`);
 var carvahal = document.createElement('img');
 carvahal.src = `<%= image_path 'winery_icon.png' %>`
 carvahal.classList.add('map-icon');
@@ -325,6 +353,16 @@ var carvahalLocation = new mapboxgl.Marker(carvahal)
 .setPopup(carvahalPopup)
 .addTo(map);
 
+var quintaLemosPopup = new mapboxgl.Popup({
+  anchor:'bottom',
+  offset: [0, -64]
+})
+.setHTML(`<div id="praia-popup">
+       <img src="lemos.jpg" alt="" class="card-img-top card-img-mapbox">
+      <div class="card-body">
+        <h5 class="card-title">Quinta de Lemos</h5>
+    </div>
+  </div>`);
 var quintaLemos = document.createElement('img');
 quintaLemos.src = `<%= image_path 'winery_icon.png' %>`
 quintaLemos.classList.add('map-icon');
@@ -334,6 +372,17 @@ var quintaLemosLocation = new mapboxgl.Marker(quintaLemos)
 .setPopup(quintaLemosPopup)
 .addTo(map);
 
+
+var fragaPopup = new mapboxgl.Popup({
+  anchor:'bottom',
+  offset: [0, -64]
+})
+.setHTML(`<div id="praia-popup">
+      <img src="fraga.jpg" alt="" class="card-img-top card-img-mapbox">
+      <div class="card-body">
+        <h5 class="card-title">Fraga da Pena</h5>
+    </div>
+  </div>`);
 var fraga = document.createElement('img');
 fraga.src = `<%= image_path 'binoculars_icon.png' %>`
 fraga.classList.add('map-icon');
@@ -343,6 +392,16 @@ var fragaLocation = new mapboxgl.Marker(fraga)
 .setPopup(fragaPopup)
 .addTo(map);
 
+var cabrizPopup = new mapboxgl.Popup({
+  anchor:'bottom',
+  offset: [0, -64]
+})
+.setHTML(`<div id="praia-popup">
+      <img src="cabriz.jpg" alt="" class="card-img-top card-img-mapbox">
+      <div class="card-body">
+        <h5 class="card-title">Quinta de Cabriz</h5>
+    </div>
+  </div>`);
 var cabriz = document.createElement('img');
 cabriz.src = `<%= image_path 'winery_icon.png' %>`
 cabriz.classList.add('map-icon');
@@ -358,7 +417,6 @@ vivendaIcon.classList.add('map-icon');
 vivendaIcon.classList.add('vivenda-card');
 var vivendaLocation = new mapboxgl.Marker(vivendaIcon)
 .setLngLat([-8.013077, 40.2560003])
-.setPopup(vivendaPopup)
 .addTo(map);
 
 
