@@ -261,8 +261,18 @@ body {
 
 .sidebar {
   width: 35%;
+  min-height: 70vh;
+  padding:0px !important;
 }
 
+.card-map {
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+.card-img-mapbox {
+  max-height:300px;
+}
 .map {
   border-left: 1px solid #fff;
   height:70vh;
@@ -360,8 +370,11 @@ footer {
   padding-top:0px;
 }
 
+  .mapboxgl-popup-content {
+    display:none;
+  }
 // Media
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1050px) {
   .container-nav {
   grid-template-columns:25% auto 25%;
 }
@@ -393,6 +406,10 @@ footer {
 
   .map.pad2 {
     width:100vw;
+  }
+
+  .mapboxgl-popup-content {
+    display:initial;
   }
 }
 
