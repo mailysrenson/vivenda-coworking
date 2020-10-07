@@ -6,7 +6,7 @@ function scrollFunction() {
     let fontText = document.getElementsByClassName("font-text");
     let menuBarWhite = document.getElementById("menu-btn-white");
     let menuBarGreen = document.getElementById("menu-btn-green");
-    console.log(menuBarWhite);
+
 
   if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     background.classList.remove('navbar-trans')
