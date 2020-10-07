@@ -1,342 +1,307 @@
 
 <body>
-<%= javascript_pack_tag 'navbar' %>
-<%= javascript_pack_tag 'mapbox_description' %>
+  <%= javascript_pack_tag 'navbar' %>
+  <%= javascript_pack_tag 'mapbox_description' %>
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky" id="navbar-container">
+    <div class="container-nav">
+      <div class="dropdown side-element">
+        <button class="btn btn-secondary font-text drop-menu text-white " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="<%= image_path 'menuBarWhite.png' %>"  id="menu-btn-white" class="menu-bar " alt="">
+        <img src="<%= image_path 'menuBarGreen.png' %>"  id="menu-btn-green" class="menu-bar menu-bar-hidden" alt="">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.rates') %></a>
+          <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.about_us') %></a>
+          <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.book') %></a>
+          <div class="dropdown-divider"></div>
+          <a class="nav-item nav-link dropdown-item" href="#"><%= "FR - EN - PT" %></a>
+        </div>
+      </div>
 
+      <div class="title-center">
+        <%= link_to root_path, class: "navbar-brand column-center" do  %>
+        <h1 class="font-text vivenda-size-big"> <%= " Vivenda " %> </h1>
+        <h2 class="font-text nossa-size-big "> <%="- a Nossa Coroa -"  %> </h2>
+        <% end %>
+      </div>
 
-<nav class="navbar navbar-expand-lg navbar-light sticky" id="navbar-container">
-  <div class="container-nav">
-    <div class="dropdown side-element">
-      <button class="btn btn-secondary font-text drop-menu text-white " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <img src="<%= image_path 'menuBarWhite.png' %>"  id="menu-btn-white" class="menu-bar " alt="">
-      <img src="<%= image_path 'menuBarGreen.png' %>"  id="menu-btn-green" class="menu-bar menu-bar-hidden" alt="">
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.rates') %></a>
-        <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.about_us') %></a>
-        <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.book') %></a>
-        <div class="dropdown-divider"></div>
-        <a class="nav-item nav-link dropdown-item" href="#"><%= "FR - EN - PT" %></a>
+      <div class="side-element reservez">
+        <%= link_to root_path, class: "nav-item reserver" do  %>
+        <h2 class="font-text reservez" id="deco-none"><%= t('global.navbar.book') %></h2>
+        <% end %>
       </div>
     </div>
+  </nav>
 
-    <div class="title-center">
-      <%= link_to root_path, class: "navbar-brand column-center" do  %>
-      <h1 class="font-text vivenda-size-big"> <%= " Vivenda " %> </h1>
-      <h2 class="font-text nossa-size-big "> <%="- a Nossa Coroa -"  %> </h2>
-      <% end %>
+  <!-- Carousel -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner ">
+
+      <div class="carousel-item active ">
+        <%= image_tag "DSC_0151.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+      </div>
+
+      <div class="carousel-item ">
+        <%= image_tag "Praia_Fluvia.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+      </div>
+
+      <div class="carousel-item ">
+        <%= image_tag "DSC_0036.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+      </div>
+
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-    <div class="side-element reservez">
-      <%= link_to root_path, class: "nav-item reserver" do  %>
-      <h2 class="font-text reservez" id="deco-none"><%= t('global.navbar.book') %></h2>
-      <% end %>
+
+  <!-- Cards alltogether-->
+  <div class="container">
+    <h2 class="text-center">Notre domaine</h2>
+    <div class="my-grid-1">
+      <div class="item">
+        <div class="card card-position" style="width: 20rem;">
+          <%= image_tag 'domain.JPG', class:"card-img-top", alt:"#{t('.domain_alt')}"%>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="card card-position" style="width: 20rem;">
+          <%= image_tag 'coja.png', class:"card-img-top", alt:"#{t('.neighbourhood_alt')}"%>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="card card-position" style="width: 20rem;">
+          <%= image_tag 'swimming_pool.jpg', class:"card-img-top", alt:"#{t('.swimming_pool_alt')}"%>
+        </div>
+      </div>
+
+      <div class="item">
+          <div class="card card-position" style="width: 20rem;">
+            <%= image_tag 'casas.JPG', class:"card-img-top", alt:"#{t('.casas_alt')}"%>
+          </div>
+      </div>
+
+      <div class="item">
+          <div class="card card-position" style="width: 20rem;">
+            <%= image_tag 'terrasse.JPG', class:"card-img-top", alt:"#{t('.terrasse_alt')}"%>
+          </div>
+      </div>
+
+
+      <div class="item">
+        <div class="card card-position" style="width: 20rem;">
+          <%= image_tag 'kitchen.JPG', class:"card-img-top", alt:"#{t('.kitchen_alt')}"%>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="card card-position" style="width: 20rem;">
+          <%= image_tag 'living_room.JPG', class:"card-img-top", alt:"#{t('.living_room_alt')}"%>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="card card-position" style="width: 20rem;">
+          <%= image_tag 'main_bedroom.JPG', class:"card-img-top", alt:"#{t('.main_bedroom_alt')}"%>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner ">
+  <!-- Map of activities -->
 
-    <div class="carousel-item active ">
-      <%= image_tag "DSC_0151.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+  <div class="activities-map container-activite">
+    <div class='sidebar pad2'>
+        <div class="li-item" id="acti-description">
+          <div class="">
+            <div class="card card-position" style="max-height: 33rem;" >
+              <%= image_tag "DSC_0036.JPG", class: "card-img-top" %>
+              <div class="card-body">
+                <h5 class="card-title">Bem vindo a Vivenda a Nossa Coroa </h5>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
+                  ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
+                    sequi facilis corrupti distinctio quibusdam similique molestias.</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-
-    <div class="carousel-item ">
-      <%= image_tag "Praia_Fluvia.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
-    </div>
-
-    <div class="carousel-item ">
-      <%= image_tag "DSC_0036.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
-    </div>
-
+    <div id='map' class='map pad2' style="">Map</div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row ">
+      <div class="col-12 order-last col-md-9 order-md-first ">
+        <p class="footer-font">
+          info@anossacoroa.com <br>
+          +32 477 24 57 26 <br>
+          +351 915274823
+        </p>
+        <p class="adress footer-font">
+          Vivenda a nossa coroa <br>
+          Vale do forno, <br>
+          3305-183 Coja, Portugal <br>
+        </p>
+        <p class="footer-font">Alojamento local 119/AL</p>
+      </div>
+      <div class="col-12 order-first col-md-3 order-md-last item icon">
+        <a href="tel:+32477245726" target="_blank"><i class="fas fa-phone icon-footer circle-icon" ></i></a>
+        <a href="mailto:info@anossacoroa.com" target="_blank"><i class="far fa-envelope icon-footer circle-icon"></i></a>
+        <a href="info@anossacoroa.com" target="_blank"></a>
+        <a href="https://www.facebook.com/anossacoroa" target="_blank"> <i class="fab fa-facebook-f icon-footer circle-icon" ></i></a>
+        <a href="https://www.instagram.com/vivendaanossacoroa/" target="_blank"><i class="fab fa-instagram icon-footer circle-icon"></i></a>
+      </div>
+    </div>
+  </footer>
 
 
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibmlrbzExMDAiLCJhIjoiY2tkYTVkcXd2MTZ1MjJxdGd3cWYyaWtqZCJ9.-E_TJRjcNNxpIW-l7LOHIw';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-8.008407, 40.3844089],
+    zoom: 9
+  });
+  var cojaIcon = document.createElement('div');
+  cojaIcon.classList.add('coja-icon');
+  var CojaCenter = new mapboxgl.Marker(cojaIcon)
+  .setLngLat([-7.98861, 40.269045])
+  .addTo(map);
 
-
-<div class="container">
-  <div class="my-grid">
-    <div class="item">
-      <div class="card card-position" style="width: 20rem;">
-        <img src="https://mailysrenson.github.io/vivenda-2/css/images/part_3_vivenda.jpg" class="card-img-top" alt="...">
+  var praiaPopup = new mapboxgl.Popup({
+    anchor:'bottom',
+    offset: [0, -64]
+  })
+  .setHTML(`<div id="praia-popup">
+        <div class="card card-position" >
+        <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="card-img-top praia-popup" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title">Praia fluvial do caneiro</h5>
         </div>
       </div>
-    </div>
+    </div>`);
+  var praiaIcon = document.createElement('img');
+  praiaIcon.src = `<%= image_path 'beach_icon.png' %>`
+  praiaIcon.classList.add('map-icon');
+  var praiaFluvia = new mapboxgl.Marker(praiaIcon)
+  .setLngLat([-7.995078, 40.267689])
+  .setPopup(praiaPopup)
+  .addTo(map);
 
-    <div class="item">
-      <div class="card card-position" style="width: 20rem;">
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-      <div class="item">
-      <div class="card card-position" style="width: 20rem;">
-      <img src="https://mailysrenson.github.io/vivenda-2/css/images/casa-bambu.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="item">
-      <div class="card card-position" style="width: 20rem;">
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468330.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-    <div class="item">
-      <div class="card card-position" style="width: 20rem;">
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/242/242275980.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-      <div class="item">
-      <div class="card card-position" style="width: 20rem;">
-      <img src="https://mailysrenson.github.io/vivenda-2/css/images/casa-azulejos.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
+  var santaComba = document.createElement('img');
+  santaComba.src = `<%= image_path 'bike_icon.png' %>`
+  santaComba.classList.add('map-icon');
+  var santaCombaLocation = new mapboxgl.Marker(santaComba)
+  .setLngLat([-8.1597634,40.3924813])
+  .addTo(map);
 
-      <div class="item">
-      <div class="card card-position" style="width: 20rem;">
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
+  var kayak = document.createElement('img');
+  kayak.src = `<%= image_path 'kayak_icon.png' %>`
+  kayak.classList.add('map-icon');
+  var kayakLocation = new mapboxgl.Marker(kayak)
+  .setLngLat([-8.2933872,40.2881311])
+  .addTo(map);
 
+  var rioAlva = document.createElement('img');
+  rioAlva.src = `<%= image_path 'beach_icon.png' %>`
+  rioAlva.classList.add('map-icon');
+  var rioAlvaLocation = new mapboxgl.Marker(rioAlva)
+  .setLngLat([-7.9972999,40.267763])
+  .addTo(map);
 
-<div class="activities-map container-activite">
+  var casca = document.createElement('img');
+  casca.src = `<%= image_path 'beach_icon.png' %>`
+  casca.classList.add('map-icon');
+  var cascaLocation = new mapboxgl.Marker(casca)
+  .setLngLat([-8.0379081,40.2502341])
+  .addTo(map);
 
-  <div class='sidebar pad2'>
-      <div class="li-item" id="acti-description">
+  var seraEstrela = document.createElement('img');
+  seraEstrela.src = `<%= image_path 'hike_icon.png' %>`
+  seraEstrela.classList.add('map-icon');
+  var seraEstrelaLocation = new mapboxgl.Marker(seraEstrela)
+  .setLngLat([-7.6355217,40.333333])
+  .addTo(map);
 
-<div class="">
-      <div class="card card-position" style="max-height: 33rem;" >
-      <%= image_tag "DSC_0036.JPG", class: "card-img-top" %>
-      <div class="card-body">
-        <h5 class="card-title">Bem vindo a Vivenda a Nossa Coroa </h5>
-        <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
-          ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
-            sequi facilis corrupti distinctio quibusdam similique molestias.</p>
-      </div>
-    </div>
-  </div>
+  var avo = document.createElement('img');
+  avo.src = `<%= image_path 'beach_icon.png' %>`
+  avo.classList.add('map-icon');
+  var avoLocation = new mapboxgl.Marker(avo)
+  .setLngLat([-7.9080021,40.2941203])
+  .addTo(map);
 
+  var carvahal = document.createElement('img');
+  carvahal.src = `<%= image_path 'winery_icon.png' %>`
+  carvahal.classList.add('map-icon');
+  var carvahalLocation = new mapboxgl.Marker(carvahal)
+  .setLngLat([-7.8771582,40.5432448])
+  .addTo(map);
 
+  var quintaLemos = document.createElement('img');
+  quintaLemos.src = `<%= image_path 'winery_icon.png' %>`
+  quintaLemos.classList.add('map-icon');
+  var quintaLemosLocation = new mapboxgl.Marker(quintaLemos)
+  .setLngLat([-7.9845738,40.5748316])
+  .addTo(map);
 
+  var fraga = document.createElement('img');
+  fraga.src = `<%= image_path 'binoculars_icon.png' %>`
+  fraga.classList.add('map-icon');
+  var fragaLocation = new mapboxgl.Marker(fraga)
+  .setLngLat([-7.9781015,40.4680063])
+  .addTo(map);
 
-
-      </div>
-  </div>
-
-
-  <div id='map' class='map pad2' style="">Map</div>
-</div>
-
-
-<footer>
-      <div class="row ">
-        <div class="col-12 order-last col-md-9 order-md-first ">
-          <p class="footer-font">
-            info@anossacoroa.com <br>
-            +32 477 24 57 26 <br>
-            +351 915274823
-          </p>
-
-          <p class="adress footer-font">
-            Vivenda a nossa coroa <br>
-            Vale do forno, <br>
-            3305-183 Coja, Portugal <br>
-          </p>
-          <p class="footer-font">Alojamento local 119/AL</p>
-
-        </div>
-    <div class="col-12 order-first col-md-3 order-md-last item icon">
-    <a href="tel:+32477245726" target="_blank"><i class="fas fa-phone icon-footer circle-icon" ></i></a>
-    <a href="mailto:info@anossacoroa.com" target="_blank"><i class="far fa-envelope icon-footer circle-icon"></i></a>
-    <a href="info@anossacoroa.com" target="_blank"></a>
-    <a href="https://www.facebook.com/anossacoroa" target="_blank"> <i class="fab fa-facebook-f icon-footer circle-icon" ></i></a>
-    <a href="https://www.instagram.com/vivendaanossacoroa/" target="_blank"><i class="fab fa-instagram icon-footer circle-icon"></i></a>
-
-    </div>
-    </div>
-</footer>
-
-
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoibmlrbzExMDAiLCJhIjoiY2tkYTVkcXd2MTZ1MjJxdGd3cWYyaWtqZCJ9.-E_TJRjcNNxpIW-l7LOHIw';
-var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v11',
-  center: [-8.008407, 40.3844089],
-  zoom: 9
-});
-var cojaIcon = document.createElement('div');
-cojaIcon.classList.add('coja-icon');
-var CojaCenter = new mapboxgl.Marker(cojaIcon)
-.setLngLat([-7.98861, 40.269045])
-.addTo(map);
-
-var praiaPopup = new mapboxgl.Popup({
-  anchor:'bottom',
-  offset: [0, -64]
-})
-.setHTML(`<div id="praia-popup">
-      <div class="card card-position" >
-      <img src="https://cf.bstatic.com/images/hotel/max1024x768/264/264468323.jpg" class="card-img-top praia-popup" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Praia fluvial do caneiro</h5>
-      </div>
-    </div>
-  </div>`);
-var praiaIcon = document.createElement('img');
-praiaIcon.src = `<%= image_path 'beach_icon.png' %>`
-praiaIcon.classList.add('map-icon');
-var praiaFluvia = new mapboxgl.Marker(praiaIcon)
-.setLngLat([-7.995078, 40.267689])
-.setPopup(praiaPopup)
-.addTo(map);
-
-var santaComba = document.createElement('img');
-santaComba.src = `<%= image_path 'bike_icon.png' %>`
-santaComba.classList.add('map-icon');
-var santaCombaLocation = new mapboxgl.Marker(santaComba)
-.setLngLat([-8.1597634,40.3924813])
-.addTo(map);
-
-var kayak = document.createElement('img');
-kayak.src = `<%= image_path 'kayak_icon.png' %>`
-kayak.classList.add('map-icon');
-var kayakLocation = new mapboxgl.Marker(kayak)
-.setLngLat([-8.2933872,40.2881311])
-.addTo(map);
-
-var rioAlva = document.createElement('img');
-rioAlva.src = `<%= image_path 'beach_icon.png' %>`
-rioAlva.classList.add('map-icon');
-var rioAlvaLocation = new mapboxgl.Marker(rioAlva)
-.setLngLat([-7.9972999,40.267763])
-.addTo(map);
-
-var casca = document.createElement('img');
-casca.src = `<%= image_path 'beach_icon.png' %>`
-casca.classList.add('map-icon');
-var cascaLocation = new mapboxgl.Marker(casca)
-.setLngLat([-8.0379081,40.2502341])
-.addTo(map);
-
-var seraEstrela = document.createElement('img');
-seraEstrela.src = `<%= image_path 'hike_icon.png' %>`
-seraEstrela.classList.add('map-icon');
-var seraEstrelaLocation = new mapboxgl.Marker(seraEstrela)
-.setLngLat([-7.6355217,40.333333])
-.addTo(map);
-
-var avo = document.createElement('img');
-avo.src = `<%= image_path 'beach_icon.png' %>`
-avo.classList.add('map-icon');
-var avoLocation = new mapboxgl.Marker(avo)
-.setLngLat([-7.9080021,40.2941203])
-.addTo(map);
-
-var carvahal = document.createElement('img');
-carvahal.src = `<%= image_path 'winery_icon.png' %>`
-carvahal.classList.add('map-icon');
-var carvahalLocation = new mapboxgl.Marker(carvahal)
-.setLngLat([-7.8771582,40.5432448])
-.addTo(map);
-
-var quintaLemos = document.createElement('img');
-quintaLemos.src = `<%= image_path 'winery_icon.png' %>`
-quintaLemos.classList.add('map-icon');
-var quintaLemosLocation = new mapboxgl.Marker(quintaLemos)
-.setLngLat([-7.9845738,40.5748316])
-.addTo(map);
-
-var fraga = document.createElement('img');
-fraga.src = `<%= image_path 'binoculars_icon.png' %>`
-fraga.classList.add('map-icon');
-var fragaLocation = new mapboxgl.Marker(fraga)
-.setLngLat([-7.9781015,40.4680063])
-.addTo(map);
-
-var cabriz = document.createElement('img');
-cabriz.src = `<%= image_path 'winery_icon.png' %>`
-cabriz.classList.add('map-icon');
-var cabrizLocation = new mapboxgl.Marker(cabriz)
-.setLngLat([-8.0207627,40.4247854])
-.addTo(map);
+  var cabriz = document.createElement('img');
+  cabriz.src = `<%= image_path 'winery_icon.png' %>`
+  cabriz.classList.add('map-icon');
+  var cabrizLocation = new mapboxgl.Marker(cabriz)
+  .setLngLat([-8.0207627,40.4247854])
+  .addTo(map);
 
 
 
-var vivendaIcon = document.createElement('img');
-vivendaIcon.src = `<%= image_path 'vivenda_icon.png' %>`
-vivendaIcon.classList.add('map-icon');
-var vivendaLocation = new mapboxgl.Marker(vivendaIcon)
-.setLngLat([-8.013077, 40.2560003])
-.addTo(map);
+  var vivendaIcon = document.createElement('img');
+  vivendaIcon.src = `<%= image_path 'vivenda_icon.png' %>`
+  vivendaIcon.classList.add('map-icon');
+  var vivendaLocation = new mapboxgl.Marker(vivendaIcon)
+  .setLngLat([-8.013077, 40.2560003])
+  .addTo(map);
+  </script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script>
 
 
-
-
-</script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script>
-
-
-imagesLoaded( document.querySelector('.container'), () => {
-  waterfall('.my-grid')
-});
-
-
-  window.addEventListener('resize', () => {
-      waterfall('.my-grid');
+  imagesLoaded( document.querySelector('.container'), () => {
+    waterfall('.my-grid-1');
+    waterfall('.my-grid-2');
   });
 
-</script>
+    window.addEventListener('resize', () => {
+        waterfall('.my-grid-1');
+        waterfall('.my-grid-2');
+    });
 
-
-
-
-
+  </script>
 </body>
 
 
