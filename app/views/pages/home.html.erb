@@ -69,67 +69,74 @@
   </div>
 
 
-  <!-- Cards alltogether-->
+  <!-- Pictures -->
   <div class="container">
-    <div class="my-grid">
+    <div class="my-grid-1">
       <div class="item">
-        <div class="card card-position" style="width: 20rem;">
+        <div class="card card-position" style="width: 32rem; border: none;">
           <%= image_tag 'domain.JPG', class:"card-img-top", alt:"#{t('.domain_alt')}"%>
         </div>
       </div>
 
       <div class="item">
-        <div class="card card-position" style="width: 20rem;">
-          <%= image_tag 'coja.png', class:"card-img-top", alt:"#{t('.neighbourhood_alt')}"%>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card card-position" style="width: 20rem;">
-          <%= image_tag 'swimming_pool.jpg', class:"card-img-top", alt:"#{t('.swimming_pool_alt')}"%>
-        </div>
-      </div>
-
-      <div class="item">
-          <div class="card card-position" style="width: 20rem;">
+          <div class="card card-position" style="width: 32rem; border: none;">
             <%= image_tag 'casas.JPG', class:"card-img-top", alt:"#{t('.casas_alt')}"%>
           </div>
       </div>
 
       <div class="item">
-          <div class="card card-position" style="width: 20rem;">
-            <%= image_tag 'terrasse.JPG', class:"card-img-top", alt:"#{t('.terrasse_alt')}"%>
-          </div>
-      </div>
-
-
-      <div class="item">
-        <div class="card card-position" style="width: 20rem;">
-          <%= image_tag 'kitchen.JPG', class:"card-img-top", alt:"#{t('.kitchen_alt')}"%>
+        <div class="card card-position" style="width: 32rem; border: none;">
+          <%= image_tag 'swimming_pool.jpg', class:"card-img-top", alt:"#{t('.swimming_pool_alt')}"%>
         </div>
       </div>
 
       <div class="item">
-        <div class="card card-position" style="width: 20rem;">
+        <div class="card card-position" style="width: 32rem; border: none;">
+          <%= image_tag 'kitchen.JPG', class:"card-img-top", alt:"#{t('.kitchen_alt')}"%>
+        </div>
+      </div>
+    </div>
+
+  <div class="sub-card">
+      <h3>Le domaine</h3>
+      <p>La « Vivenda » est une petite structure composée de 4 bungalows/maisons au total: 3 à louer comme locations de vacances et 1 que nous occupons. Les bungalows, situés côte à côte, ont été construits en 2007 sur un terrain d’environ un hectare de verdure et de fleurs. Sept chênes-lièges (espèce protégée au Portugal) sont également caractéristiques du domaine de vacances. <br>
+      Avec les grandes fenêtres dans toutes les pièces, vous bénéficierez partout de vues magnifiques sur la nature et les montagnes. <br>
+      Le domaine convient parfaitement aux couples et aux familles. Il est également idéal en groupes d’amis ou en grandes familles ! Louez donc 1, 2 ou 3 bungalows selon vos besoins.<br>
+      L’endroit est également idéal pour passer l’hiver et profiter d’une météo plus clémente que dans le nord de l’Europe. Ici, tous les commerces, restaurants, etc restent ouverts et la vie continue durant toute l’année. La nature reste également verte et luxuriante toute l’année. Profitez de nos prix promotionnels pour des longs séjours en hiver.<br>
+      Les 3 bungalows de vacances, tous identiques, spacieux (+/- 70 m2) et confortablement meublés, sont décorés de manière différente. Vous avez le choix entre 3 thèmes: la casa Savana, la casa Azulejos et la casa Bambu.</p>
+  </div>
+
+    <div class="my-grid-2">
+      <div class="item">
+          <div class="card card-position" style="width: 32rem; border: none;">
+            <%= image_tag 'terrasse.JPG', class:"card-img-top", alt:"#{t('.terrasse_alt')}"%>
+          </div>
+      </div>
+
+      <div class="item">
+        <div class="card card-position" style="width: 32rem; border: none;">
           <%= image_tag 'living_room.JPG', class:"card-img-top", alt:"#{t('.living_room_alt')}"%>
         </div>
       </div>
 
       <div class="item">
-        <div class="card card-position" style="width: 20rem;">
+        <div class="card card-position" style="width: 32rem; border: none;">
+          <%= image_tag 'main_bedroom.JPG', class:"card-img-top", alt:"#{t('.main_bedroom_alt')}"%>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="card card-position" style="width: 32rem; border: none;">
+          <%= image_tag 'main_bedroom.JPG', class:"card-img-top", alt:"#{t('.main_bedroom_alt')}"%>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="card card-position" style="width: 32rem; border: none;">
           <%= image_tag 'main_bedroom.JPG', class:"card-img-top", alt:"#{t('.main_bedroom_alt')}"%>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Description  -->
-  <div class="container">
-    <h2>Le domaine</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti optio ipsum saepe culpa possimus sapiente doloribus incidunt! Rem, autem molestias dolorum fugit ullam qui cum quibusdam eaque accusantium, voluptates iusto!</p>
-
-    <h2>Les casas</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, sapiente tempora, quisquam corrupti velit rerum facere eos quo consequuntur dicta nostrum vero ipsum dolore possimus numquam ducimus eius eligendi maxime.</p>
   </div>
   
   <!-- Map of activities -->
@@ -301,7 +308,10 @@
 
 
   imagesLoaded( document.querySelector('.container'), () => {
-    waterfall('.my-grid');
+    waterfall('.my-grid-1');
+  });
+   imagesLoaded( document.querySelector('.container'), () => {
+    waterfall('.my-grid-2');
   });
 
     window.addEventListener('resize', () => {
