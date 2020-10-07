@@ -9,7 +9,8 @@
   <div class="container-nav">
     <div class="dropdown side-element">
       <button class="btn btn-secondary font-text drop-menu text-white " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <img src="<%= image_path 'menuBarWhite.png' %>"  id="menu-btn-white" class="menu-bar-white" alt="">
+      <img src="<%= image_path 'menuBarWhite.png' %>"  id="menu-btn-white" class="menu-bar " alt="">
+      <img src="<%= image_path 'menuBarGreen.png' %>"  id="menu-btn-green" class="menu-bar menu-bar-hidden" alt="">
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
         <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.rates') %></a>
@@ -203,8 +204,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibmlrbzExMDAiLCJhIjoiY2tkYTVkcXd2MTZ1MjJxdGd3c
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v11',
-  center: [-7.995078, 40.267689],
-  zoom: 12
+  center: [-8.008407, 40.3844089],
+  zoom: 9
 });
 var cojaIcon = document.createElement('div');
 cojaIcon.classList.add('coja-icon');
@@ -224,28 +225,95 @@ var praiaPopup = new mapboxgl.Popup({
       </div>
     </div>
   </div>`);
-
-var praiaIcon = document.createElement('div');
-praiaIcon.classList.add('praia-icon');
+var praiaIcon = document.createElement('img');
+praiaIcon.src = `<%= image_path 'beach_icon.png' %>`
+praiaIcon.classList.add('map-icon');
 var praiaFluvia = new mapboxgl.Marker(praiaIcon)
 .setLngLat([-7.995078, 40.267689])
 .setPopup(praiaPopup)
 .addTo(map);
 
+var santaComba = document.createElement('img');
+santaComba.src = `<%= image_path 'bike_icon.png' %>`
+santaComba.classList.add('map-icon');
+var santaCombaLocation = new mapboxgl.Marker(santaComba)
+.setLngLat([-8.1597634,40.3924813])
+.addTo(map);
 
-var vivendaIcon = document.createElement('div');
-vivendaIcon.classList.add('vivenda-icon');
+var kayak = document.createElement('img');
+kayak.src = `<%= image_path 'kayak_icon.png' %>`
+kayak.classList.add('map-icon');
+var kayakLocation = new mapboxgl.Marker(kayak)
+.setLngLat([-8.2933872,40.2881311])
+.addTo(map);
+
+var rioAlva = document.createElement('img');
+rioAlva.src = `<%= image_path 'beach_icon.png' %>`
+rioAlva.classList.add('map-icon');
+var rioAlvaLocation = new mapboxgl.Marker(rioAlva)
+.setLngLat([-7.9972999,40.267763])
+.addTo(map);
+
+var casca = document.createElement('img');
+casca.src = `<%= image_path 'beach_icon.png' %>`
+casca.classList.add('map-icon');
+var cascaLocation = new mapboxgl.Marker(casca)
+.setLngLat([-8.0379081,40.2502341])
+.addTo(map);
+
+var seraEstrela = document.createElement('img');
+seraEstrela.src = `<%= image_path 'hike_icon.png' %>`
+seraEstrela.classList.add('map-icon');
+var seraEstrelaLocation = new mapboxgl.Marker(seraEstrela)
+.setLngLat([-7.6355217,40.333333])
+.addTo(map);
+
+var avo = document.createElement('img');
+avo.src = `<%= image_path 'beach_icon.png' %>`
+avo.classList.add('map-icon');
+var avoLocation = new mapboxgl.Marker(avo)
+.setLngLat([-7.9080021,40.2941203])
+.addTo(map);
+
+var carvahal = document.createElement('img');
+carvahal.src = `<%= image_path 'winery_icon.png' %>`
+carvahal.classList.add('map-icon');
+var carvahalLocation = new mapboxgl.Marker(carvahal)
+.setLngLat([-7.8771582,40.5432448])
+.addTo(map);
+
+var quintaLemos = document.createElement('img');
+quintaLemos.src = `<%= image_path 'winery_icon.png' %>`
+quintaLemos.classList.add('map-icon');
+var quintaLemosLocation = new mapboxgl.Marker(quintaLemos)
+.setLngLat([-7.9845738,40.5748316])
+.addTo(map);
+
+var fraga = document.createElement('img');
+fraga.src = `<%= image_path 'binoculars_icon.png' %>`
+fraga.classList.add('map-icon');
+var fragaLocation = new mapboxgl.Marker(fraga)
+.setLngLat([-7.9781015,40.4680063])
+.addTo(map);
+
+var cabriz = document.createElement('img');
+cabriz.src = `<%= image_path 'winery_icon.png' %>`
+cabriz.classList.add('map-icon');
+var cabrizLocation = new mapboxgl.Marker(cabriz)
+.setLngLat([-8.0207627,40.4247854])
+.addTo(map);
+
+
+
+var vivendaIcon = document.createElement('img');
+vivendaIcon.src = `<%= image_path 'vivenda_icon.png' %>`
+vivendaIcon.classList.add('map-icon');
 var vivendaLocation = new mapboxgl.Marker(vivendaIcon)
-.setLngLat([-8.010888, 40.256])
+.setLngLat([-8.013077, 40.2560003])
 .addTo(map);
 
 
 
-var trail01Icon = document.createElement('div');
-trail01Icon.classList.add('trail01-icon');
-var trail01Location = new mapboxgl.Marker(trail01Icon)
-.setLngLat([-7.998077, 40.258227])
-.addTo(map);
 
 </script>
 
