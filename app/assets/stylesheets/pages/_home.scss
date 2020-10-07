@@ -261,8 +261,18 @@ body {
 
 .sidebar {
   width: 35%;
+  min-height: 70vh;
+  padding:0px !important;
 }
 
+.card-map {
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+.card-img-mapbox {
+  max-height:300px;
+}
 .map {
   border-left: 1px solid #fff;
   height:70vh;
