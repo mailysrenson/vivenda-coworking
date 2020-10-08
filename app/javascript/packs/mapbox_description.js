@@ -154,7 +154,7 @@ avo.addEventListener('click', (event) => { 
   actiDescription.innerHTML = `      <div class="card card-position card-map " >
       <img src="avo.jpg" alt="" class="card-img-top card-img-mapbox">
       <div class="card-body">
-        <h5 class="card-title">Avo</h5>
+        <h5 class="card-title">Praia Fluvial de Avô</h5>
         <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
           ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
