@@ -1,24 +1,55 @@
 <%= javascript_pack_tag 'people_limit' %>
 <%= javascript_pack_tag 'disable_date' %>
 
+<div class="title-center">
+  <%= link_to root_path, class: "navbar-brand column-center " do  %>
+    <h1 class="font-text vivenda-size-big color-to-green"> <%= " Vivenda " %> </h1>
+    <h2 class="font-text nossa-size-big color-to-green "> <%="- a Nossa Coroa -"  %> </h2>
+  <% end %>
+</div>
+
+ <!-- Tab links -->
 
 <div class="container">
-<%= simple_form_for [@booking] do |f| %>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.input :email %>
-  <%= f.input :phone %>
-  <%= f.input :adults, input_html: {id: "booking_adults"}, selected: 0, collection: 0..amountParents %>
-  <%= f.input :childrens, input_html: {class: "people-limit"}, selected: 0, collection: 0..amountChildren %>
-  <%=f.input_field :baby_bed, as: :boolean, boolean_style: :inline  %>
-  <%= f.input :street %>
-  <%= f.input :city %>
-  <%= f.input :zipcode %>
-  <%= f.input :country %>
-  <%= f.input :comment %>
-  <%= f.input :arrival_date, as: :string, input_html: {class: "datepicker-arrival", id: "arrival-date"}  %>
-  <%= f.input :departure_date, as: :string, input_html: {class: "datepicker-departure", readonly: true} %>
-
-  <%= f.submit class: "btn btn-red-own-activities" %>
-<% end %>
+  <%= simple_form_for [@booking] do |f| %>
+  <div>
+    <div>
+      <h4>Part 1</h4>
+      <p>icone</p>
+    </div>
+    <div>
+      <%= f.input :arrival_date, as: :string, input_html: {class: "datepicker-arrival", id: "arrival-date"}  %>
+      <%= f.input :departure_date, as: :string, input_html: {class: "datepicker-departure", readonly: true} %>
+      <%= f.input :adults, input_html: {id: "booking_adults"}, selected: 0, collection: 0..5 %>
+      <%= f.input :childrens, input_html: {class: "people-limit"}, selected: 0, collection: 0..5 %>
+      <%=f.input_field :baby_bed, as: :boolean, boolean_style: :inline  %>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h4>Part 2</h4>
+      <p>icone</p>
+    </div>
+    <div>
+      <%= f.input :first_name %>
+      <%= f.input :last_name %>
+      <%= f.input :email %>
+      <%= f.input :phone %>
+      <%= f.input :street %>
+      <%= f.input :city %>
+      <%= f.input :zipcode %>
+      <%= f.input :country %>
+      <%= f.input :comment %>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h4>Part 3</h4>
+      <p>icone</p>
+    </div>
+    <div>
+     <%= f.submit class: "btn btn-red-own-activities" %>
+     <% end %>
+    </div>
+  </div>
 </div>
