@@ -36,5 +36,11 @@ fr:
         comment: "Demandes spéciales?"
         arrival_date: "Date d'arrivée"
         departure_date: "Date de départ"
-
+    
+  pages:
+    home:
+      domain: "Notre domaine"
+      domain_description_html: "Séjournez dans des bungalows spacieux et tout équipés, pour max 4-5 personnes, situés dans un domaine paisible d'un hectare d'arbres et de fleurs.<br><br>
+      Tout en tranquillité, dans une petite structure composée de 3 bungalows de vacances, loin du tourisme de masse.<br><br>
+      Profitez des parties communes comprenant notamment une agréable piscine, un petit bar cosy,…"
 
