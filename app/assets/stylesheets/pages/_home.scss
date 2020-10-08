@@ -162,7 +162,6 @@ text-shadow:1px 1px 2px rgba(59,67,54,0.5);
   width: 100% !important;
   display:grid;
   grid-template-columns:10% auto 10%;
-
 }
 
 .column-nav {
@@ -192,6 +191,11 @@ flex-flow: column wrap;
 .dropdown-menu.show {
    background-color:rgba(255,255,255,0.5);
 }
+
+.dropdown.side-element.show{
+ height: 66px;
+}
+
 
 .reserver h2 {
   border-radius:4px;
@@ -286,8 +290,18 @@ body {
 
 .sidebar {
   width: 35%;
+  min-height: 70vh;
+  padding:0px !important;
 }
 
+.card-map {
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+.card-img-mapbox {
+  max-height:300px;
+}
 .map {
   border-left: 1px solid #fff;
   height:70vh;
@@ -385,8 +399,11 @@ footer {
   padding-top:0px;
 }
 
+  .mapboxgl-popup-content {
+    display:none;
+  }
 // Media
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1050px) {
   .container-nav {
   grid-template-columns:25% auto 25%;
 }
@@ -418,6 +435,10 @@ footer {
 
   .map.pad2 {
     width:100vw;
+  }
+
+  .mapboxgl-popup-content {
+    display:initial;
   }
 }
 
