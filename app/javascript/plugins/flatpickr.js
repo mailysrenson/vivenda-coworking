@@ -13,21 +13,23 @@ const initFlatPicker = () => {
     //   }]
   });
 // datepicker-arrival flatpickr-calendar
+
 let dateDeparture
-const calendar = document.querySelector(".datepicker-arrival");
+
+const calendar = document.querySelector(".flatpickr-days");
 console.log(calendar)
-calendar.addEventListener('input', ($event) => {
-  let arrivalDate = document.getElementsByClassName("startRange");
+calendar.addEventListener('click', ($event) => {
+  setTimeout(test, 50);
+  function test() {
+  console.log("dans listener")
+  let arrivalDate = document.querySelector(".startRange");
   console.log(arrivalDate)
-  let dateSelectedObj = $event.target.value
-  console.log(dateSelectedObj)
-       let [year, month, day] = dateSelectedObj.split("-");
-       day = parseInt(day, 10);
-       month = parseInt(month, 10);
-       year = parseInt(year, 10);
+  let arrivalMonth = arrivalDate.getAttribute('aria-label')
+       let [month, day, year] = arrivalMonth.split(" ");
+       console.log(month)
      let i = 1
-   if (month === 6 || month === 7 ){
-     let selection = document.getElementsByClassName("startRange");
+   if (month === "July" || month === "August" ){
+     let selection = document.querySelector(".startRange");
      let selectionPrev = selection;
      while (i < 8) {
         let siblingOne = selection.nextSibling;
@@ -39,7 +41,8 @@ calendar.addEventListener('input', ($event) => {
         i += 1
      }
    } else {
-        let selection = arrivalDate[0];
+    let selectDay = document.getElementsByClassName(".startRange");
+        let selection = arrivalDate;
         let selectionPrev = selection;
       while (i < 4) {
         let siblingOne = selection.nextSibling;
@@ -51,7 +54,10 @@ calendar.addEventListener('input', ($event) => {
         i += 1
         console.log(i)
       }
-   }
+    }
+    }
+  });
+
 
     // let selection = document.querySelector(".startRange")
     // let siblingOne = selection.nextSibling;
@@ -69,7 +75,7 @@ calendar.addEventListener('input', ($event) => {
 
 
 
-});
+
 // <span class="flatpickr-day notAllowed" aria-label="October 15, 2020" tabindex="-1">15</span>
 
 
