@@ -117,6 +117,7 @@ text-shadow:1px 1px 2px rgba(59,67,54,0.5);
 
 .card-position {
   position: absolute;
+  width:32rem;
 }
 
 .title-card-home{
@@ -386,7 +387,7 @@ body {
 
 footer {
  background-color:white;
- padding:30px 0 0 50px;
+ padding:30px 30px 30px 50px;
 }
 
 .footer-font {
@@ -402,6 +403,12 @@ footer {
   .mapboxgl-popup-content {
     display:none;
   }
+
+.card-img-waterfall {
+  border-radius:7px !important;
+      flex-shrink: 0;
+    width: 100%;
+}
 // Media
 @media screen and (max-width: 1050px) {
   .container-nav {
@@ -440,5 +447,14 @@ footer {
   .mapboxgl-popup-content {
     display:initial;
   }
+
+  .card-position {
+  width:90vw;
+}
+
+.container{
+  padding-right: 5vw !important;
+  padding-left: 5vw !important;
+}
 }
 
