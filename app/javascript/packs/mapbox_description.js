@@ -1,4 +1,13 @@
 window.onload = function(){
+
+
+let title = document.querySelector(".mapboxgl-ctrl-attrib");
+console.log(title)
+title.remove();
+let title2 = document.querySelector(".mapboxgl-ctrl-logo");
+title2.remove();
+
+
 let praiaPopup = document.getElementsByClassName("praia-icon")
 let actiDescription = document.getElementById("acti-description")
 

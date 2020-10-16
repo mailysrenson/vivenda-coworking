@@ -11,6 +11,7 @@ fr:
   bookings:
     new:
       baby_bed: "Lit bébé"
+      title: "Réservation"
   admin-form: "Nouvelle réservation"
 
   activerecord:
@@ -36,7 +37,7 @@ fr:
         comment: "Demandes spéciales?"
         arrival_date: "Date d'arrivée"
         departure_date: "Date de départ"
-    
+
   pages:
     home:
       domain: "Notre domaine"

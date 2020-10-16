@@ -1,5 +1,4 @@
 import flatpickr from "flatpickr";
-
 const initFlatPicker = () => {
     flatpickr(".datepicker-arrival", {
     altInput: true,
@@ -7,57 +6,70 @@ const initFlatPicker = () => {
     dateFormat: "Y-m-d",
     minDate: "today",
     inline: true,
-    mode: "range",
-    disable: [function(date) {
-      let result = rangeDisable(date)
-      console.log(`result `, result)
-        return result;
-    }]
+    mode: "range"
   });
-
-const calendar = document.querySelector(".flatpickr-input");
 let dateDeparture
-calendar.addEventListener('input', ($event) => {
-  const arrivalDateObject = document.querySelector(".flatpickr-day.selected.startRange");
-  let arrivalDate = arrivalDateObject.dateObj;
-    if ( arrivalDate != ""){
-    let dateSelected = $event.target.value;
-      let [year, month, day] = dateSelected.split("-");
-      day = parseInt(day, 10);
-      month = parseInt(month, 10) - 1;
-      year = parseInt(year, 10);
-      dateDeparture = new Date(year, month, day);
-      if (month === 6 || month === 7 ){
-      dateDeparture.setDate(dateDeparture.getDate() + 7);
-    } else {
-      dateDeparture.setDate(dateDeparture.getDate() + 3);
-    };
-    };
-
-});
-function rangeDisable(date) {
-  console.log(`Departure`, dateDeparture)
-  console.log(`Date`, date)
-  if (date < dateDeparture ) {
-    console.log(`dans if`)
-         return true;
+const calendar = document.querySelector(".flatpickr-days");
+calendar.addEventListener('click', ($event) => {
+  setTimeout(test, 50);
+  function test() {
+  let arrivalDate = document.querySelector(".startRange");
+  console.log(arrivalDate)
+  let arrivalMonth = arrivalDate.getAttribute('aria-label')
+       let [month, day, year] = arrivalMonth.split(" ");
+       console.log(month)
+     let i = 1
+   if (month === "July" || month === "August" ){
+     let selection = document.querySelector(".startRange");
+     let selectionPrev = selection;
+     while (i < 8) {
+        let siblingOne = selection.nextSibling;
+        siblingOne.classList.add("flatpickr-disabled");
+        let prevSiblingOne = selectionPrev.previousSibling;
+        prevSiblingOne.classList.add("flatpickr-disabled");
+        selection = siblingOne
+        selectionPrev = prevSiblingOne
+        i += 1
+     }
+   } else {
+    let selectDay = document.getElementsByClassName(".startRange");
+        let selection = arrivalDate;
+        let selectionPrev = selection;
+      while (i < 4) {
+        let siblingOne = selection.nextSibling;
+        siblingOne.classList.add("flatpickr-disabled");
+        let prevSiblingOne = selectionPrev.previousSibling;
+        prevSiblingOne.classList.add("flatpickr-disabled");
+        selection = siblingOne
+        selectionPrev = prevSiblingOne
+        i += 1
+      }
     }
-}
-//   arrivalDate[0].addEventListener("blur", ($event) => {
-//    console.log(arrivalDate)
-//   flatpickr(".datepicker-", {
-//     altInput: true,
-//     altFormat: "d-m-Y",
-//     dateFormat: "Y-m-d",
-//     minDate: dateDeparture,
-//     disable: [ function(date) {
-//       if (date < dateDeparture ) {
-//         return true
-//       }
-//     } ]
-//   });
-// }
-// });
+        let rangeDiv = document.querySelector("#arrival-date");
+    let range = rangeDiv.getAttribute('value')
+    let dateSeparator = range.split(" to ");
+    let dateArrival = dateSeparator[0]
+    let dateDeparture = dateSeparator[1]
+    let arrivalInput = document.querySelector("#arrival-date-input");
+    arrivalInput.setAttribute("value", dateArrival);
+    let departureInput = document.querySelector("#departure-date-input");
+    departureInput.setAttribute("value", dateDeparture);
+    }
+  });
 };
-
 export {initFlatPicker};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
