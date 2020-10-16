@@ -63,7 +63,6 @@ ActiveRecord::Schema.define(version: 2020_10_16_095029) do
     t.string "language"
     t.string "special_status"
     t.string "range_date"
-
     t.index ["casas_id"], name: "index_bookings_on_casas_id"
   end
 
