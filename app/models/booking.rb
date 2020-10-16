@@ -1,6 +1,13 @@
 class Booking < ApplicationRecord
   validates :last_name, :first_name, :email, :phone, :adults, :childrens, :arrival_date, :departure_date, :street, :city, :zipcode, :country, presence: true
   validates :adults, :childrens, inclusion: { in: (0..5).to_a}
+  scope :pending, ->{where(state: :pending)}
+  scope :deposit_requested, ->{where(state: :waiting_for_deposit)}
+  scope :confirmed, ->{where(state: :confirmed)}
+  scope :denied, ->{where(state: :denied)}
+  scope :closed, ->{where(state: :closed)}
+  scope :refund_pending, ->{where(state: :refund_pending)}
+  scope :cancelled, ->{where(state: :cancelled)}
 
   STATE = ['pending', 'waiting_for_deposit', 'confirmed', 'refund_pending', 'cancelled', 'denied', 'closed']
 
