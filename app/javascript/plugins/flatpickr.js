@@ -15,13 +15,10 @@ const initFlatPicker = () => {
 // datepicker-arrival flatpickr-calendar
 
 let dateDeparture
-
 const calendar = document.querySelector(".flatpickr-days");
-console.log(calendar)
 calendar.addEventListener('click', ($event) => {
   setTimeout(test, 50);
   function test() {
-  console.log("dans listener")
   let arrivalDate = document.querySelector(".startRange");
   console.log(arrivalDate)
   let arrivalMonth = arrivalDate.getAttribute('aria-label')
@@ -52,11 +49,21 @@ calendar.addEventListener('click', ($event) => {
         selection = siblingOne
         selectionPrev = prevSiblingOne
         i += 1
-        console.log(i)
       }
     }
+        let rangeDiv = document.querySelector("#arrival-date");
+    let range = rangeDiv.getAttribute('value')
+    let dateSeparator = range.split(" to ");
+    let dateArrival = dateSeparator[0]
+    let dateDeparture = dateSeparator[1]
+    let arrivalInput = document.querySelector("#arrival-date-input");
+    arrivalInput.setAttribute("value", dateArrival);
+    let departureInput = document.querySelector("#departure-date-input");
+    departureInput.setAttribute("value", dateDeparture);
     }
   });
+
+// ------------------- range to dates ---------------------------
 
 
     // let selection = document.querySelector(".startRange")
