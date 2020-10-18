@@ -2,6 +2,8 @@
   <%= javascript_pack_tag 'navbar' %>
   <%= javascript_pack_tag 'mapbox_description' %>
 
+
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light sticky" id="navbar-container">
     <div class="container-nav">
@@ -69,8 +71,8 @@
 
 
   <!-- Pictures -->
-  <div class="container">
-    <div class="my-grid-1">
+  <div class="container" style="transform: translate(0.0% , 0%);">
+    <div class="my-grid-1" id="waterfall-container">
       <div class="item">
         <div class="card card-position" style="border: none;">
           <%= image_tag 'domain.JPG', class:"card-img-waterfall", alt:"#{t('.domain_alt')}"%>
@@ -107,7 +109,7 @@
       </div>
     </div>
 
-    <div class="my-grid-2">
+    <div class="my-grid-2" id="waterfall-container-2">
       <div class="item">
         <div class="card card-position" style="border: none;">
           <%= image_tag 'terrasse.JPG', class:"card-img-waterfall", alt:"#{t('.terrasse_alt')}"%>
@@ -445,6 +447,7 @@
   </script>
 
   <%= javascript_pack_tag 'mapbox_fly' %>
+  <%= javascript_pack_tag 'waterfall_img_center' %>
 </body>
 
 
