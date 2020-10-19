@@ -1,5 +1,12 @@
 ActiveAdmin.register Booking do
   actions :all, :except => :destroy
+  scope :pending
+  scope :deposit_requested
+  scope :confirmed
+  scope :closed
+  scope :refund_pending
+  scope :cancelled
+
   controller do
     def permitted_params
       params.permit(:utf8, :_method, :authenticity_token, :locale, :commit, :id,
@@ -104,6 +111,15 @@ ActiveAdmin.register Booking do
       f.input :comment
       f.submit
     end
+  end
+
+  index do
+    column :last_name
+    column :first_name
+    column :arrival_date
+    column :departure_date
+    column :state
+    actions
   end
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
