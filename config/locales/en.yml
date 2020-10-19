@@ -7,6 +7,27 @@ en:
       book: "Book now"
       language: "flag"
 
+  booking_mailer:
+    new_booking: 
+      email_text_html: 'Hi %{first_name}, <br><br> We hereby confirm that we have received your booking request from %{arrival_date} till %{departure_date}.
+      <br><br>We will come back to you within 24 hours to confirm or deny your booking.'
+      email_text: 'Hi %{first_name},
+      We hereby confirm that we have received your booking request from %{arrival_date} till %{departure_date}.
+      We will come back to you within 24 hours to confirm or deny your booking.'
+      booking_summary: 'Booking Summary'
+      arrival_date: 'Arrival Date'
+      departure_date: 'Departure Date'
+      adults: 'Number of adults'
+      childrens: 'Number of children'
+      baby_bed: 'Baby bed needed'
+      yes: 'Yes'
+      no: "No"
+      comment: "Special requests: "
+      contact_details: 'Contact details'
+      name: "Name"
+      email: 'Email'
+      phone: "Phone number"
+      greeting: 'Kind regards,'
 
   pages: #controller (plural)
     home: #view

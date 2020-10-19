@@ -1,8 +1,21 @@
-<%= "Booking request from #{@booking.arrival_date} till #{@booking.departure_date}"%>
+<%= t('.email_text', first_name: @booking.first_name, arrival_date: @booking.arrival_date, departure_date: @booking.departure_date)%></p>
 
-Hi <%="#{@booking.first_name}"%>, we hereby confirm that we have received your booking request from <%="#{@booking.arrival_date} till #{@booking.departure_date}" %>.
-We will come back to you within 24hours.
+<%=t('.booking_summary') %>
+    <%= t('.arrival_date')%> : <%= @booking.arrival_date %>
+    <%= t('.departure_date')%> : <%= @booking.departure_date %>
+    <%= t('.adults')%> : <%= @booking.adults %>
+    <%= t('.childrens')%> : <%= @booking.childrens %>
+    <%= t('.baby_bed')%> : <%= @booking.baby_bed ? t('.yes') : t('.no') %>
+  <% unless @booking.comment.empty? %>
+    <%= t('.comment')%> : <%= @booking.comment %>
+  <% end %>
 
-Kind regards,
+<%= t('.contact_details') %>
+    <%= t('.name') %> : <%= "#{@booking.first_name} #{@booking.last_name}" %>
+    <%= t('.email') %> : <%= @booking.email %>
+    <%= t('.phone') %> : <%= @booking.phone %>
+
+
+<%= t('.greeting')%>
 Didier & Gene
 Vivenda a nossa coroa
