@@ -184,7 +184,7 @@ select.list-dt:focus {
     display: block;
     font-size: 18px;
     color: #ffffff;
-    background: lightgray;
+    background: #678649;
     border-radius: 50%;
     margin: 0 auto 10px auto;
     padding: 2px
@@ -194,7 +194,7 @@ select.list-dt:focus {
     content: '';
     width: 100%;
     height: 2px;
-    background: lightgray;
+    background: #678649;
     position: absolute;
     left: 0;
     top: 25px;
@@ -237,4 +237,32 @@ select.list-dt:focus {
 }
 .datepicker-arrival{
  justify-content: center !important;
+}
+
+#booking_adults{
+  width: 87%;
+}
+
+#booking_childrens{
+  width: 87%;
+}
+
+.optional{
+width: 87%;
+}
+
+.form-check-input.boolean.optional{
+  width:20vw;
+}
+
+.label{
+padding: 40px;
+}
+
+.action-button{
+background-color: #678649 !important;
+}
+
+#personnal{
+color: black !important;
 }

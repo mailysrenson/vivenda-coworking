@@ -29,7 +29,7 @@ fr:
         phone: "Numéro de téléphone"
         adults: "Nombre d'adultes"
         childrens: "Nombre d'enfants"
-        baby_bed: " Cochez la case si vous souhaitez un lit pour bébé"
+        baby_bed: "Souhaitez-vous un lit bébé ?"
         street: "Rue et numéro"
         city: "Ville"
         zipcode: "Code postal"

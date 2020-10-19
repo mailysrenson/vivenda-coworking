@@ -15,7 +15,7 @@
   <% end %>
 </div>
     <div class="row justify-content-center mt-0">
-        <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+        <div class="col-11 col-sm-9 col-md-7 col-lg-4 text-center p-0 mt-3 mb-2">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3 card-booking">
                 <h2><strong><%= t (".title") %></strong></h2>
                 <div class="row">
@@ -25,19 +25,21 @@
                             <!-- progressbar -->
                             <ul id="progressbar">
                                 <li class="active" id="account"><strong>Votre séjour</strong></li>
-                                <li id="personal"><strong>Personal</strong></li>
-                                <li id="confirm"><strong>Finish</strong></li>
+                                <li id="personal"><strong>vos coordonnées</strong></li>
+                                <li id="confirm"><strong>validé</strong></li>
                             </ul> <!-- fieldsets -->
                             <fieldset>
                                 <div class="form-card">
-                                  <div>
+                                  <div class="d-flex">
                                     <%= f.input :range_date, as: :string, input_html: {class: "datepicker-arrival pl-5", id: "arrival-date"}  %>
                                     <%= f.input :arrival_date, as: :string, :as => :hidden, input_html: {class: "datepicker-disable", id: "arrival-date-input"}  %>
                                     <%= f.input :departure_date, as: :string, :as => :hidden, input_html: {class: "datepicker-departure", id: "departure-date-input"} %>
-                                    <%= f.input :adults, input_html: {id: "booking_adults"}, selected: 0, collection: 0..5 %>
-                                    <%= f.input :childrens, input_html: {class: "people-limit"}, selected: 0, collection: 0..5 %>
-                                    <%=f.input :baby_bed, as: :boolean, boolean_style: :inline  %>
-                                  </div>
+                                     </div><%= f.input :adults, input_html: {id: "booking_adults"},  selected: 0, collection: 0..5 %>
+                                    <%= f.input :childrens, input_html: {class: "people-limit "}, selected: 0, collection: 0..5 %>
+                                    <div class="d-block">
+                                    <%= f.input :baby_bed, as: :boolean, boolean_style: :inline, input_html: {class: "label"}  %>
+                                    </div>
+
                                 </div> <input type="button" name="next" class="next action-button" value="Next Step" />
                             </fieldset>
                             <fieldset>
