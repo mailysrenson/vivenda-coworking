@@ -5,8 +5,8 @@ class BookingMailer < ApplicationMailer
   #
   #   en.booking_mailer.new_booking.subject
   #
-  def new_booking
-    @greeting = "Hi"
+  def new_booking(booking)
+    @booking = booking
 
     mail to: "to@example.org"
   end
