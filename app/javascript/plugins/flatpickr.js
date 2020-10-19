@@ -58,5 +58,3 @@ calendar.addEventListener('click', ($event) => {
     }
   });
 };
-
-export {initFlatPicker};
