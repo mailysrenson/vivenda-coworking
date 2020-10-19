@@ -1,5 +1,5 @@
 import flatpickr from "flatpickr";
-const initFlatPicker = () => {
+function initFlatPicker() {
     flatpickr(".datepicker-arrival", {
     altInput: true,
     altFormat: "d-m-Y",
@@ -58,3 +58,5 @@ calendar.addEventListener('click', ($event) => {
     }
   });
 };
+
+export {initFlatPicker};
