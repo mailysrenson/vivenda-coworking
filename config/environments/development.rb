@@ -73,4 +73,6 @@ config.assets.check_precompiled_asset = false
     user_name: ENV["OVH_USERNAME"],
     password: ENV["OVH_PASSWORD"]
   }
+
+  config.action_mailer.default_url_options = { host: "localhost:3000"}
 end
