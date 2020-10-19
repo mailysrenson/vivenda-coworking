@@ -1,4 +1,5 @@
 class Booking < ApplicationRecord
+
   validates :last_name, :first_name, :email, :phone, :adults, :childrens, :arrival_date, :departure_date, :street, :city, :zipcode, :country, presence: true
   validates :adults, :childrens, inclusion: { in: (0..5).to_a}
   scope :pending, ->{where(state: :pending)}
@@ -43,8 +44,18 @@ class Booking < ApplicationRecord
     event :cancel do
       transition [:waiting_for_deposit, :refund_pending] => :cancelled
     end
+
+
   end
 
+  # after_initialize do
+  #   @date_today = Date.today
+  #   @date_today = @date_today.strftime("%Y-%m-%d")
+
+  #     if @date_today > Booking.find(id=1)
+  #       puts "coucou"
+  #   end
+  # end
 
 
 

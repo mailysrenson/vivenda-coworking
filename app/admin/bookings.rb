@@ -6,7 +6,7 @@ ActiveAdmin.register Booking do
   scope :closed
   scope :refund_pending
   scope :cancelled
-  
+
   controller do
     def permitted_params
       params.permit(:utf8, :_method, :authenticity_token, :locale, :commit, :id,
