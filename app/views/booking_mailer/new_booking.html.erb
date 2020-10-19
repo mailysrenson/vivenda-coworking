@@ -1,8 +1,14 @@
-<h1><%= "Booking confirmation #{@booking.range_date}"%></h1>
+<h1><%= "Booking request from #{@booking.arrival_date} till #{@booking.departure_date}"%></h1>
 
 <p>
-  Hi <%="#{@booking.first_name}"%>, we hereby confirm that we have received your booking request.
+  Hi <%="#{@booking.first_name}"%>, we hereby confirm that we have received your booking request from <%="#{@booking.arrival_date} till #{@booking.departure_date}" %>.
 </p>
 <p>
   We will come back to you within 24hours.
+</p>
+
+<p>
+Kind regards, <br>
+Didier & Gene
+Vivenda a nossa coroa
 </p>

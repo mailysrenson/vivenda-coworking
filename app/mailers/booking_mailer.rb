@@ -9,6 +9,6 @@ class BookingMailer < ApplicationMailer
     @booking = booking
 
     mail to: @booking.email,
-         subject: "Nouvelle réservation #{@booking.range_date}"
+         subject: "Vivenda a nossa coroa - Booking request"
   end
 end
