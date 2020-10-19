@@ -8,6 +8,7 @@ const initFlatPicker = () => {
     inline: true,
     mode: "range"
   });
+
 let dateDeparture
 const calendar = document.querySelector(".flatpickr-days");
 calendar.addEventListener('click', ($event) => {
@@ -17,7 +18,6 @@ calendar.addEventListener('click', ($event) => {
   console.log(arrivalDate)
   let arrivalMonth = arrivalDate.getAttribute('aria-label')
        let [month, day, year] = arrivalMonth.split(" ");
-       console.log(month)
      let i = 1
    if (month === "July" || month === "August" ){
      let selection = document.querySelector(".startRange");
@@ -54,22 +54,7 @@ calendar.addEventListener('click', ($event) => {
     arrivalInput.setAttribute("value", dateArrival);
     let departureInput = document.querySelector("#departure-date-input");
     departureInput.setAttribute("value", dateDeparture);
+    console.log(departureInput)
     }
   });
 };
-export {initFlatPicker};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
