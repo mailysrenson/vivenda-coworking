@@ -66,8 +66,8 @@ config.assets.check_precompiled_asset = false
 
   config.action_mailer.smtp_settings = {
     address: "ssl0.ovh.net",
-    port: 465,
-    domain: "renson.biz",
+    port: 587,
+    domain: "localhost",
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["OVH_USERNAME"],

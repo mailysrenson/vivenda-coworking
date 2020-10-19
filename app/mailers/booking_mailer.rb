@@ -8,6 +8,7 @@ class BookingMailer < ApplicationMailer
   def new_booking(booking)
     @booking = booking
 
-    mail to: "to@example.org"
+    mail to: @booking.email,
+         subject: "Nouvelle réservation #{@booking.range_date}"
   end
 end

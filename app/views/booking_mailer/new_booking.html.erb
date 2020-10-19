@@ -1,5 +1,8 @@
-<h1>Booking#new_booking</h1>
+<h1><%= "Booking confirmation #{@booking.range_date}"%></h1>
 
 <p>
-  <%= @greeting %>, find me in app/views/booking_mailer/new_booking.html.erb
+  Hi <%="#{@booking.first_name}"%>, we hereby confirm that we have received your booking request.
+</p>
+<p>
+  We will come back to you within 24hours.
 </p>
