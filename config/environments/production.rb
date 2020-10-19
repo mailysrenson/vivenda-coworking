@@ -115,7 +115,6 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: "ssl0.ovh.net",
     port: 587,
-    domain: "vivenda-coworking.herokuapp.com",
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["OVH_USERNAME"],
