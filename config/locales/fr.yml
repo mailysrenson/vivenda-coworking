@@ -5,6 +5,7 @@ fr:
       about_us: "A propos"
       book: "Réserver"
       rates: "Tarifs"
+  
   booking_mailer:
     new_booking:
       email_text_html: "Bonjour %{first_name}, <br><br> Nous confirmons la bonne réception de votre demande de réservation du %{arrival_date} au %{departure_date}.
@@ -26,6 +27,7 @@ fr:
       email: "Email"
       phone: "Numéro de téléphone"
       greeting: "Bien à vous,"
+  
   pages:
     home: 
       # Alt for images on homepage
@@ -51,6 +53,7 @@ fr:
       vivenda_title: "Bem vindo a Vivenda a Nossa Coroa"
       vivenda_explanation_html: "La vivenda se trouve au centre du Portugal, une magnifique région pour les amoureux de la nature. <br>
       Pendant votre séjour, découvrez les superbes 'Praia fluvials' portugaises, de chouettes plages aménagées, faites un tour en kayak sur le Mondego et allez vous promener dans la Sierra da Estrella."
+    
     about_us:
       picture_alt: "Picture of Gene and Didier, les propriétaires de Vivenda a nossa coroa."
       about_us: "A propos"
@@ -59,6 +62,43 @@ fr:
       En ce qui nous concerne, nous sommes directement tombés sous le charme du centre du Portugal et sommes persuadés que vous aussi vous y sentirez comme chez vous au vu de l’accueil chaleureux des locaux, de la nature verdoyante et des magnifiques paysages dont regorge cette région du pays.
       <br><br>A bientôt, nous espérons? 
       <br><br>Gene & Didier"
+
+    tarifs:
+      rates: "Tarifs"
+      low_season: "Basse saison"
+      period_low: "Du 16/10 au 31/03"
+      price_week_low_html: "<strong>395€/</strong> semaine"
+      price_night_low: "65 € / nuit"
+      price_month_low_html: "<strong>795€</strong> / 1er mois et <strong>695€</strong>/ àpd 2ème mois"
+      medium_season: "Moyenne saison"
+      period_medium: "Du 01/04 au 30/06 - du 01/09 au 15/10"
+      price_week_medium_html: "<strong>545€/</strong> semaine"
+      price_night_medium: "90 € / nuit"
+      price_month_medium_html: "/"
+      high_season: "Haute saison"
+      period_high: "Du 01/07 au 31/08"
+      price_week_high_html: "<strong>695€/</strong> semaine"
+      payment_html: "<strong>L’acompte est de 40% à la réservation et le solde est à payer 6 semaines avant l’arrivée.</strong>
+            Votre réservation n’est prise en compte qu’après réception de votre paiement.
+            <br><br>
+            <strong>Jours d’arrivées et de départs:</strong> arrivées et départs libres (min 7 nuits en juillet/août et min 3 nuits aux autres périodes).
+            <br><br>
+            Les arrivées le 1er jour sont prévues entre 15h et 20h. Si vous arrivez plus tôt, vous pouvez déjà utiliser les parties communes. Les départs le dernier jour se font pour 10h.
+            <br><br>
+            <strong>Les prix comprennent:</strong> les serviettes de bain et de piscine, les draps de lit (lits faits à l’arrivée), le linge de cuisine, le bois pour le poêle (de novembre à mars), l’eau et l’électricité, la tva.
+            <br><br>
+            <strong>Les prix ne comprennent pas:</strong> les repas, les boissons, les assurances (annulation, assistance,…) et les éventuelles taxes de séjour.
+            <br><br>
+            <strong>Nettoyage final (obligatoire):</strong> 50 € à payer sur place.
+            <br><br>
+            Selon disponibilités et sur réservation (gratuit): lit bébé, chaise bébé.
+            <br><br>
+            Sur demande et sous certaines conditions (gratuit): petits animaux de compagnie. Sauf en juillet/août.
+            <br><br>
+            Les bungalows sont totalement non fumeurs.
+            <br><br>
+            <strong>Conditions d’annulation:</strong> jusqu’à 6 semaines avant votre arrivée, 40% de frais d’annulation. Moins de 6 semaines avant votre arrivée, 100% de frais d’annulation. Nous vous conseillons donc de souscrire à une assurance annulation."
+
   bookings:
     new:
       title: "Votre réservation"
