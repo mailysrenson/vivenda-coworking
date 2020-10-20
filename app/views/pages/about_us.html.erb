@@ -5,7 +5,7 @@
     <div class="container-nav">
       <div class="dropdown side-element">
         <button class="btn btn-secondary font-text drop-menu text-white " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="<%= image_path 'menuBarGreen.png' %>"  id="menu-btn-green" class="menu-bar " alt="">
+          <img src="<%= image_path 'menuBarGreen.png' %>"  id="menu-btn-green" class="menu-bar" >
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
           <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.rates') %></a>
@@ -36,22 +36,12 @@
   <div class="row d-flex justify-content-center main_div_about ">
 
     <div class="col-6 text-right">
-      <%= image_tag 'domain.JPG', class:"card-img-about", alt:"#{t('.domain_alt')}"%>
+      <%= image_tag 'domain.JPG', class:"card-img-about", alt:"#{t('.picture_alt')}"%>
     </div>
     <div class="col-6">
-      <h1 class="title_about">About us</h1>
+      <h1 class="title_about"><%= t('.about_us')%></h1>
       <div class="underline"></div>
-      <p> Consequatur possimus. Similique accusamus ratione sequi quidem itaque nulla magni nihil totam nisi.</p>
-      <br><br>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-         Perferendis quaerat, rem optio provident ducimus maiores suscipit recusandae quia
-         animi corporis consectetur deserunt placeat doloremque voluptate aliquam eveniet
-         repellendus laudantium nihil.
-       </p>
-       <p>        Lorem, ipsum dolor sit, amet consectetur adipisicing elit. <br>
-         Praesentium itaque eveniet sequi minima unde eligendi quam soluta commodi eius ducimus
-         autem odit delectus odio maxime nisi nam, distinctio excepturi laudantium!
-       </p>
+      <p><%= t('.about_us_description_html')%></p>
     </div>
   </div>
 
