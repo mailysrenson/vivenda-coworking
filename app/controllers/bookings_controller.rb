@@ -4,6 +4,7 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.state = 'pending'
     if @booking.save!
+      BookingMailer.new_booking(@booking).deliver_now
       redirect_to root_path
     else
       render :new

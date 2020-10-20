@@ -5,14 +5,28 @@
     <div class="container-nav">
       <div class="dropdown side-element">
         <button class="btn btn-secondary font-text drop-menu text-white " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="<%= image_path 'menuBarGreen.png' %>"  id="menu-btn-green" class="menu-bar " alt="">
+          <img src="<%= image_path 'menuBarGreen.png' %>"  id="menu-btn-green" class="menu-bar" >
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.rates') %></a>
-          <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.about_us') %></a>
-          <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.book') %></a>
+          <%= link_to tarifs_path, class: "nav-item nav-link dropdown-item" do %>
+          <%= t('global.navbar.rates') %>
+          <% end %>
+          <%= link_to about_us_path, class: "nav-item nav-link dropdown-item" do %>
+          <%= t('global.navbar.about_us') %>
+          <% end %>
+          <%= link_to new_booking_path, class: "nav-item nav-link dropdown-item" do %>
+          <%= t('global.navbar.book') %>
+          <% end %>
           <div class="dropdown-divider"></div>
-          <a class="nav-item nav-link dropdown-item" href="#"><%= "FR - EN - PT" %></a>
+          <%= link_to "en", class: "nav-item nav-link dropdown-item d-inline padding-drop" do %>
+          EN
+         <% end %>
+         <%= link_to "fr", class: "nav-item nav-link dropdown-item d-inline padding-drop" do %>
+          FR
+         <% end %>
+         <%= link_to "pt", class: "nav-item nav-link dropdown-item d-inline padding-drop" do %>
+          PT
+         <% end %>
         </div>
       </div>
 
@@ -24,7 +38,7 @@
         </div>
 
         <div class="side-element reservez">
-          <%= link_to root_path, class: "nav-item reserver" do  %>
+          <%= link_to new_booking_path, class: "nav-item reserver" do  %>
             <h2 class="font-text btn-call reservez" id="deco-none"><%= t('global.navbar.book') %></h2>
           <% end %>
         </div>
@@ -36,38 +50,28 @@
   <div class="row d-flex justify-content-center main_div_about ">
 
     <div class="col-6 text-right">
-      <%= image_tag 'domain.JPG', class:"card-img-about", alt:"#{t('.domain_alt')}"%>
+      <%= image_tag 'domain.JPG', class:"card-img-about", alt:"#{t('.picture_alt')}"%>
     </div>
     <div class="col-6">
-      <h1 class="title_about">About us</h1>
+      <h1 class="title_about"><%= t('.about_us')%></h1>
       <div class="underline"></div>
-      <p> Consequatur possimus. Similique accusamus ratione sequi quidem itaque nulla magni nihil totam nisi.</p>
-      <br><br>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-         Perferendis quaerat, rem optio provident ducimus maiores suscipit recusandae quia
-         animi corporis consectetur deserunt placeat doloremque voluptate aliquam eveniet
-         repellendus laudantium nihil.
-       </p>
-       <p>        Lorem, ipsum dolor sit, amet consectetur adipisicing elit. <br>
-         Praesentium itaque eveniet sequi minima unde eligendi quam soluta commodi eius ducimus
-         autem odit delectus odio maxime nisi nam, distinctio excepturi laudantium!
-       </p>
+      <p><%= t('.about_us_description_html')%></p>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer-border">
     <div class="row ">
       <div class="col-12 order-last col-md-9 order-md-first ">
         <p class="footer-font">
-          info@anossacoroa.com <br>
-          +32 477 24 57 26 <br>
+          info@anossacoroa.com
+          +32 477 24 57 26 /
           +351 915274823
         </p>
         <p class="adress footer-font">
-          Vivenda a nossa coroa <br>
-          Vale do forno, <br>
-          3305-183 Coja, Portugal <br>
+          Vivenda a nossa coroa
+          Vale do forno,
+          3305-183 Coja, Portugal
         </p>
         <p class="footer-font">Alojamento local 119/AL</p>
       </div>
