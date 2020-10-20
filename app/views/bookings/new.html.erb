@@ -24,9 +24,9 @@
                             <%= simple_form_for [@booking], id: "msform" do |f| %>
                             <!-- progressbar -->
                             <ul id="progressbar">
-                                <li class="active" id="account"><strong>Votre séjour</strong></li>
-                                <li id="personal"><strong>vos coordonnées</strong></li>
-                                <li id="confirm"><strong>validé</strong></li>
+                                <li class="active" id="account"><strong><%= t(".your_stay") %></strong></li>
+                                <li id="personal"><strong><%= t('contact_details') %></strong></li>
+                                <li id="confirm"><strong><%= t('.confirmation') %></strong></li>
                             </ul> <!-- fieldsets -->
                             <fieldset>
                                 <div class="form-card">
@@ -60,13 +60,13 @@
                             <fieldset>
 
                                 <div class="form-card">
-                                    <h2 class="fs-title text-center">Success !</h2> <br><br>
+                                    <h2 class="fs-title text-center"><%= t('.success') %></h2> <br><br>
                                     <div class="row justify-content-center">
                                         <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
                                     </div> <br><br>
                                     <div class="row justify-content-center">
                                         <div class="col-7 text-center">
-                                            <h5>You Have Successfully Signed Up</h5>
+                                            <h5><%= t('.success_explanation_html') %></h5>
                                         </div>
                                     </div>
                                 </div>
