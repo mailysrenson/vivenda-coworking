@@ -3,7 +3,8 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     @booking.state = 'pending'
-    if @booking.save!
+    if @booking.save
+      sleep(5)
       BookingMailer.new_booking(@booking).deliver_now
       redirect_to root_path
     else
