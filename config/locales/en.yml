@@ -72,7 +72,9 @@ en:
       succes: "Your booking has been received!"
       success_explanation_html: "You will received an email confirming your booking request. <br>
       We will come back to you within the next 24 hours to confirm or deny your booking."
-
+      button_next: "Next step"
+      button_previous: "Previous step"
+      confirm: "Confirm request"
    
   activerecord:
     errors:

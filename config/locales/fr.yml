@@ -67,6 +67,9 @@ fr:
       confirmation: "Confirmation"
       succes: "Nous avons bien enregistré votre demande"
       success_explanation_html: "Nous revenons vers vous dans les 24h pour confirmer si la période de réservation est libre" 
+      button_next: "Suivant"
+      button_previous: "Précédant"
+      confirm: "Confirmer demande"
   activerecord:
     errors:
       models:

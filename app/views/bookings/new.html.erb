@@ -25,7 +25,7 @@
                             <!-- progressbar -->
                             <ul id="progressbar">
                                 <li class="active" id="account"><strong><%= t(".your_stay") %></strong></li>
-                                <li id="personal"><strong><%= t('contact_details') %></strong></li>
+                                <li id="personal"><strong><%= t('.contact_details') %></strong></li>
                                 <li id="confirm"><strong><%= t('.confirmation') %></strong></li>
                             </ul> <!-- fieldsets -->
                             <fieldset>
@@ -40,7 +40,7 @@
                                     <%= f.input :baby_bed, as: :boolean, boolean_style: :inline, input_html: {class: "label"}  %>
                                     </div>
 
-                                </div> <input type="button" name="next" class="next action-button" value="Next Step" />
+                                </div> <input type="button" name="next" class="next action-button" value=<%="#{t('.button_next')}"%>>
                             </fieldset>
                             <fieldset>
                                 <div class="form-card">
@@ -55,7 +55,7 @@
                                     <%= f.input :country %>
                                     <%= f.input :comment %>
                                   </div>
-                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />  <input type="submit" name="next" class="next action-button" value="Next Step" />
+                                </div> <input type="button" name="previous" class="previous action-button-previous" value=<%="#{t('.button_previous')}"%>>  <input type="submit" name="next" class="next action-button" value=<%="#{t('.confirm')}"%>/>
                             </fieldset>
                             <fieldset>
 
