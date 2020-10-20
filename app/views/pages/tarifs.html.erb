@@ -38,11 +38,12 @@
     </div>
   </nav>
 
-<h2><%= t('.rates') %></h2>
-<div class="prices my-5">
 
 
 <div class="container">
+<h1 class="mt-5"><%= t('.rates') %></h1>
+<div class="underline"></div>
+<div class="prices my-5">
   <div class="row border-tarif">
     <div class="col">
       <h3><%= t('.low_season') %></h3>
@@ -66,30 +67,11 @@
       <p>/</p>
     </div>
   </div>
-
-        <div class="row justify-content-center mt-4">
-          <p class="col-12">
-            <strong>L’acompte est de 40% à la réservation et le solde est à payer 6 semaines avant l’arrivée.</strong>
-            Votre réservation n’est prise en compte qu’après réception de votre paiement.
-            <br><br>
-            <strong>Jours d’arrivées et de départs:</strong> arrivées et départs libres (min 7 nuits en juillet/août et min 3 nuits aux autres périodes).
-            <br><br>
-            Les arrivées le 1er jour sont prévues entre 15h et 20h. Si vous arrivez plus tôt, vous pouvez déjà utiliser les parties communes. Les départs le dernier jour se font pour 10h.
-            <br><br>
-            <strong>Les prix comprennent:</strong> les serviettes de bain et de piscine, les draps de lit (lits faits à l’arrivée), le linge de cuisine, le bois pour le poêle (de novembre à mars), l’eau et l’électricité, la tva.
-            <br><br>
-            <strong>Les prix ne comprennent pas:</strong> les repas, les boissons, les assurances (annulation, assistance,…) et les éventuelles taxes de séjour.
-            <br><br>
-            <strong>Nettoyage final (obligatoire):</strong> 50 € à payer sur place.
-            <br><br>
-            Selon disponibilités et sur réservation (gratuit): lit bébé, chaise bébé.
-            <br><br>
-            Sur demande et sous certaines conditions (gratuit): petits animaux de compagnie. Sauf en juillet/août.
-            <br><br>
-            Les bungalows sont totalement non fumeurs.
-            <strong>Conditions d’annulation:</strong> jusqu’à 6 semaines avant votre arrivée, 40% de frais d’annulation. Moins de 6 semaines avant votre arrivée, 100% de frais d’annulation. Nous vous conseillons donc de souscrire à une assurance annulation.
-          </p>
-        </div>
+  <div class="row justify-content-center mt-4">
+    <p class="col-12 mt-5">
+      <%= t('.payment_html') %>
+    </p>
+  </div>
 </div>
 ​</div>
 ​
