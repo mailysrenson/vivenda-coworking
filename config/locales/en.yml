@@ -2,19 +2,80 @@ en:
   global: #to use this full notation needs to be used as we don't use existing routes (global.navbar.test)
     navbar:
       home: "Home"
-      about: "About us"
-      contact: "Contact"
+      about_us: "About us"
       book: "Book now"
-      language: "flag"
+      rates: "Rates"
 
+  booking_mailer:
+    new_booking: 
+      email_text_html: 'Hi %{first_name}, <br><br> We hereby confirm that we have received your booking request from %{arrival_date} till %{departure_date}.
+      <br><br>We will come back to you within 24 hours to confirm or deny your booking.'
+      email_text: 'Hi %{first_name},
+      We hereby confirm that we have received your booking request from %{arrival_date} till %{departure_date}.
+      We will come back to you within 24 hours to confirm or deny your booking.'
+      booking_summary: 'Booking Summary'
+      arrival_date: 'Arrival Date'
+      departure_date: 'Departure Date'
+      adults: 'Number of adults'
+      childrens: 'Number of children'
+      baby_bed: 'Baby bed needed'
+      yes: 'Yes'
+      no: "No"
+      comment: "Special requests: "
+      contact_details: 'Contact details'
+      name: "Name"
+      email: 'Email'
+      phone: "Phone number"
+      greeting: 'Kind regards,'
 
-  pages: #controller (plural)
-    home: #view
-      test: "Testing" #key used
-      #test_html in case your content contains html tags
+  pages:
+    home: 
+      # Alt for images on homepage
+      domain_alt: "The domain is surrounded by the nature, which gives it its calming and relaxing feeling"
+      casas_alt: "The 3 holiday bungalows in the nature, fully furnished and decorated"
+      swimming_pool_alt: "The big swimming pool"
+      flowers_alt: "The flowers and trees surrounding the domain"
+      praia_fluvial_alt: "The praia fluvial of Coja, a river beach with fresh water, sand and a bar"
+      terrasse_alt: "The bungalows have 2 terrasses: one in front, one in the back. Therefore, you can enjoy the sun all day long."
+      living_room: "The bungalows all have a big living room with a sofa, wifi and a TV"
+      main_bedroom: "The bungalows have two bedrooms, each with 2 single beds. The bedrooms both have beautiful views of the nature"
+      general_alt: "The bungalows are 70m² big, with a kitchen, living room, eating room, a bathroom, 2 bedrooms and two terrasses"
+      kitchen_alt: "All the bungalows have a fully equipped kitchen"
+      vivenda_alt: "The vivenda is located in the center of Portugal, a beautiful region with lots of activities"
+      # Text within waterfall
+      domain: "The domain"
+      domain_explanation_html: "Our « Vivenda » is a small structure including 4 bungalows/houses (what we call the casas): 3 of which can be rented as holiday rentals and 1 which is occupied by ourselves. The bungalows are next to each other and have been built in 2007, on a domain of 1 hectare of nature. <br>
+      Our bungalows all have big windows so that you can enjoy the view of the nature and the mountains. <br><br>
+      Our domain is the perfect solution for families and/or bigger groups of people. You can rent 1, 2 or 3 casas depending on your needs. <br><br>
+      The location of our vivenda is perfect to avoid the bad weather of Northern Europe. All the shops, bars and restaurants are open all year long. <br><br>
+      Our 3 bungalows all have the same amenities, but are decorated in different themes. "
+      # Text within map of activities
+      vivenda_title: "Bem vindo a Vivenda a Nossa Coroa"
+      vivenda_explanation_html: "The vivenda is located in the center of Portugal, a beautiful region for nature lovers. <br>
+      During your stay, make sure to visit some of the 
+      beautiful Praia fluvials (river beaches), to do a kayak tour or to walk around in the Sierra da Estrella"
+    about_us:
+      picture_alt: "Picture of Gene and Didier, the owners of Vivenda a nossa coroa."
+      about_us: "About us"
+      about_us_description_html: "Belgian couple, both travel agents for 25 years, we decided to leave everything behind and follow our dream of living abroad. Since we both worked in the touristic sector, it followed naturally to continue in this sector. We fell in love with this “Vivenda” in the green heart of Portugal and went for it… <br><br>
+      The center of Portugal has many activities for nature lovers, from kayaking on the Mondego, to walking on the Serra da Estrella. Although we are not located near the sea, Portugal has plenty of “Praia fluvia”, river beaches. 
+      We fell in love with this part of Portugal and we are convinced that you would feel at home instantly as well. 
+      <br><br>So, see you soon we hope? 
+      <br><br>Gene & Didier"
 
-  #translating models
-
+  bookings:
+    new:
+      title: "Your booking"
+      your_stay: "Your stay"
+      contact_details: "Your contact details"
+      confirmation: "Confirmation"
+      succes: "Your booking has been received!"
+      success_explanation_html: "You will received an email confirming your booking request. <br>
+      We will come back to you within the next 24 hours to confirm or deny your booking."
+      button_next: "Next step"
+      button_previous: "Previous step"
+      confirm: "Confirm request"
+   
   activerecord:
     errors:
       models:
@@ -22,12 +83,13 @@ en:
           attributes:
             email:
               blank: "cannot be empty"
+    
     attributes:
-      booking: #always singular
+      booking:
         email: "Email address"
         phone: "Phone number"
         adults: "Number of adults"
-        childrens: "Number of children "
+        childrens: "Number of children"
         baby_bed: " Do you need a baby bed?"
         street: "Street name and house number"
         city: "City"
@@ -36,17 +98,6 @@ en:
         comment: "Insert any additional comments"
         arrival_date: "Arrival date"
         departure_date: "Departure date"
+        range_date: "Period of stay"
 
-  # <%= f.input :email %>
-  # <%= f.input :phone %>
-  # <%= f.input :adults, collection: 1..5 %>
-  # <%= f.input :childrens, collection: 1..5 %>
-  # <%=f.input_field :baby_bed, as: :boolean, boolean_style: :inline, label: t(".baby_bed")  %>
-  # <%= f.input :street %>
-  # <%= f.input :city %>
-  # <%= f.input :zipcode %>
-  # <%= f.input :country %>
-  # <%= f.input :comment %>
-  # <%= f.input :arrival_date, as: :string, input_html: {class: "datepicker"} %>
-  # <%= f.input :departure_date, as: :string, input_html: {class: "datepicker"} %>
 

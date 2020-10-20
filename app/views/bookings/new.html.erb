@@ -24,19 +24,22 @@
                             <!-- progressbar -->
                             <ul id="progressbar">
 
-                                <li class="far fa-calendar-alt active" id="account" ><strong>Votre séjour</strong></li>
-                                <li class="fas fa-portrait" id="personal"><strong>Vos coordonnées</strong></li>
-                                <li class="fas fa-check" id="confirm"><strong>Validé</strong></li>
+
+                                <li class="far fa-calendar-alt active" id="account" ><strong><%= t(".your_stay") %></strong></li>
+                                <li class="fas fa-portrait" id="personal"><strong><%= t('.contact_details') %></strong></li>
+                                <li class="fas fa-check" id="confirm"><strong><%= t('.confirmation') %></strong></li>
                             </ul>
                             <!-- fieldsets -->
 
 
                             <div class="first_info">
+
                             <fieldset>
                                 <div class="form-card">
                                   <div class="auto">
                                    <div class="col-auto"> <%= f.input :range_date, as: :string, input_html: {class: "datepicker-arrival pl-5", id: "arrival-date"}  %> </div>
                                     <%= f.input :arrival_date, as: :string, :as => :hidden, input_html: {class: "datepicker-disable", id: "arrival-date-input"}  %>
+
                                   <%= f.input :departure_date, as: :string, :as => :hidden, input_html: {class: "datepicker-departure", id: "departure-date-input"} %>
                                     <p class="missing_date" style="color:red; font-size:12px;">Ajouter une date de départ et arrivée</p>
                                     <div class="row">
@@ -74,13 +77,27 @@
                                     <%= f.input :country %>
                                     <%= f.input :comment, as: :text, :maxlength => 300 %>
                                   </div>
-                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                                <input type="submit" name="next" class="submit-button action-button" id="submit-button" value="Valider" />
+
+                                </div> <input type="button" name="previous" class="previous action-button-previous" value=<%="#{t('.button_previous')}"%> />
+                                <input type="submit" name="next" class="submit-button action-button" id="submit-button" value=<%="#{t('.confirm')}"%> />
+
                             </fieldset>
                           </div>
                             <div class="validation-window">
                             <fieldset>
 
+
+                                <div class="form-card">
+                                    <h2 class="fs-title text-center"><%= t('.success') %></h2> <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
+                                    </div> <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-7 text-center">
+                                            <h5><%= t('.success_explanation_html') %></h5>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </fieldset>
                             </div>
