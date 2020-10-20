@@ -31,8 +31,7 @@ en:
   pages:
     home: 
       # Alt for images on homepage
-      test: "Testing" 
-      domain_alt: "The domain surrounded by the nature, which gives it its calming and relaxing feeling"
+      domain_alt: "The domain is surrounded by the nature, which gives it its calming and relaxing feeling"
       casas_alt: "The 3 holiday bungalows in the nature, fully furnished and decorated"
       swimming_pool_alt: "The big swimming pool"
       flowers_alt: "The flowers and trees surrounding the domain"
@@ -84,7 +83,7 @@ en:
               blank: "cannot be empty"
     
     attributes:
-      booking: #always singular
+      booking:
         email: "Email address"
         phone: "Phone number"
         adults: "Number of adults"
