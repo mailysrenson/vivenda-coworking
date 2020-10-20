@@ -39,9 +39,21 @@ fr:
         departure_date: "Date de départ"
 
   pages:
-    home:
-      domain: "Notre domaine"
-      domain_description_html: "Séjournez dans des bungalows spacieux et tout équipés, pour max 4-5 personnes, situés dans un domaine paisible d'un hectare d'arbres et de fleurs.<br><br>
-      Tout en tranquillité, dans une petite structure composée de 3 bungalows de vacances, loin du tourisme de masse.<br><br>
-      Profitez des parties communes comprenant notamment une agréable piscine, un petit bar cosy,…"
+    home: 
+      # Alt for images on homepage
+      test: "Testing" 
+      domain_alt: "The domain surrounded by the nature"
+      casas_alt: "The 3 holiday bungalows in the nature"
+      swimming_pool_alt: "The big swimming pool"
+      flowers_alt: "The flowers and trees surrounding the domain"
+      praia_fluvial_alt: "The praia fluvial of Coja, a river beach with fresh water, sand and a bar"
+      # Text within waterfall
+      domain: "The domain"
+      domain_explanation_html: "La « Vivenda » est une petite structure composée de 4 bungalows/maisons au total: 3 à louer comme locations de vacances et 1 que nous occupons. Les bungalows, situés côte à côte, ont été construits en 2007 sur un terrain d’environ un hectare de verdure et de fleurs. Sept chênes-lièges (espèce protégée au Portugal) sont également caractéristiques du domaine de vacances. <br>
+        Avec les grandes fenêtres dans toutes les pièces, vous bénéficierez partout de vues magnifiques sur la nature et les montagnes. <br><br>
+        Le domaine convient parfaitement aux couples et aux familles. Il est également idéal en groupes d’amis ou en grandes familles ! Louez donc 1, 2 ou 3 bungalows selon vos besoins.<br><br>
+        L’endroit est également idéal pour passer l’hiver et profiter d’une météo plus clémente que dans le nord de l’Europe. Ici, tous les commerces, restaurants, etc restent ouverts et la vie continue durant toute l’année. La nature reste également verte et luxuriante toute l’année. Profitez de nos prix promotionnels pour des longs séjours en hiver.<br><br>
+        Les 3 bungalows de vacances, tous identiques, spacieux (+/- 70 m2) et confortablement meublés, sont décorés de manière différente. Vous avez le choix entre 3 thèmes: la casa Savana, la casa Azulejos et la casa Bambu."
+      
+
 

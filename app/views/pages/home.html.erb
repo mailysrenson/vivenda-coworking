@@ -47,15 +47,15 @@
     <div class="carousel-inner ">
 
       <div class="carousel-item active ">
-        <%= image_tag "DSC_0151.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+        <%= image_tag "DSC_0151.JPG", alt:"#{t('.swimming_pool_alt')}", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
       </div>
 
       <div class="carousel-item ">
-        <%= image_tag "Praia_Fluvia.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+        <%= image_tag "Praia_Fluvia.JPG", alt:"#{t('.praia_fluvial_alt')}", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
       </div>
 
       <div class="carousel-item ">
-        <%= image_tag "DSC_0036.JPG", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
+        <%= image_tag "DSC_0036.JPG", alt: "#{t('.domain_alt')}", class: "d-block img-home img-fluid img-size", :style => "object-fit:cover; width:100%; height:100vh;" %>
       </div>
 
     </div>
@@ -93,19 +93,15 @@
 
       <div class="item">
         <div class="card card-position" style="border: none;">
-          <%= image_tag 'flowers.JPG', class:"card-img-waterfall", alt:"#{t('.kitchen_alt')}"%>
+          <%= image_tag 'flowers.JPG', class:"card-img-waterfall", alt:"#{t('.flowers_alt')}"%>
         </div>
       </div>
     </div>
 
     <div class="my-5">
       <div class="domain-home">
-        <h3>Le domaine</h3>
-        <p>La « Vivenda » est une petite structure composée de 4 bungalows/maisons au total: 3 à louer comme locations de vacances et 1 que nous occupons. Les bungalows, situés côte à côte, ont été construits en 2007 sur un terrain d’environ un hectare de verdure et de fleurs. Sept chênes-lièges (espèce protégée au Portugal) sont également caractéristiques du domaine de vacances. <br>
-        Avec les grandes fenêtres dans toutes les pièces, vous bénéficierez partout de vues magnifiques sur la nature et les montagnes. <br><br>
-        Le domaine convient parfaitement aux couples et aux familles. Il est également idéal en groupes d’amis ou en grandes familles ! Louez donc 1, 2 ou 3 bungalows selon vos besoins.<br><br>
-        L’endroit est également idéal pour passer l’hiver et profiter d’une météo plus clémente que dans le nord de l’Europe. Ici, tous les commerces, restaurants, etc restent ouverts et la vie continue durant toute l’année. La nature reste également verte et luxuriante toute l’année. Profitez de nos prix promotionnels pour des longs séjours en hiver.<br><br>
-        Les 3 bungalows de vacances, tous identiques, spacieux (+/- 70 m2) et confortablement meublés, sont décorés de manière différente. Vous avez le choix entre 3 thèmes: la casa Savana, la casa Azulejos et la casa Bambu.</p>
+        <h3><%= t('.domain') %></h3>
+        <p><%= t('.domain_explanation_html') %></p>
       </div>
     </div>
 
@@ -124,7 +120,7 @@
 
       <div class="item">
         <div class="card card-position" style="border: none;">
-          <%= image_tag 'terrasse_2.JPG', class:"card-img-waterfall", alt:"#{t('.main_bedroom_alt')}"%>
+          <%= image_tag 'terrasse_2.JPG', class:"card-img-waterfall", alt:"#{t('.terrasse_alt')}"%>
         </div>
       </div>
 
@@ -137,14 +133,14 @@
 
       <div class="item">
         <div class="card card-position" style="border: none;">
-          <%= image_tag 'new_photo.JPG', class:"card-img-waterfall", alt:"#{t('.main_bedroom_alt')}"%>
+          <%= image_tag 'new_photo.JPG', class:"card-img-waterfall", alt:"#{t('.general_alt')}"%>
         </div>
       </div>
 
 
       <div class="item">
         <div class="card card-position" style="border: none;">
-          <%= image_tag 'kitchen.JPG', class:"card-img-waterfall", alt:"#{t('.main_bedroom_alt')}"%>
+          <%= image_tag 'kitchen.JPG', class:"card-img-waterfall", alt:"#{t('.kitchen_alt')}"%>
         </div>
       </div>
     </div>
@@ -158,12 +154,10 @@
       <div class="li-item" id="acti-description">
         <div class="">
           <div class="card card-position card-map" >
-            <%= image_tag "DSC_0036.JPG", class: "card-img-top card-img-mapbox" %>
+            <%= image_tag "DSC_0036.JPG", class: "card-img-top card-img-mapbox" , alt:"#{t('.vivenda_alt')}"%>
             <div class="card-body">
-              <h5 class="card-title">Bem vindo a Vivenda a Nossa Coroa </h5>
-              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, dicta excepturi at quo
-                ipsum quibusdam sit, aliquam fugiat reiciendis dolor exercitationem. Amet voluptatibus
-                  sequi facilis corrupti distinctio quibusdam similique molestias.</p>
+              <h5 class="card-title"><%= t('.vivenda_title') %></h5>
+              <p class="card-text"><%= t('.vivenda_explanation_html') %></p>
             </div>
           </div>
         </div>

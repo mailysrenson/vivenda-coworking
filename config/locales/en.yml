@@ -2,10 +2,9 @@ en:
   global: #to use this full notation needs to be used as we don't use existing routes (global.navbar.test)
     navbar:
       home: "Home"
-      about: "About us"
-      contact: "Contact"
+      about_us: "About us"
       book: "Book now"
-      language: "flag"
+      rates: "Rates"
 
   booking_mailer:
     new_booking: 
@@ -29,10 +28,39 @@ en:
       phone: "Phone number"
       greeting: 'Kind regards,'
 
-  pages: #controller (plural)
-    home: #view
-      test: "Testing" #key used
-      #test_html in case your content contains html tags
+  pages:
+    home: 
+      # Alt for images on homepage
+      test: "Testing" 
+      domain_alt: "The domain surrounded by the nature, which gives it its calming and relaxing feeling"
+      casas_alt: "The 3 holiday bungalows in the nature, fully furnished and decorated"
+      swimming_pool_alt: "The big swimming pool"
+      flowers_alt: "The flowers and trees surrounding the domain"
+      praia_fluvial_alt: "The praia fluvial of Coja, a river beach with fresh water, sand and a bar"
+      terrasse_alt: "The bungalows have 2 terrasses: one in front, one in the back. Therefore, you can enjoy the sun all day long."
+      living_room: "The bungalows all have a big living room with a sofa, wifi and a TV"
+      main_bedroom: "The bungalows have two bedrooms, each with 2 single beds. The bedrooms both have beautiful views of the nature"
+      general_alt: "The bungalows are 70m² big, with a kitchen, living room, eating room, a bathroom, 2 bedrooms and two terrasses"
+      kitchen_alt: "All the bungalows have a fully equipped kitchen"
+      vivenda_alt: "The vivenda is located in the center of Portugal, a beautiful region with lots of activities"
+      # Text within waterfall
+      domain: "The domain"
+      domain_explanation_html: "Our « Vivenda » is a small structure including 4 bungalows/houses (what we call the casas): 3 of which can be rented as holiday rentals and 1 which is occupied by ourselves. The bungalows are next to each other and have been built in 2007, on a domain of 1 hectare of nature. <br>
+      Our bungalows all have big windows so that you can enjoy the view of the nature and the mountains. <br><br>
+      Our domain is the perfect solution for families and/or bigger groups of people. You can rent 1, 2 or 3 casas depending on your needs. <br><br>
+      The location of our vivenda is perfect to avoid the bad weather of Northern Europe. All the shops, bars and restaurants are open all year long. <br><br>
+      Our 3 bungalows all have the same amenities, but are decorated in different themes. "
+      # Text within map of activities
+      vivenda_title: "Bem vindo a Vivenda a Nossa Coroa"
+      vivenda_explanation_html: "The vivenda is located in the center of Portugal, a beautiful region for nature lovers. <br>
+      During your stay, make sure to visit some of the 
+      beautiful Praia fluvials (river beaches), to do a kayak tour or to walk around in the Sierra da Estrella"
+
+
+      
+
+
+      
 
   #translating models
 
@@ -43,6 +71,7 @@ en:
           attributes:
             email:
               blank: "cannot be empty"
+    
     attributes:
       booking: #always singular
         email: "Email address"
@@ -58,16 +87,4 @@ en:
         arrival_date: "Arrival date"
         departure_date: "Departure date"
 
-  # <%= f.input :email %>
-  # <%= f.input :phone %>
-  # <%= f.input :adults, collection: 1..5 %>
-  # <%= f.input :childrens, collection: 1..5 %>
-  # <%=f.input_field :baby_bed, as: :boolean, boolean_style: :inline, label: t(".baby_bed")  %>
-  # <%= f.input :street %>
-  # <%= f.input :city %>
-  # <%= f.input :zipcode %>
-  # <%= f.input :country %>
-  # <%= f.input :comment %>
-  # <%= f.input :arrival_date, as: :string, input_html: {class: "datepicker"} %>
-  # <%= f.input :departure_date, as: :string, input_html: {class: "datepicker"} %>
 
