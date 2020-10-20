@@ -38,32 +38,30 @@
     </div>
   </nav>
 
-<h2>Tarifs</h2>
+<h2><%= t('.rates') %></h2>
 <div class="prices my-5">
 
 
 <div class="container">
   <div class="row border-tarif">
     <div class="col">
-      <h3>Basse saison</h3>
-      <p>Du 16/10 au 31/03</p>
-
-      <p><strong>395€/</strong> semaine</p>
-      <p>65 € / nuit</p>
-      <p><strong>795€</strong> / 1er mois et <strong>695€</strong>/ apd 2ème mois</p>
+      <h3><%= t('.low_season') %></h3>
+      <p><%= t('.period_low') %></p>
+      <p><%= t('.price_week_low_html') %></p>
+      <p><%= t('.price_night_low') %></p>
+      <p><%= t('.price_month_low_html') %></p>
     </div>
     <div class="col">
-     <h3>Moyenne saison</h3>
-      <p>Du 01/04 au 30/06 - du 01/09 au 15/10</p>
-      <p><strong>545€/</strong> semaine</p>
-      <p>90 € / nuit</p>
-      <p>/</p>
+      <h3><%= t('.medium_season') %></h3>
+      <p><%= t('.period_medium') %></p>
+      <p><%= t('.price_week_medium_html') %></p>
+      <p><%= t('.price_night_medium') %></p>
+      <p> / </p>
     </div>
     <div class="col">
-      <h3>Haute saison</h3>
-      <p>Du 01/07 au 31/08</p>
-
-      <p><strong>695€/</strong> semaine</p>
+      <h3><%= t('.high_season') %></h3>
+      <p><%= t('.period_high') %></p>
+      <p><%= t('.price_week_high_html') %></p>
       <p>/</p>
       <p>/</p>
     </div>
