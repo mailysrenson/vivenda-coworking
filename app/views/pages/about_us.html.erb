@@ -18,15 +18,9 @@
           <%= t('global.navbar.book') %>
           <% end %>
           <div class="dropdown-divider"></div>
-          <%= link_to "en", class: "nav-item nav-link dropdown-item d-inline padding-drop" do %>
-          EN
-         <% end %>
-         <%= link_to "fr", class: "nav-item nav-link dropdown-item d-inline padding-drop" do %>
-          FR
-         <% end %>
-         <%= link_to "pt", class: "nav-item nav-link dropdown-item d-inline padding-drop" do %>
-          PT
-         <% end %>
+          <%= link_to 'EN', about_us_path(locale: :en), class: "nav-item nav-link dropdown-item d-inline padding-drop"%>
+          <%= link_to 'FR', about_us_path(locale: :fr), class: "nav-item nav-link dropdown-item d-inline padding-drop"%>
+          <%= link_to 'PT', about_us_path(locale: :pt), class: "nav-item nav-link dropdown-item d-inline padding-drop"%>
         </div>
       </div>
 
@@ -49,10 +43,10 @@
 
   <div class="row d-flex justify-content-center main_div_about ">
 
-    <div class="col-6 text-right">
+    <div class="col-lg-6 text-right">
       <%= image_tag 'domain.JPG', class:"card-img-about", alt:"#{t('.domain_alt')}"%>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6">
       <h1 class="title_about">About us</h1>
       <div class="underline"></div>
       <p> Consequatur possimus. Similique accusamus ratione sequi quidem itaque nulla magni nihil totam nisi.</p>
@@ -70,7 +64,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer-border">
+  <footer class="footer-border footer-padding">
     <div class="row ">
       <div class="col-12 order-last col-md-9 order-md-first ">
         <p class="footer-font">
