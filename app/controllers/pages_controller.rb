@@ -5,6 +5,6 @@ class PagesController < ApplicationController
   def about_us
   end
 
-  def contact
+  def tarifs
   end
 end

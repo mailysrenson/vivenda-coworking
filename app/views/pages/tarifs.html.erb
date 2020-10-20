@@ -7,11 +7,19 @@
           <img src="<%= image_path 'menuBarGreen.png' %>"  id="menu-btn-green" class="menu-bar " alt="">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.rates') %></a>
-          <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.about_us') %></a>
-          <a class="nav-item nav-link dropdown-item" href="#"><%= t('global.navbar.book') %></a>
+          <%= link_to tarifs_path, class: "nav-item nav-link dropdown-item" do %>
+          <%= t('global.navbar.rates') %>
+          <% end %>
+          <%= link_to about_us_path, class: "nav-item nav-link dropdown-item" do %>
+          <%= t('global.navbar.about_us') %>
+          <% end %>
+          <%= link_to new_booking_path, class: "nav-item nav-link dropdown-item" do %>
+          <%= t('global.navbar.book') %>
+          <% end %>
           <div class="dropdown-divider"></div>
-          <a class="nav-item nav-link dropdown-item" href="#"><%= "FR - EN - PT" %></a>
+          <%= link_to 'EN', tarifs_path(locale: :en), class: "nav-item nav-link dropdown-item d-inline padding-drop"%>
+          <%= link_to 'FR', tarifs_path(locale: :fr), class: "nav-item nav-link dropdown-item d-inline padding-drop"%>
+          <%= link_to 'PT', tarifs_path(locale: :pt), class: "nav-item nav-link dropdown-item d-inline padding-drop"%>
         </div>
       </div>
 
@@ -23,12 +31,13 @@
         </div>
 
         <div class="side-element reservez">
-          <%= link_to root_path, class: "nav-item reserver" do  %>
+          <%= link_to new_booking_path, class: "nav-item reserver" do  %>
             <h2 class="font-text btn-call reservez" id="deco-none"><%= t('global.navbar.book') %></h2>
           <% end %>
         </div>
     </div>
   </nav>
+
 <h2>Tarifs</h2>
 <div class="prices my-5">
 
