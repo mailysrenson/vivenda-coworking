@@ -85,10 +85,6 @@ let fullForm = document.querySelector("#msform")
     }
   })
 
- $('#submit-button').submit(function(e){
-
-});
-
 
 submitButton.addEventListener('click', ($event) => {
   // firstField.style.display = "none";
