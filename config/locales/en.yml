@@ -31,8 +31,7 @@ en:
   pages:
     home: 
       # Alt for images on homepage
-      test: "Testing" 
-      domain_alt: "The domain surrounded by the nature, which gives it its calming and relaxing feeling"
+      domain_alt: "The domain is surrounded by the nature, which gives it its calming and relaxing feeling"
       casas_alt: "The 3 holiday bungalows in the nature, fully furnished and decorated"
       swimming_pool_alt: "The big swimming pool"
       flowers_alt: "The flowers and trees surrounding the domain"
@@ -73,7 +72,9 @@ en:
       succes: "Your booking has been received!"
       success_explanation_html: "You will received an email confirming your booking request. <br>
       We will come back to you within the next 24 hours to confirm or deny your booking."
-
+      button_next: "Next step"
+      button_previous: "Previous step"
+      confirm: "Confirm request"
    
   activerecord:
     errors:
@@ -84,7 +85,7 @@ en:
               blank: "cannot be empty"
     
     attributes:
-      booking: #always singular
+      booking:
         email: "Email address"
         phone: "Phone number"
         adults: "Number of adults"
