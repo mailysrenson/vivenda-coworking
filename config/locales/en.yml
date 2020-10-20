@@ -64,13 +64,17 @@ en:
       <br><br>So, see you soon we hope? 
       <br><br>Gene & Didier"
 
-      
+  bookings:
+    new:
+      title: "Your booking"
+      your_stay: "Your stay"
+      contact_details: "Your contact details"
+      confirmation: "Confirmation"
+      succes: "Your booking has been received!"
+      success_explanation_html: "You will received an email confirming your booking request. <br>
+      We will come back to you within the next 24 hours to confirm or deny your booking."
 
-
-      
-
-  #translating models
-
+   
   activerecord:
     errors:
       models:
@@ -84,7 +88,7 @@ en:
         email: "Email address"
         phone: "Phone number"
         adults: "Number of adults"
-        childrens: "Number of children "
+        childrens: "Number of children"
         baby_bed: " Do you need a baby bed?"
         street: "Street name and house number"
         city: "City"
@@ -93,5 +97,6 @@ en:
         comment: "Insert any additional comments"
         arrival_date: "Arrival date"
         departure_date: "Departure date"
+        range_date: "Period of stay"
 
 
