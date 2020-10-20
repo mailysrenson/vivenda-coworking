@@ -1,0 +1,33 @@
+.price-table {
+  border: 1px solid grey;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid black;
+}
+​
+.price-table td {
+  border: 1px solid grey !important;
+  width: 33%;
+  padding: 10px 10px;
+  text-align: center;
+}
+​
+.price-table th {
+  border: 1px solid grey !important;
+  width: 33%;
+  text-align: center;
+}
+​
+.prices {
+  width: 100%;
+}
+
+.border-tarif{
+border-bottom: 1px solid lightgrey;
+border-top: 1px solid lightgrey;
+}
+
+.footer-border{
+  border-top: 1px solid lightgrey;
+}
