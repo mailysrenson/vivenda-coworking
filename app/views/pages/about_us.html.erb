@@ -43,18 +43,26 @@
 
   <div class="row d-flex justify-content-center main_div_about ">
 
+
+    <div class="col-lg-6 text-right">
+      <%= image_tag 'domain.JPG', class:"card-img-about", alt:"#{t('.domain_alt')}"%>
+    </div>
+    <div class="col-lg-6">
+      <h1 class="title_about">About us</h1>
+
     <div class="col-6 text-right">
       <%= image_tag 'domain.JPG', class:"card-img-about", alt:"#{t('.picture_alt')}"%>
     </div>
     <div class="col-6">
       <h1 class="title_about"><%= t('.about_us')%></h1>
+
       <div class="underline"></div>
       <p><%= t('.about_us_description_html')%></p>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="footer-border">
+  <footer class="footer-border footer-padding">
     <div class="row ">
       <div class="col-12 order-last col-md-9 order-md-first ">
         <p class="footer-font">
