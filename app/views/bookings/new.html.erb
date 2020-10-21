@@ -53,7 +53,7 @@
                                     <p class="missing_people" style="color:red; font-size:12px;">Ajouter le nombre d'adultes et enfants</p>
                                     <%= f.input :baby_bed, as: :boolean, boolean_style: :inline, input_html: {class: "label"} %>
                                 </div>
-                                </div> <input type="button" name="next" class="action-button first-validation next" value="Next Step" />
+                                </div> <input type="button" name="next" class="action-button first-validation next" value=<%="#{t('.button_next')}"%> />
                             </fieldset>
                             </div>
 
