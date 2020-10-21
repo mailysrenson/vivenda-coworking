@@ -44,16 +44,16 @@
                             <fieldset>
                                 <div class="form-card">
                                   <div class="auto">
-                                   <div class="col-auto"> <%= f.input :range_date, as: :string, input_html: {class: "datepicker-arrival pl-5", id: "arrival-date"}  %> </div>
+                                   <div class="col-auto booking-calendar"> <%= f.input :range_date, as: :string, input_html: {class: "datepicker-arrival pl-5", id: "arrival-date"}  %> </div>
                                     <%= f.input :arrival_date, as: :string, :as => :hidden, input_html: {class: "datepicker-disable", id: "arrival-date-input"}  %>
 
                                   <%= f.input :departure_date, as: :string, :as => :hidden, input_html: {class: "datepicker-departure", id: "departure-date-input"} %>
                                     <p class="missing_date" style="color:red; font-size:12px;">Ajouter une date de départ et arrivée</p>
                                     <div class="row">
-                                      <div class="col">
+                                      <div class="col-auto guest_amount">
                                         <%= f.input :adults, input_html: {id: "booking_adults"}, default: 0, collection: 0..5 %>
                                       </div>
-                                      <div class="col-auto">
+                                      <div class="col-auto guest_amount">
                                         <%= f.input :childrens, input_html: {id: "booking_children"}, default: 0, collection: 0..5 %>
                                       </div>
                                     </div>
@@ -78,8 +78,8 @@
                                     <%= f.input :phone %>
                                     <%= f.input :street %>
                                     <div class="row">
-                                    <div class="col" style="padding-right:5px;"> <%= f.input :city %> </div>
-                                    <div class="col-auto"> <%= f.input :zipcode %> </div>
+                                    <div class="col-auto city-div" style="padding-right:5px;"> <%= f.input :city %> </div>
+                                    <div class="col-auto zipcode-div"> <%= f.input :zipcode %> </div>
                                     </div>
                                     <%= f.input :country %>
                                     <%= f.input :comment, as: :text, :maxlength => 300 %>

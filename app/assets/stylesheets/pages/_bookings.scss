@@ -156,28 +156,6 @@ select.list-dt:focus {
     position: relative
 }
 
-#progressbar #account:before {
-    // font-family: "Font Awesome 5 Free";
-    // content: "\f023"
-}
-
-#progressbar #personal:before {
-    // font-family: FontAwesome;
-    // content: "\f007"
-
-
-}
-
-#progressbar #payment:before {
-    // font-family: FontAwesome;
-    // content: "\f09d"
-}
-
-#progressbar #confirm:before {
-    // font-family: FontAwesome;
-    // content: "\f00c"
-}
-
 #progressbar li:before {
     width: 50px;
     height: 50px;
@@ -281,10 +259,30 @@ color: black !important;
   width: 100%;
 }
 
-.booking_childrens {
-  padding-left: 3rem;
+.zipcode-div {
+  width: 43% !important;
+  max-width: 43% !important;
 }
 
+.city-div {
+  width: 57% !important;
+}
+
+.guest_amount {
+   width: 45% !important;
+  max-width: 45% !important;
+}
 .optional {
     width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+#msform fieldset .form-card {
+  padding: 20px 7px 30px 7px;
+}
+
+.booking-calendar {
+  padding-right: 5px !important;
+    padding-left: 5px !important;
+}
 }
