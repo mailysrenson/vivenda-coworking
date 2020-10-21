@@ -8,7 +8,6 @@ essential: true
 });
 });
 
-
 let kayakFly = document.getElementsByClassName('kayak-card')
 kayakFly[0].addEventListener('click', function () {
 map.flyTo({
@@ -18,7 +17,6 @@ zoom: 9,
 essential: true
 });
 });
-
 
 let rioFly = document.getElementsByClassName('rio-card')
 rioFly[0].addEventListener('click', function () {
@@ -40,7 +38,6 @@ essential: true
 });
 });
 
-
 let seraFly = document.getElementsByClassName('sera-card')
 seraFly[0].addEventListener('click', function () {
 map.flyTo({
@@ -51,7 +48,6 @@ essential: true
 });
 });
 
-
 let avoFly = document.getElementsByClassName('avo-card')
 avoFly[0].addEventListener('click', function () {
 map.flyTo({
@@ -61,8 +57,6 @@ zoom: 9,
 essential: true
 });
 });
-
-
 
 let carvahalFly = document.getElementsByClassName('carvahal-card')
 carvahalFly[0].addEventListener('click', function () {
@@ -85,7 +79,6 @@ essential: true
 });
 
 
-
 let fragaFly = document.getElementsByClassName('fraga-card')
 fragaFly[0].addEventListener('click', function () {
 map.flyTo({
@@ -96,7 +89,6 @@ essential: true
 });
 });
 
-
 let cabrizFly = document.getElementsByClassName('cabriz-card')
 cabrizFly[0].addEventListener('click', function () {
 map.flyTo({
@@ -106,7 +98,3 @@ zoom: 9,
 essential: true
 });
 });
-
-
-
-

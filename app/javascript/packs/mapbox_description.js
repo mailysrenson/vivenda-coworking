@@ -1,17 +1,10 @@
 window.onload = function(){
-
-
 let title = document.querySelector(".mapboxgl-ctrl-attrib");
-console.log(title)
 title.remove();
 let title2 = document.querySelector(".mapboxgl-ctrl-logo");
 title2.remove();
-
-
 let praiaPopup = document.getElementsByClassName("praia-icon")
 let actiDescription = document.getElementById("acti-description")
-
-
 let santaComba = document.getElementsByClassName("santa-comba-card")
 santaComba = santaComba[0]
 santaComba.addEventListener('click', (event) => { 
@@ -24,7 +17,6 @@ santaComba.addEventListener('click', (event) => { 
             sequi facilis corrupti distinctio quibusdam similique molestias.</p>
       </div>
     </div>`
-
 });
 
 let kayak = document.getElementsByClassName("kayak-card")
@@ -157,7 +149,6 @@ vivenda.addEventListener('click', (event) => { 
 });
 
 let avo = document.getElementsByClassName("avo-card")
-
 avo = avo[0]
 avo.addEventListener('click', (event) => { 
   actiDescription.innerHTML = `      <div class="card card-position card-map " >
