@@ -30,11 +30,11 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initFlatPicker } from "../plugins/flatpickr";
-import { disableDate } from "./disable_date";
+import { people_limit } from "./people_limit";
+
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initFlatPicker();
-  disableDate();
   waterfall();
   // initSelect2();
 });

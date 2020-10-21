@@ -66,7 +66,6 @@ html {
     font-size: 16px;
     letter-spacing: 1px
 }
-
 #msform input:focus,
 #msform textarea:focus {
     -moz-box-shadow: none !important;
@@ -158,23 +157,25 @@ select.list-dt:focus {
 }
 
 #progressbar #account:before {
-    font-family: FontAwesome;
-    content: "\f023"
+    // font-family: "Font Awesome 5 Free";
+    // content: "\f023"
 }
 
 #progressbar #personal:before {
-    font-family: FontAwesome;
-    content: "\f007"
+    // font-family: FontAwesome;
+    // content: "\f007"
+
+
 }
 
 #progressbar #payment:before {
-    font-family: FontAwesome;
-    content: "\f09d"
+    // font-family: FontAwesome;
+    // content: "\f09d"
 }
 
 #progressbar #confirm:before {
-    font-family: FontAwesome;
-    content: "\f00c"
+    // font-family: FontAwesome;
+    // content: "\f00c"
 }
 
 #progressbar li:before {
@@ -184,7 +185,7 @@ select.list-dt:focus {
     display: block;
     font-size: 18px;
     color: #ffffff;
-    background: #678649;
+    background: grey;
     border-radius: 50%;
     margin: 0 auto 10px auto;
     padding: 2px
@@ -265,4 +266,25 @@ background-color: #678649 !important;
 
 #personnal{
 color: black !important;
+}
+
+.form-check-input {
+  width: auto !important;
+  margin-top: 7px !important;
+}
+
+#booking_childrens #booking_adults {
+  width:5rem;
+}
+
+#booking_adults {
+  width: 100%;
+}
+
+.booking_childrens {
+  padding-left: 3rem;
+}
+
+.optional {
+    width: 100%;
 }

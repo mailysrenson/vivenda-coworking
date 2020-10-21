@@ -1,5 +1,5 @@
 import flatpickr from "flatpickr";
-const initFlatPicker = () => {
+function initFlatPicker() {
     flatpickr(".datepicker-arrival", {
     altInput: true,
     altFormat: "d-m-Y",
@@ -15,7 +15,6 @@ calendar.addEventListener('click', ($event) => {
   setTimeout(test, 50);
   function test() {
   let arrivalDate = document.querySelector(".startRange");
-  console.log(arrivalDate)
   let arrivalMonth = arrivalDate.getAttribute('aria-label')
        let [month, day, year] = arrivalMonth.split(" ");
      let i = 1
@@ -54,7 +53,9 @@ calendar.addEventListener('click', ($event) => {
     arrivalInput.setAttribute("value", dateArrival);
     let departureInput = document.querySelector("#departure-date-input");
     departureInput.setAttribute("value", dateDeparture);
-    console.log(departureInput)
+
     }
   });
 };
+
+export {initFlatPicker};

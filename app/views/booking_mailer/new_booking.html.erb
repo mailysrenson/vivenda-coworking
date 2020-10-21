@@ -1,0 +1,53 @@
+<p><%= t('.email_text_html', first_name: @booking.first_name, arrival_date: @booking.arrival_date, departure_date: @booking.departure_date)%></p>
+<h3><%=t('.booking_summary') %></h3>
+<table>
+  <tr>
+    <td><%= t('.arrival_date')%></td>
+    <td><%= @booking.arrival_date %></td>
+  </tr>
+  <tr>
+    <td><%= t('.departure_date')%></td>
+    <td><%= @booking.departure_date %></td>
+  </tr>
+  <tr>
+    <td><%= t('.adults')%></td>
+    <td><%= @booking.adults %></td>
+  </tr>
+  <tr>
+    <td><%= t('.childrens')%></td>
+    <td><%= @booking.childrens %></td>
+  </tr>
+  <tr>
+    <td><%= t('.baby_bed')%></td>
+    <td><%= @booking.baby_bed ? t('.yes') : t('.no') %></td>
+  </tr>
+  <% unless @booking.comment.empty? %>
+  <tr>
+    <td><%= t('.comment')%></td>
+    <td><%= @booking.comment %></td>
+  </tr>
+  <% end %>
+</table>
+
+  <h3><%= t('.contact_details') %></h3>
+  <table>
+    <tr>
+      <td><%= t('.name') %></td>
+      <td><%= "#{@booking.first_name} #{@booking.last_name}" %></td>
+    </tr>
+    <tr>
+      <td><%= t('.email') %></td>
+      <td><%= @booking.email %></td>
+    </tr>
+    <tr>
+      <td><%= t('.phone') %></td>
+      <td><%= @booking.phone %></td>
+    </tr>
+  </table>
+
+
+<p>
+<%= t('.greeting')%> <br>
+Didier & Gene
+Vivenda a nossa coroa
+</p>
