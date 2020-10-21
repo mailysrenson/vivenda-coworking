@@ -9,7 +9,6 @@ function initFlatPicker() {
     mode: "range"
   });
 
-let dateDeparture
 const calendar = document.querySelector(".flatpickr-days");
 calendar.addEventListener('click', ($event) => {
   setTimeout(test, 50);
@@ -31,7 +30,7 @@ calendar.addEventListener('click', ($event) => {
         i += 1
      }
    } else {
-    let selectDay = document.getElementsByClassName(".startRange");
+    document.getElementsByClassName(".startRange");
         let selection = arrivalDate;
         let selectionPrev = selection;
       while (i < 4) {

@@ -104,10 +104,4 @@ if (arrivalInput.value != false){
   validationField.style.display = "none";
   }
 }
-
-
-
 }
-
-
-
