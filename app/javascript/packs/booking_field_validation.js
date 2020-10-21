@@ -78,7 +78,7 @@ let fullForm = document.querySelector("#msform")
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'Votre réservation a bien été enregistrée',
+      //title: 'Votre réservation a bien été enregistrée',
       showConfirmButton: false,
       timer: 5000
     })
@@ -104,10 +104,4 @@ if (arrivalInput.value != false){
   validationField.style.display = "none";
   }
 }
-
-
-
 }
-
-
-

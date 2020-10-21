@@ -1,9 +1,6 @@
 <body>
   <%= javascript_pack_tag 'navbar' %>
   <%= javascript_pack_tag 'mapbox_description' %>
-<%= javascript_pack_tag 'popup_message' %>
-
-
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light sticky" id="navbar-container">
@@ -14,7 +11,9 @@
           <img src="<%= image_path 'menuBarGreen.png' %>"  id="menu-btn-green" class="menu-bar menu-bar-hidden" alt="">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-
+          <%= link_to root_path, class: "nav-item nav-link dropdown-item" do %>
+          <%= t('global.navbar.home') %>
+          <% end %>
           <%= link_to tarifs_path, class: "nav-item nav-link dropdown-item" do %>
           <%= t('global.navbar.rates') %>
           <% end %>
