@@ -208,7 +208,9 @@
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [-8.008407, 40.3844089],
-      zoom: 9
+      zoom: 9,
+      maxZoom: 11,
+      minZoom: 8
     });
 
     var cojaIcon = document.createElement('div');
@@ -435,8 +437,8 @@
     .addTo(map);
     </script>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script defer src="//cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js"></script>
+    <script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
     <script>
     imagesLoaded( document.querySelector('.container'), () => {

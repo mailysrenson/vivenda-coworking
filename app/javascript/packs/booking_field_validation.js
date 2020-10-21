@@ -72,29 +72,21 @@ firstValidation.addEventListener('click', ($event) => {
 
 let fullForm = document.querySelector("#msform")
  fullForm.addEventListener('submit', e => {
-    console.log("popup")
     setTimeout(popup, 100);
     function popup () {
     Swal.fire({
       position: 'center',
       icon: 'success',
-      //title: 'Votre réservation a bien été enregistrée',
       showConfirmButton: false,
       timer: 5000
     })
     }
   })
 
-
 submitButton.addEventListener('click', ($event) => {
-  // firstField.style.display = "none";
-  // secondField.style.display = "none";
-  // validationField.style.display = "block";
   personnalInfo.classList.add("active");
   confirmInfo.classList.add("active");
-
 })
-
 
 if (arrivalInput.value != false){
   setTimeout(test, 50);
