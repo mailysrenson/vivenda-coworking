@@ -35,7 +35,8 @@ import { people_limit } from "./people_limit";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initFlatPicker();
-  waterfall();
+  people_limit();
+  //waterfall();
   // initSelect2();
 });
 

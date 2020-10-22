@@ -11,8 +11,6 @@ let submitButton = document.querySelector(".submit-button");
 let returnBtn = document.querySelector(".action-button-previous");
 let personnalInfo = document.querySelector("#personal")
 let confirmInfo = document.querySelector("#confirm")
-let validationWindow = document.querySelector(".validation-window")
-let validationField = validationWindow.firstElementChild;
 let departureInput = document.querySelector(".datepicker-disable")
 let arrivalInput = document.querySelector(".datepicker-departure")
 let rangeDate = document.querySelector(".datepicker-arrival")
@@ -22,7 +20,6 @@ missingDate.style.display = "none";
 missingPeople.style.display = "none";
 firstField.style.display = "block";
 secondField.style.display = "none";
-validationField.style.display = "none";
 
 
 const regexDate = RegExp(/([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/);
@@ -72,42 +69,27 @@ firstValidation.addEventListener('click', ($event) => {
 
 let fullForm = document.querySelector("#msform")
  fullForm.addEventListener('submit', e => {
-    console.log("popup")
     setTimeout(popup, 100);
     function popup () {
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'Votre réservation a bien été enregistrée',
       showConfirmButton: false,
-      timer: 5000
+      timer: 3000
     })
     }
   })
 
-
 submitButton.addEventListener('click', ($event) => {
-  // firstField.style.display = "none";
-  // secondField.style.display = "none";
-  // validationField.style.display = "block";
   personnalInfo.classList.add("active");
   confirmInfo.classList.add("active");
-
 })
-
 
 if (arrivalInput.value != false){
   setTimeout(test, 50);
   function test(){
   firstField.style.display = "none";
   secondField.style.display = "block";
-  validationField.style.display = "none";
   }
 }
-
-
-
 }
-
-
-

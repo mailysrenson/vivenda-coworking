@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VivendaCoworking</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164191375-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-164191375-1');
+    </script>
+    <title>Vivenda a Nossa Coroa</title>
+    <meta name="description" content="Holiday rental of 3 furnished bungalows with a swimming pool, in the center of Portugal. The bungalows are surrounded by nature, giving a calm and relaxing atmosphere." />
+    <meta property="og:title" content="Vivenda a Nossa Coroa - Holiday rentals">
+    <meta property="og:description" content="Holiday rental of 3 furnished bungalows with a swimming pool, in the center of Portugal. The bungalows are surrounded by nature, giving a calm and relaxing atmosphere.">
+    <meta property="og:image" content="https://scontent.fbru1-1.fna.fbcdn.net/v/t1.0-9/71590556_133607354681248_314461614034124800_o.jpg?_nc_cat=110&_nc_sid=cdbe9c&_nc_ohc=h8ImzizNdBkAX8SGio7&_nc_ht=scontent.fbru1-1.fna&oh=08464c0c4e98118e7ce49bff73a3a215&oe=5FB4E9C6">
+    <meta property="og:url" content="https://www.anossacoroa.com">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <!-- <link rel="stylesheet" type="text/css" href="screen.css" media="screen"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="print.css"  media="print"> -->
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-
   </head>
-
-
   <body>
-
-
     <%= yield %>
   </body>
 </html>

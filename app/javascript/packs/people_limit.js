@@ -8,31 +8,22 @@ numberSelected = 0
     adult: document.getElementById('booking_adults'),
     children: document.getElementById('booking_children')
   }
-  // const peopleLimitAdult = document.getElementById('booking_adults');
-  // const peopleLimitChildren = document.getElementById('booking_children');
-
-  const updateSelectOptions = (el,seatsLeft) => {
+  function updateSelectOptions(el, seatsLeft) {
     const childrenEl = el.childNodes
-      childrenEl.forEach(childEl => {
-        if (childEl.tagName === 'OPTION') {
-          if (Number(childEl.value) > seatsLeft) {
-            childEl.disabled = true
-          } else {
-            childEl.disabled = false
-          }
+    childrenEl.forEach(childEl => {
+      if (childEl.tagName === 'OPTION') {
+        if (Number(childEl.value) > seatsLeft) {
+          childEl.disabled = true
+        } else {
+          childEl.disabled = false
         }
-      })
-  }
-
+      }
+  })
+}
   const checkNumberPeople = $event => {
     const varName = $event.target.id === 'booking_adults' ? 'adult' : 'children'
     a[varName] =  Number($event.target.value)
     updateSelectOptions(formEl[$event.target.id !== 'booking_adults' ? 'adult' : 'children'],maxPeople - a[varName])
   }
-
   formEl.adult.addEventListener("change", checkNumberPeople)
   formEl.children.addEventListener("change", checkNumberPeople)
-
-
-
-
