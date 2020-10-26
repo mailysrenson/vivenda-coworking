@@ -82,8 +82,9 @@ essential: true
 let fragaFly = document.getElementsByClassName('fraga-card')
 fragaFly[0].addEventListener('click', function () {
 map.flyTo({
-center: [-7.9781015,
-40.4680063 + 0.15],
+center: [-8.0246446,
+40.1876857 + 0.15],
+
 zoom: 9,
 essential: true
 });

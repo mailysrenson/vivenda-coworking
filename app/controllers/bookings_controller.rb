@@ -16,6 +16,8 @@ class BookingsController < ApplicationController
     @booking = Booking.new
   end
 
+
+
   def edit
     @booking = Booking.find(params[:id])
   end
@@ -25,6 +27,8 @@ class BookingsController < ApplicationController
     @booking.update(params[:booking])
     # Will raise ActiveModel::ForbiddenAttributesError
   end
+
+
 
   private
 
