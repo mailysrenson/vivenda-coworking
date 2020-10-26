@@ -5,7 +5,7 @@
 <div class="container-fluid " style="object-fit:cover; width:100vw; height:100%; padding-left : 0; margin: 0; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'domaine.JPG' %>); background-size: cover">
   <div class="container-fluid" id="grad1">
     <div class="title-center d-flex justify-content-center" >
-      <%= link_to root_path, class: "navbar-brand column-center " do%>
+      <%= link_to root_path, class: "navbar-brand column-center" do%>
         <h1 class="font-text vivenda-size-big color-to-white"> <%= " Vivenda "%> </h1>
         <h2 class="font-text nossa-size-big color-to-white "> <%="- a Nossa Coroa -"%></h2>
       <% end %>
@@ -44,7 +44,7 @@
                             <p class="missing_people" style="color:red; font-size:12px;">Ajouter le nombre d'adultes et enfants</p>
                             <%= f.input :baby_bed, as: :boolean, boolean_style: :inline, input_html: {class: "label"} %>
                           </div>
-                        </div> <input type="button" name="next" class="action-button first-validation next" value=<%="#{t('.button_next')}"%>/>
+                        </div> <input type="button" name="next" class="action-button first-validation next" value=<%="#{t('.button_next')}"%> />
                       </div>
                     </fieldset>
                     <div class="second_info">
@@ -66,8 +66,8 @@
                             <%= f.input :comment, as: :text, :maxlength => 300 %>
                           </div>
                         </div>
-                        <input type="button" name="previous" class="previous action-button-previous" value=<%="#{t('.button_previous')}"%>/>
-                        <input type="submit" name="next" class="submit-button action-button" id="submit-button" value=<%="#{t('.confirm')}"%>/>
+                        <input type="button" name="previous" class="previous action-button-previous" value=<%="#{t('.button_previous')}"%> />
+                        <input type="submit" name="next" class="submit-button action-button" id="submit-button" value=<%="#{t('.confirm')}"%> />
                       </fieldset>
                     </div>
                   </div>

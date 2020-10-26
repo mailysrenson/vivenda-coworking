@@ -1,8 +1,10 @@
 <body>
   <%= javascript_pack_tag 'navbar' %>
   <%= javascript_pack_tag 'mapbox_description' %>
+  <%= javascript_pack_tag 'backToTop' %>
 
   <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-light sticky" id="navbar-container">
     <div class="container-nav">
       <div class="dropdown side-element">
@@ -46,7 +48,7 @@
 
   <!-- Carousel -->
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -75,6 +77,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+    <a id="back2Top" title="Back to top" style="display:inline;" href="#">&#10148;</a>
   </div>
 
 
@@ -381,7 +384,7 @@
     fraga.classList.add('map-icon');
     fraga.classList.add('fraga-card');
     var fragaLocation = new mapboxgl.Marker(fraga)
-    .setLngLat([-7.9781015,40.4680063])
+    .setLngLat([-8.0246446,40.1876857])
     .setPopup(fragaPopup)
     .addTo(map);
 
