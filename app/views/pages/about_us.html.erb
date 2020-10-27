@@ -1,16 +1,19 @@
 <!-- Navbar -->
 <%= render "navbar"%>
 <!-- about us content -->
-  <div class="row d-flex justify-content-start main_div_about ">
-    <div class="col-lg-6">
-      <%= image_tag 'domain.JPG', class:"card-img-about", alt:"#{t('.domain_alt')}"%>
+<div class="container ">
+  <div class="row   ">
+    <div class="col-sm-12 col-lg-6 pt-5 pl-1">
+      <%= image_tag 'geneetdidier.JPG', class:"card-img-about", alt:"#{t('.domain_alt')}"%>
     </div>
-    <div class="col-lg-6">
+    <div class="col-sm-12 col-lg-6 pt-5">
       <h1 class="title_about"><%= t('.about_us')%></h1>
       <div class="underline"></div>
       <p><%= t('.about_us_description_html')%></p>
      </div>
   </div>
+</div>
+<div class="p-3"></div>
 
 <!-- Footer -->
-<%= render "footer"%>
+<%= render "footer" %>
