@@ -187,36 +187,36 @@ Etes-vous prêts à découvrir le Portugal autrement, hors des sentiers battus e
 
   bookings:
     new:
-      title: "Votre réservation"
-      your_stay: "Période"
-      contact_details: "Vos coordonnées"
-      confirmation: "Confirmation"
-      succes: "Nous avons bien enregistré votre demande"
-      success_explanation_html: "Nous revenons vers vous dans les 24h pour confirmer si la période de réservation est libre"
-      button_next: "Suivant"
-      button_previous: "Précédent"
-      confirm: "Confirmer demande"
+      title: "Jouw boeking"
+      your_stay: "Periode"
+      contact_details: "Jouw contactgegevens"
+      confirmation: "Bevestiging"
+      succes: "We hebben jouw aanvraag goed ontvangen"
+      success_explanation_html: "We zullen binnen de 24h bevestigen of we in die periode nog een casa vrij hebben of niet."
+      button_next: "Volgende"
+      button_previous: "Vorige"
+      confirm: "Aanvraag bevestigen"
   activerecord:
     errors:
       models:
         formsubmission:
           attributes:
             email:
-              blank: "Veuillez remplir ce champs"
+              blank: "Gelieve alle velden in te vullen"
     attributes:
       booking:
-        email: "Adresse email"
-        phone: "Numéro de téléphone"
-        adults: "Nombre d'adultes"
-        childrens: "Nombre d'enfants"
-        baby_bed: "Avez-vous besoin d'un lit pour bébé?"
-        street: "Rue et numéro"
-        city: "Ville"
-        zipcode: "Code postal"
-        country: "Pays"
-        comment: "Avez-vous des demandes supplémentaires?"
-        arrival_date: "Date d'arrivée"
-        departure_date: "Date de départ"
-        range_date: "Période de réservation"
+        email: "Emailadres"
+        phone: "Telefoonnummer"
+        adults: "Aantal volwassenen"
+        childrens: "Aantal kinderen"
+        baby_bed: "Heb je een babybedje nodig?"
+        street: "Straat en nummer"
+        city: "Stad"
+        zipcode: "Postcode"
+        country: "Land"
+        comment: "Heb je nog speciale verzoeken?"
+        arrival_date: "Aankomstdatum"
+        departure_date: "Vertrekdatum"
+        range_date: "Boekingsperiode"
 
 

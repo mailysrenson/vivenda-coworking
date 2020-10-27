@@ -42,18 +42,104 @@ en:
       general_alt: "The bungalows are 70m² big, with a kitchen, living room, eating room, a bathroom, 2 bedrooms and two terrasses"
       kitchen_alt: "All the bungalows have a fully equipped kitchen"
       vivenda_alt: "The vivenda is located in the center of Portugal, a beautiful region with lots of activities"
+      # Text in carousel 
+      picture_one_html: "Holiday rental with swimming pool <br>- center of Portugal -"
+      picture_two_html: "Off the beaten track | Authentic region | Rural tourism"
+      picture_three_html: "Surrounded by nature | Far from mass tourism | Calm and relaxation"
       # Text within waterfall
       domain: "The domain"
-      domain_explanation_html: "Our « Vivenda » is a small structure including 4 bungalows/houses (what we call the casas): 3 of which can be rented as holiday rentals and 1 which is occupied by ourselves. The bungalows are next to each other and have been built in 2007, on a domain of 1 hectare of nature. <br>
-      Our bungalows all have big windows so that you can enjoy the view of the nature and the mountains. <br><br>
-      Our domain is the perfect solution for families and/or bigger groups of people. You can rent 1, 2 or 3 casas depending on your needs. <br><br>
-      The location of our vivenda is perfect to avoid the bad weather of Northern Europe. All the shops, bars and restaurants are open all year long. <br><br>
-      Our 3 bungalows all have the same amenities, but are decorated in different themes. "
+      domain_explanation_html: "Small structure consisting of 3 <em>HOLIDAY BUNGALOWS</em> (plus one where we live ourselves), next to each other, in the green heart of Portugal; with a shared <em>SWIMMING POOL</em>, and close to many <em>RIVER BEACHES</em> - developed beaches on the riversides.
+      The domain is located in the middle of the nature, at 5 minutes of the charming village of Coja, at 55 minutes of the historical city of Coimbra and 1h45 of Porto airport.
+      The bungalows each have 2 bedrooms and can accomodate a maximum of 5 people. They are <em>FULLY EQUIPPED</em>, spacious and comfortable!! <br><br>
+      The bungalows can be rented seperately, or the domain in its entirety. Therefore, the domain is perfect for couples, groups and even big families.
+      The central location of the Vivenda, halfway between the sea and the mountains, offers plenty of activities for adults and children (sports, nature, hiking, charming villages, historical villages, etc.).<br><br>
+      <em>In the middle of nature | Far from mass tourism | Off the beaten path | Authentic region | Rural tourism | Calm and relaxing | Refreshing</em>"
       # Text within map of activities
       vivenda_title: "Bem vindo a Vivenda a Nossa Coroa"
       vivenda_explanation_html: "The vivenda is located in the center of Portugal, a beautiful region for nature lovers. <br>
       During your stay, make sure to visit some of the 
       beautiful Praia fluvials (river beaches), to do a kayak tour or to walk around in the Sierra da Estrella"
+      santaComba_title: "Eco-Pista do Dão - ciclovia de Viseu a Santa Comba Dão"
+      santaComba_explanation_html: "30 minutes from the Vivenda:<br>
+      This old railway has been turned into a beautiful cycling path. 
+      You have the choice between cycling tours of 20, 30 or 47km (almost exclusively on a slight slope) to discover amazing landscapes.<br>
+      Difficulty level is quite easy."
+      kayak_title: "O pioneiro do Mondego - descida do rio em kayak"
+      kayak_explanation_html: "35 minutes from the Vivenda:<br>
+      Kayaking tour (18 or 25 km) on the 'rio Mondego', from Penacova to Coimbra. Combine adventure, nature and sports.<br>
+      Difficulty level: easy"
+      casca_title: "Praia fluvial da Cascalheira - Secarias"
+      casca_explanation_html: "9 minutes from the Vivenda:<br>
+      The river beach of Secarias is located on the riverside of the Alva river. The river beach is surrounded by nature, which makes it the place to be on a hot summer day.
+      River beaches are the perfect solution for people looking for a place to relax with fresh water."
+      estrella_title: "Lagoa Covao dos Conchos - Serra da Estrela"
+      estrella_explanation_html: "1 hour from the Vivenda:<br>
+      Our favourite place in the neighbourhood!<br>
+      Stunning hike of approximately 10km (back and forth), departing from the lace 'Lagoa Comprido' until the black hole of the lake 'Covao dos Conchos'.<br>
+      Highly recommended for nature lovers.<br>
+      Difficulty level: moderate"
+      fraga_title: "Cascata da Fraga da Pena"
+      fraga_explanation_html: "25 minutes from the Vivenda:
+      This 19m cascade is located nearby the Benfeita village in the 'serra do Açor'.<br>
+      The water is cristal clear and there are even some zones where you can swim (if you are not afraid of cold water).<br>
+      For the sportive people among us, there is also a hiking route starting from the Benfeita village and passing through the different cascades."
+      cabriz_title: 
+      cabriz_explanation_html:
+      caminhos_title:
+      caminhos_explanation_html:
+      lemos_title:
+      lemos_explanation_html:
+      rio_title: "Praia fluvial do Caneiro de Côja"
+      rio_explanation_html: "5 minutes from the Vivenda: <br>
+      The river beach of Coja is located on the riverside of the Alva river and is surrounded by nature.
+      River beaches are the perfect solution for people looking for a place to relax with fresh water."
+      baloico_title: "Baloiço da Carriça - Alqueve"
+      baloico_explanation_html: "15 minutes from the Vivenda: <br>
+      Swings are very popular in Portugal. There is one just down our Vivenda, in the 'serra do Açor'.
+      This is an original way to photograph the amazing view points of Portugal, or to admire a beautiful sunset."
+      coimbra_title: "Cidade histórica de Coimbra"
+      # stopped here
+      coimbra_explanation_html: " 55 minutes from the Vivenda: <br>
+      Coimbra est accrochée à une colline et surplombe le “rio Mondego”. Moins connue que Lisbonne et Porto, elle vaut pourtant franchement le détour ! Son centre historique est plein de charme.
+      C’est à Coimbra que fut construite la première université du Portugal. Elle compte parmi les plus anciennes d’Europe. Une des visites à ne surtout pas manquer est d’ailleurs sa bibliothèque “Joanina”.
+      Le fado de Coimbra est certainement la musique qui marque le rythme du cœur de la ville des étudiants. Il est régulièrement chanté dans des petits cafés et dans l’église."
+      aveiro_title: "Cidade de Aveiro"
+      aveiro_explanation_html: "A 1h15 de notre Vivenda: <br>
+      La petite Venise Portugaise !
+      Aveiro est traversée par un réseau de canaux, sur lesquels circulent les “barcos moliceiros”, bateaux traditionnels propres à la région, aux formes élancées et décorés de couleurs vives, souvent de façon humoristique, qui servaient autrefois à ramasser les algues. Aujourd’hui, ces embarcations sont utilisées pour les promenades touristiques sur les canaux.
+      Promenez-vous à pied le long des canaux et découvrez la ville et son architecture style “Art nouveau”. Pour ceux qui préfèrent pédaler, des vélos, appelés “bugas” , sont mis gratuitement à disposition."
+      costa_title: "Praia da Costa Nova"
+      costa_explanation_html: "A 1h30 de notre Vivenda: <br>
+      Étendue de plage de sable connue pour ses maisons à rayures de couleurs vives, avec promenade et dunes. A 15 minutes seulement d’Aveiro, ça vaut la peine de faire le détour !"
+      piodao_title: "Aldeia pitoresca de Piodão"
+      piodao_explanation_html: "A 45 minutes de notre Vivenda: <br>
+      Magnifique petit village typique de montagne plein de charme, situé au pied de la “serra do Açor”. Ses maisons, faites de schiste et d’ardoises, sont situées en amphithéâtre dans la colline.
+      Prenez le temps de déambuler dans ses petites ruelles étroites et escarpées."
+      egua_title: "Zona de lazer de Foz d’Egua"
+      egua_explanation_html: "A 55 minutes de notre Vivenda: <br>
+      Foz d’Egua est une merveille cachée dans le “serra do Açor”, à environ 10 minutes de Piodão. Un lieu incontournable !
+      Cette piscine fluviale naturelle est un petit coin de paradis au beau milieu de la nature. "
+      alva_title: "Restaurante Principe do Alva - Coja"
+      alva_explanation_html: " A 5 minutes de notre Vivenda: <br>
+        Un des meilleurs restaurants de la région ! Bonne cuisine, beau cadre et belle vue.
+        Cuisine portugaise et européenne. <br>
+        Prix: moyen. "
+      azzurro_title: "Pizzeria Azzurro - Arganil"
+      azzurro_explanation_html: "A 10 minutes de notre Vivenda: <br>
+        Les propriétaires parlent plusieurs langues: français, allemand, italien et portugais.
+        Cuisine italienne et européenne. <br>
+        Prix: bon marché."
+      sombri_title: "Restaurante Sombrinha do Alva - Secarias"
+      sombri_explanation_html: "A 9 minutes de notre Vivenda: <br>
+      Le long du fleuve Alva. Terrasse recouverte par des vignes super agréable en été.
+      N’hésitez pas à goûter leur “arroz de tamboril”, un plat traditionnel à base de riz et de lotte.
+      Cuisine portugaise et européenne. <br>
+      Prix: moyen. <br> "
+      mira_title: "Praia de Mira - ao longo do oceano Atlântico"
+      mira_explanation_html: "A 1h15 de notre Vivenda:
+      Si vous préférez le bon air de la mer, rejoignez la côte ouest du Portugal, le long de l’océan Atlantique.
+      Plus petite que la station balnéaire de Figueira da Foz, “Praia de Mira” est plus tranquille. Vous pourrez même y voir les pêcheurs travailler le matin. "
+
     about_us:
       picture_alt: "Picture of Gene and Didier, the owners of Vivenda a nossa coroa."
       about_us: "About us"
