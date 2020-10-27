@@ -42,6 +42,10 @@ fr:
       general_alt: "Les bungalows font 70 mètres carrés, avec cuisine équippée, un salon, une salle-à-manger, une salle-de-bain, 2 chambres et deux terrasses"
       kitchen_alt: "Tous les bungalows ont une cuisine équipée"
       vivenda_alt: "Notre vivenda se situe au centre du Portugal, une belle région avec beaucoup d'activités pour les amoureux de la nature. Aussi bien pour les enfants que les adultes"
+      # Text in carousel 
+      picture_one_html: "Locations de vacances avec piscine <br>- centre du Portugal -"
+      picture_two_html: "Hors des sentiers battus | Région authentique | Tourisme rural"
+      picture_three_html: "Proche de la nature | Loin du tourisme de masse | Calme et détente"
       # Text within waterfall
       domain: "Notre domaine"
       domain_explanation_html: "Petite structure de 3 <em>BUNGALOWS DE VACANCES</em> (plus 1 que nous occupons), situés côtes à côtes, dans le centre verdoyant du Portugal; avec <em>PISCINE</em> commune, et proche de <em>PLAGES FLUVIALES</em> - plages de sable aménagées le long des fleuves.
