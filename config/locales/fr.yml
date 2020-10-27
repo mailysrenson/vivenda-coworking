@@ -48,6 +48,7 @@ fr:
       picture_three_html: "Proche de la nature | Loin du tourisme de masse | Calme et détente"
       # Text within waterfall
       domain: "Notre domaine"
+
       domain_explanation_html: "Petite structure de 3 <em>BUNGALOWS DE VACANCES</em> (plus 1 que nous occupons), situés côtes à côtes, dans le centre verdoyant du Portugal; avec <em>PISCINE</em> commune, et proche de <em>PLAGES FLUVIALES</em> - plages de sable aménagées le long des fleuves.
       Domaine situé au calme, en pleine nature, à 5 minutes du charmant petit village de Côja, à 55 minutes de la ville historique de Coimbra et à 1h45 de l’aéroport de Porto.
       Bungalows 2 chambres max 5 personnes, <em>TOUT EQUIPES</em>, spacieux et confortables !! <br><br>
@@ -59,9 +60,88 @@ fr:
       vivenda_explanation_html: "La vivenda se trouve au centre du Portugal, une magnifique région pour les amoureux de la nature. <br>
       Pendant votre séjour, découvrez les superbes 'Praia fluvials' portugaises, de chouettes plages aménagées, faites un tour en kayak sur le Mondego et allez vous promener dans la Sierra da Estrella."
 
+      santaComba_title: "Eco-Pista do Dão - ciclovia de Viseu a Santa Comba Dão"
+      santaComba_explanation_html: "A 30 minutes de notre Vivenda:
+      Cette ancienne ligne de chemin de fer a été convertie en belle piste cyclable (ou aussi pédestre).
+      Parcourez tranquillement, quasi uniquement en pente douce, 20, 30 ou 47 km tout en découvrant des paysages magnifiques. On en prend plein les yeux et plein les jambes. Difficulté: facile."
+      kayak_title: "O pioneiro do Mondego - descida do rio em kayak"
+      kayak_explanation_html: "A 35 minutes de notre Vivenda:
+      Descente (18 ou 25 km) du “rio Mondego” de Penacova à Coimbra en kayak. Combinez l’aventure, la nature et les sport. Difficulté: facile. "
+      casca_title: "Praia fluvial da Cascalheira - Secarias"
+      casca_explanation_html: "A 9 minutes de notre Vivenda:
+      La plage fluviale de Secarias (plage de sable aménagée) est située sur le fleuve Alva et s’insère dans une région très boisée par des aulnes, ce qui rend l’endroit très ombragé et agréable lors des chaudes journées estivales.
+      Les plages fluviales sont idéales pour ceux qui recherchent un endroit rafraîchissant avec de l’eau douce et calme, dans un cadre verdoyant et entouré de forêts."
+      estrella_title: "Lagoa Covao dos Conchos - Serra da Estrela"
+      estrella_explanation_html: "A 1 heure de notre Vivenda:
+      Un de nos coups de coeur !
+      Superbe balade d'environ 10km (aller-retour) au départ du lac 'Lagoa Comprido' jusqu'au trou sans fond du lac 'Covao dos Conchos', confortablement blotti dans la réserve naturelle de la  'Serra da Estrela'. Difficulté modérée.
+      Pour les amateurs de nature et de grands espaces. Les paysages sont à couper le souffle. "
+      fraga_title: "Cascata da Fraga da Pena"
+      fraga_explanation_html: "A 25 minutes de notre Vivenda:
+      Chute d’eau de montagne, se trouvant près du village de Benfeita dans la 'serra do Açor'.
+      La pente de la cascade atteint 19 mètres de hauteur. L’eau, d’une pureté incroyable, est cependant très fraîche. Pour les moins frileux, il y a toutefois des zones pour se baigner.
+      Pour les plus sportifs, un sentier pédestre balisé part du village de Benfeita et passe par différentes petites cascades."
+      cabriz_title:
+      cabriz_explanation_html:
+      caminhos_title:
+      caminhos_explanation_html:
+      lemos_title:
+      lemos_explanation_html:
+      rio_title: "Praia fluvial do Caneiro de Côja"
+      rio_explanation_html: "A 5 minutes de notre Vivenda: <br>
+      La plage fluviale de Coja (plage de sable aménagée) est située sur le fleuve Alva et entourée de saules, peupliers et salguerinhas.
+      Les plages fluviales sont idéales pour passer des vacances différentes en pleine nature, avec des baignades dans les eaux calmes et douces des rivières pour échapper à la chaleur estivale."
+      baloico_title: "Baloiço da Carriça - Alqueve"
+      baloico_explanation_html: "A 15 minutes de notre Vivenda: <br>
+      Les balançoires sont la grande tendance 2020 au Portugal. Nous avons depuis cet été une balançoire juste au-dessus de chez nous, dans la “serra do Açor”.
+      Une belle façon originale de prendre en photo un superbe point de vue. Et pourquoi pas également en profiter pour admirer un magnifique coucher de soleil !"
+      coimbra_title: "Cidade histórica de Coimbra"
+      coimbra_explanation_html: " A 55 minutes de notre Vivenda: <br>
+      Coimbra est accrochée à une colline et surplombe le “rio Mondego”. Moins connue que Lisbonne et Porto, elle vaut pourtant franchement le détour ! Son centre historique est plein de charme.
+      C’est à Coimbra que fut construite la première université du Portugal. Elle compte parmi les plus anciennes d’Europe. Une des visites à ne surtout pas manquer est d’ailleurs sa bibliothèque “Joanina”.
+      Le fado de Coimbra est certainement la musique qui marque le rythme du cœur de la ville des étudiants. Il est régulièrement chanté dans des petits cafés et dans l’église."
+      aveiro_title: "Cidade de Aveiro"
+      aveiro_explanation_html: "A 1h15 de notre Vivenda: <br>
+      La petite Venise Portugaise !
+      Aveiro est traversée par un réseau de canaux, sur lesquels circulent les “barcos moliceiros”, bateaux traditionnels propres à la région, aux formes élancées et décorés de couleurs vives, souvent de façon humoristique, qui servaient autrefois à ramasser les algues. Aujourd’hui, ces embarcations sont utilisées pour les promenades touristiques sur les canaux.
+      Promenez-vous à pied le long des canaux et découvrez la ville et son architecture style “Art nouveau”. Pour ceux qui préfèrent pédaler, des vélos, appelés “bugas” , sont mis gratuitement à disposition."
+      costa_title: "Praia da Costa Nova"
+      costa_explanation_html: "A 1h30 de notre Vivenda: <br>
+      Étendue de plage de sable connue pour ses maisons à rayures de couleurs vives, avec promenade et dunes. A 15 minutes seulement d’Aveiro, ça vaut la peine de faire le détour !"
+      piodao_title: "Aldeia pitoresca de Piodão"
+      piodao_explanation_html: "A 45 minutes de notre Vivenda: <br>
+      Magnifique petit village typique de montagne plein de charme, situé au pied de la “serra do Açor”. Ses maisons, faites de schiste et d’ardoises, sont situées en amphithéâtre dans la colline.
+      Prenez le temps de déambuler dans ses petites ruelles étroites et escarpées."
+      egua_title: "Zona de lazer de Foz d’Egua"
+      egua_explanation_html: "A 55 minutes de notre Vivenda: <br>
+      Foz d’Egua est une merveille cachée dans le “serra do Açor”, à environ 10 minutes de Piodão. Un lieu incontournable !
+      Cette piscine fluviale naturelle est un petit coin de paradis au beau milieu de la nature. "
+      alva_title: "Restaurante Principe do Alva - Coja"
+      alva_explanation_html: " A 5 minutes de notre Vivenda: <br>
+        Un des meilleurs restaurants de la région ! Bonne cuisine, beau cadre et belle vue.
+        Cuisine portugaise et européenne. <br>
+        Prix: moyen. "
+      azzurro_title: "Pizzeria Azzurro - Arganil"
+      azzurro_explanation_html: "A 10 minutes de notre Vivenda: <br>
+        Les propriétaires parlent plusieurs langues: français, allemand, italien et portugais.
+        Cuisine italienne et européenne. <br>
+        Prix: bon marché."
+      sombri_title: "Restaurante Sombrinha do Alva - Secarias"
+      sombri_explanation_html: "A 9 minutes de notre Vivenda: <br>
+      Le long du fleuve Alva. Terrasse recouverte par des vignes super agréable en été.
+      N’hésitez pas à goûter leur “arroz de tamboril”, un plat traditionnel à base de riz et de lotte.
+      Cuisine portugaise et européenne. <br>
+      Prix: moyen. <br> "
+      mira_title: "Praia de Mira - ao longo do oceano Atlântico"
+      mira_explanation_html: "A 1h15 de notre Vivenda:
+      Si vous préférez le bon air de la mer, rejoignez la côte ouest du Portugal, le long de l’océan Atlantique.
+      Plus petite que la station balnéaire de Figueira da Foz, “Praia de Mira” est plus tranquille. Vous pourrez même y voir les pêcheurs travailler le matin. "
+
+
     about_us:
       picture_alt: "Picture of Gene and Didier, les propriétaires de Vivenda a nossa coroa."
       about_us: "A propos"
+
       about_us_description_html: "Couple belge et agents de voyages en Belgique pendant 25 ans, début 2020, nous avons décidé de tout quitter et d’accomplir notre rêve de partir vivre et travailler à l’étranger ! Etant dans le domaine du tourisme depuis toujours, il allait de soi que nous désirions continuer dans cette voie-là, quand nous avons eu un coup de coeur pour cette “Vivenda” à vendre.
 En ce qui nous concerne, nous sommes directement tombés sous le charme du centre du Portugal et sommes persuadés que vous aussi vous y sentirez comme chez vous au vu de l’accueil chaleureux des locaux, de la nature verdoyante et des magnifiques paysages dont regorge cette région du pays.
 Notre expérience en voyages nous permettra également de vous faire passer le meilleur séjour qui soit dans notre “Guest House”. Qu’il s’agisse de l’accueil à votre arrivée, des différents services pendant votre séjour, des renseignements sur ce qu’il y a à faire dans les environs,… nous serons là pour vous accompagner vu que nous vivons sur place.
