@@ -43,8 +43,11 @@ calendar.addEventListener('click', ($event) => {
         i += 1
       }
     }
-        let rangeDiv = document.querySelector("#arrival-date");
+  }
+    
+    let rangeDiv = document.querySelector("#arrival-date");
     let range = rangeDiv.getAttribute('value')
+    console.log(`Range ${range}`)
     let dateSeparator = range.split(" to ");
     let dateArrival = dateSeparator[0]
     let dateDeparture = dateSeparator[1]
@@ -52,8 +55,6 @@ calendar.addEventListener('click', ($event) => {
     arrivalInput.setAttribute("value", dateArrival);
     let departureInput = document.querySelector("#departure-date-input");
     departureInput.setAttribute("value", dateDeparture);
-
-    }
   });
 };
 
