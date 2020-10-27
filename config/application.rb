@@ -21,7 +21,7 @@ module VivendaCoworking
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    config.i18n.available_locales = [:en, :fr, :pt]
+    config.i18n.available_locales = [:en, :fr, :pt, :nl]
     config.i18n.default_locale = :en
     config.i18n.fallbacks = true
   end
