@@ -25,9 +25,10 @@
           <%= t('global.navbar.book') %>
           <% end %>
           <div class="dropdown-divider"></div>
-          <%= link_to 'EN', root_path(locale: :en), class: "nav-item nav-link dropdown-item d-inline padding-drop"%>
-          <%= link_to 'FR', root_path(locale: :fr), class: "nav-item nav-link dropdown-item d-inline padding-drop"%>
-          <%= link_to 'PT', root_path(locale: :pt), class: "nav-item nav-link dropdown-item d-inline padding-drop"%>
+          <%= link_to 'EN', url_for(locale: :en), class: "nav-item nav-link dropdown-item d-inline padding-drop", style:"padding: 0.5rem;"%>
+          <%= link_to 'FR', url_for(locale: :fr), class: "nav-item nav-link dropdown-item d-inline padding-drop", style:"padding: 0.5rem;"%>
+          <%= link_to 'PT', url_for(locale: :pt), class: "nav-item nav-link dropdown-item d-inline padding-drop", style:"padding: 0.5rem;"%>
+          <%= link_to 'NL', url_for(locale: :nl), class: "nav-item nav-link dropdown-item d-inline padding-drop", style:"padding: 0.5rem;"%>
         </div>
       </div>
         <div class="title-center">

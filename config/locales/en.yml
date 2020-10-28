@@ -42,23 +42,106 @@ en:
       general_alt: "The bungalows are 70m² big, with a kitchen, living room, eating room, a bathroom, 2 bedrooms and two terrasses"
       kitchen_alt: "All the bungalows have a fully equipped kitchen"
       vivenda_alt: "The vivenda is located in the center of Portugal, a beautiful region with lots of activities"
+      # Text in carousel 
+      picture_one_html: "Holiday rental with swimming pool <br>- center of Portugal -"
+      picture_two_html: "Off the beaten track | Authentic region | Rural tourism"
+      picture_three_html: "Surrounded by nature | Far from mass tourism | Calm and relaxation"
       # Text within waterfall
       domain: "The domain"
-      domain_explanation_html: "Our « Vivenda » is a small structure including 4 bungalows/houses (what we call the casas): 3 of which can be rented as holiday rentals and 1 which is occupied by ourselves. The bungalows are next to each other and have been built in 2007, on a domain of 1 hectare of nature. <br>
-      Our bungalows all have big windows so that you can enjoy the view of the nature and the mountains. <br><br>
-      Our domain is the perfect solution for families and/or bigger groups of people. You can rent 1, 2 or 3 casas depending on your needs. <br><br>
-      The location of our vivenda is perfect to avoid the bad weather of Northern Europe. All the shops, bars and restaurants are open all year long. <br><br>
-      Our 3 bungalows all have the same amenities, but are decorated in different themes. "
+      domain_explanation_html: "Small structure consisting of 3 <em>HOLIDAY BUNGALOWS</em> (plus one where we live ourselves), next to each other, in the green heart of Portugal; with a shared <em>SWIMMING POOL</em>, and close to many <em>RIVER BEACHES</em> - developed beaches on the riversides.
+      The domain is located in the middle of the nature, at 5 minutes of the charming village of Coja, at 55 minutes of the historical city of Coimbra and 1h45 of Porto airport.
+      The bungalows each have 2 bedrooms and can accomodate a maximum of 5 people. They are <em>FULLY EQUIPPED</em>, spacious and comfortable!! <br><br>
+      The bungalows can be rented seperately, or the domain in its entirety. Therefore, the domain is perfect for couples, groups and even big families.
+      The central location of the Vivenda, halfway between the sea and the mountains, offers plenty of activities for adults and children (sports, nature, hiking, charming villages, historical villages, etc.).<br><br>
+      <em>In the middle of nature | Far from mass tourism | Off the beaten path | Authentic region | Rural tourism | Calm and relaxing | Refreshing</em>"
       # Text within map of activities
       vivenda_title: "Bem vindo a Vivenda a Nossa Coroa"
       vivenda_explanation_html: "The vivenda is located in the center of Portugal, a beautiful region for nature lovers. <br>
       During your stay, make sure to visit some of the 
       beautiful Praia fluvials (river beaches), to do a kayak tour or to walk around in the Sierra da Estrella"
+      santaComba_title: "Eco-Pista do Dão - ciclovia de Viseu a Santa Comba Dão"
+      santaComba_explanation_html: "30 minutes from the Vivenda:<br>
+      This old railway has been turned into a beautiful cycling path. 
+      You have the choice between cycling tours of 20, 30 or 47km (almost exclusively on a slight slope) to discover amazing landscapes.<br>
+      Difficulty level is quite easy."
+      kayak_title: "O pioneiro do Mondego - descida do rio em kayak"
+      kayak_explanation_html: "35 minutes from the Vivenda:<br>
+      Kayaking tour (18 or 25 km) on the 'rio Mondego', from Penacova to Coimbra. Combine adventure, nature and sports.<br>
+      Difficulty level: easy"
+      casca_title: "Praia fluvial da Cascalheira - Secarias"
+      casca_explanation_html: "9 minutes from the Vivenda:<br>
+      The river beach of Secarias is located on the riverside of the Alva river. The river beach is surrounded by nature, which makes it the place to be on a hot summer day.
+      River beaches are the perfect solution for people looking for a place to relax with fresh water."
+      estrella_title: "Lagoa Covao dos Conchos - Serra da Estrela"
+      estrella_explanation_html: "1 hour from the Vivenda:<br>
+      Our favourite place in the neighbourhood!<br>
+      Stunning hike of approximately 10km (back and forth), departing from the lace 'Lagoa Comprido' until the black hole of the lake 'Covao dos Conchos'.<br>
+      Highly recommended for nature lovers.<br>
+      Difficulty level: moderate"
+      fraga_title: "Cascata da Fraga da Pena"
+      fraga_explanation_html: "25 minutes from the Vivenda:
+      This 19m cascade is located nearby the Benfeita village in the 'serra do Açor'.<br>
+      The water is cristal clear and there are even some zones where you can swim (if you are not afraid of cold water).<br>
+      For the sportive people among us, there is also a hiking route starting from the Benfeita village and passing through the different cascades."
+      cabriz_title: 
+      cabriz_explanation_html:
+      caminhos_title:
+      caminhos_explanation_html:
+      lemos_title:
+      lemos_explanation_html:
+      rio_title: "Praia fluvial do Caneiro de Côja"
+      rio_explanation_html: "5 minutes from the Vivenda: <br>
+      The river beach of Coja is located on the riverside of the Alva river and is surrounded by nature.
+      River beaches are the perfect solution for people looking for a place to relax with fresh water."
+      baloico_title: "Baloiço da Carriça - Alqueve"
+      baloico_explanation_html: "15 minutes from the Vivenda: <br>
+      Swings are very popular in Portugal. There is one just down our Vivenda, in the 'serra do Açor'.
+      This is an original way to photograph the amazing view points of Portugal, or to admire a beautiful sunset."
+      coimbra_title: "Cidade histórica de Coimbra"
+      coimbra_explanation_html: "55 minutes from the Vivenda: <br>
+      Although Coimbra is less famous than Porto or Lisbon, the visit is really worth it! The historical center is extremely charming.
+      The first university of Portugal was built in Coimbra, this university is also one of the oldest universities of Europe. One of the must see's in Coimbra is definitely its library 'Joanina'.<br>"
+      aveiro_title: "Cidade de Aveiro"
+      aveiro_explanation_html: "1h15 from the Vivenda: <br>
+      Aveiro's surname is 'The Venice of Portugal'!<br>
+      Enjoy a stroll in this charming city and discover their traditional boats offering tours of the canal, the 'barcos moliceiros' and Aveiro's 'Art Nouveau' architecture. For those who prefer to bike, free bicycles are at your disposal."
+      costa_title: "Praia da Costa Nova"
+      costa_explanation_html: "1h30 from the Vivenda: <br>
+      This beach is famous for its striped houses with vivid colors. As it is only 15 minutes away from Aveiro, it's worth the detour."
+      piodao_title: "Aldeia pitoresca de Piodão"
+      piodao_explanation_html: "45 minutes from the Vivenda: <br>
+      Charming little mountain village, on the bottom of the 'serra do Açor'. The houses are made of shale and slates and are disposed like in an amphitheater in the mountain.
+      Take some time to walk around in the narrow streets of Piodão."
+      egua_title: "Zona de lazer de Foz d’Egua"
+      egua_explanation_html: "55 minutes from the Vivenda: <br>
+      Foz d’Egua is a hidden wonder of 'serra do Açor', and is only 10 minutes from Piodão. A must see!
+      This natural river beach is a small paradise in the middle of the nature."
+      alva_title: "Restaurante Principe do Alva - Coja"
+      alva_explanation_html: "5 minutes from the Vivenda: <br>
+        One of the best restaurants in the region! Good cuisine, cosy atmosphere and beautiful view.<br>
+        Portuguese and European cuisine. <br>
+        Price: moderate. "
+      azzurro_title: "Pizzeria Azzurro - Arganil"
+      azzurro_explanation_html: "10 minutes from the Vivenda: <br>
+        The owners speak multiple languages: French, German, Italian and Portuguese.<br>
+        Italian and European cuisine. <br>
+        Price: inexpensive."
+      sombri_title: "Restaurante Sombrinha do Alva - Secarias"
+      sombri_explanation_html: "9 minutes from the Vivenda: <br>
+      On the riverside of the Alva river. The terrasse is covered by grapevines, which makes it a very nice place in the summer.<br>
+      Try their 'arroz de tamboril', a traditional dish with rice and monkfish.<br>
+      Portuguese and European cuisine. <br>
+      Price: moderate. <br> "
+      mira_title: "Praia de Mira - ao longo do oceano Atlântico"
+      mira_explanation_html: "1h15 from the Vivenda:<br>
+      If you prefer the fresh sea air, you can easily reach the west-coast of Portugal, along the Atlantic Ocean.
+      'Praia de Mira' is a calmer beach than Figueira da Foz. In the morning, you can even spot some fishermen working."
+      # stopped here
     about_us:
       picture_alt: "Picture of Gene and Didier, the owners of Vivenda a nossa coroa."
       about_us: "About us"
-      about_us_description_html: "Belgian couple, both travel agents for 25 years, we decided to leave everything behind and follow our dream of living abroad. Since we both worked in the touristic sector, it followed naturally to continue in this sector. We fell in love with this “Vivenda” in the green heart of Portugal and went for it… <br><br>
-      The center of Portugal has many activities for nature lovers, from kayaking on the Mondego, to walking on the Serra da Estrella. Although we are not located near the sea, Portugal has plenty of “Praia fluvia”, river beaches. 
+      about_us_description_html: "Belgian couple, both travel agents in Belgium for 25 years, we decided to leave everything behind and follow our dream of living abroad in the beginning of 2020. Since we both worked in the touristic sector, it followed naturally to continue in this sector. We fell in love with this 'Vivenda' in the green heart of Portugal and went for it… <br><br>
+      The center of Portugal offers many activities for nature lovers, from kayaking on the Mondego, to walking on the Serra da Estrella and simply watching. Although we are not located near the sea, Portugal has plenty of “Praia fluvia”, river beaches. 
       We fell in love with this part of Portugal and we are convinced that you would feel at home instantly as well. 
       <br><br>So, see you soon we hope? 
       <br><br>Gene & Didier"
@@ -78,26 +161,26 @@ en:
       high_season: "High season"
       period_high: "From 01/07 until 31/08"
       price_week_high_html: "<strong>695€/</strong> week"
-      payment_html: "<strong>L’acompte est de 40% à la réservation et le solde est à payer 6 semaines avant l’arrivée.</strong>
-            Votre réservation n’est prise en compte qu’après réception de votre paiement.
+      payment_html: "<strong>A 40% deposit is requested at the time of reservation. The remaining balance is due 6 weeks before the arrival.</strong>
+            Your booking is only confirmed once we received your deposit.
             <br><br>
-            <strong>Jours d’arrivées et de départs:</strong> arrivées et départs libres (min 7 nuits en juillet/août et min 3 nuits aux autres périodes).
+            <strong>Arrival and departure days:</strong> free to choose (min stay of 3 nights, except for in July and August where the min stay is 7 nights).
             <br><br>
-            Les arrivées le 1er jour sont prévues entre 15h et 20h. Si vous arrivez plus tôt, vous pouvez déjà utiliser les parties communes. Les départs le dernier jour se font pour 10h.
+            Arrivals between 15h and 20h. If you arrive earlier, you can already use the common area's. On the last day, the bungalows need to be left by 10h in the morning.
             <br><br>
-            <strong>Les prix comprennent:</strong> les serviettes de bain et de piscine, les draps de lit (lits faits à l’arrivée), le linge de cuisine, le bois pour le poêle (de novembre à mars), l’eau et l’électricité, la tva.
+            <strong>The prices include:</strong> bath and swimming towels, bed linen (beds are made upon arrival), kitchen linen, wood for the stove (from November until March), water and electricity, WIFI, VAT.
             <br><br>
-            <strong>Les prix ne comprennent pas:</strong> les repas, les boissons, les assurances (annulation, assistance,…) et les éventuelles taxes de séjour.
+            <strong>The prices don't include:</strong> meals, refreshments, insurance (cancellation, emergency travel insurance,…) and potential tourist taxes.
             <br><br>
-            <strong>Nettoyage final (obligatoire):</strong> 50 € à payer sur place.
+            <strong>Final cleaning (mandatory):</strong> 50 € to be paid on the spot.
             <br><br>
-            Selon disponibilités et sur réservation (gratuit): lit bébé, chaise bébé.
+            Subject to availability and upon booking (for free): baby bed and chair.
             <br><br>
-            Sur demande et sous certaines conditions (gratuit): petits animaux de compagnie. Sauf en juillet/août.
+            On request and under certain conditions (for free): small pets. Except in July and August.
             <br><br>
-            Les bungalows sont totalement non fumeurs.
+            The bungalows are completely non-smoking.
             <br><br>
-            <strong>Conditions d’annulation:</strong> jusqu’à 6 semaines avant votre arrivée, 40% de frais d’annulation. Moins de 6 semaines avant votre arrivée, 100% de frais d’annulation. Nous vous conseillons donc de souscrire à une assurance annulation."
+            <strong>Cancellation policy:</strong> until 6 weeks before arrival, 40% cancellation fee. Less than 6 weeks before arrival, 100% cancellation fee. Therefore, we advise you to subscribe to a cancellation insurance."
 
 
 

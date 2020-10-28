@@ -1,14 +1,14 @@
-fr:
+nl:
   global: #to use this full notation needs to be used as we don't use existing routes (global.navbar.test)
     navbar:
-      home: "Accueil"
-      about_us: "A propos"
-      book: "Réserver"
-      rates: "Tarifs"
+      home: "Homepage"
+      about_us: "Wie zijn wij"
+      book: "Boeken"
+      rates: "Tarief"
 
   booking_mailer:
     new_booking:
-      email_text_html: "Bonjour %{first_name}, <br><br> Nous confirmons la bonne réception de votre demande de réservation du %{arrival_date} au %{departure_date}.
+      email_text_html: "Beste %{first_name}, <br><br> Nous confirmons la bonne réception de votre demande de réservation du %{arrival_date} au %{departure_date}.
       <br><br>Nous revenons vers vous dans les 24h pour confirmer si nous avons bien une casa de libre pour cette période."
       email_text: "Bonjour %{first_name},
       Nous confirmons la bonne réception de votre demande de réservation du %{arrival_date} au %{departure_date}.
@@ -143,9 +143,9 @@ fr:
       about_us: "A propos"
 
       about_us_description_html: "Couple belge et agents de voyages en Belgique pendant 25 ans, début 2020, nous avons décidé de tout quitter et d’accomplir notre rêve de partir vivre et travailler à l’étranger ! Etant dans le domaine du tourisme depuis toujours, il allait de soi que nous désirions continuer dans cette voie-là, quand nous avons eu un coup de coeur pour cette “Vivenda” à vendre.
-      En ce qui nous concerne, nous sommes directement tombés sous le charme du centre du Portugal et sommes persuadés que vous aussi vous y sentirez comme chez vous au vu de l’accueil chaleureux des locaux, de la nature verdoyante et des magnifiques paysages dont regorge cette région du pays.
-      Notre expérience en voyages nous permettra également de vous faire passer le meilleur séjour qui soit dans notre “Guest House”. Qu’il s’agisse de l’accueil à votre arrivée, des différents services pendant votre séjour, des renseignements sur ce qu’il y a à faire dans les environs,… nous serons là pour vous accompagner vu que nous vivons sur place.
-      Etes-vous prêts à découvrir le Portugal autrement, hors des sentiers battus et loin du tourisme de masse ?
+En ce qui nous concerne, nous sommes directement tombés sous le charme du centre du Portugal et sommes persuadés que vous aussi vous y sentirez comme chez vous au vu de l’accueil chaleureux des locaux, de la nature verdoyante et des magnifiques paysages dont regorge cette région du pays.
+Notre expérience en voyages nous permettra également de vous faire passer le meilleur séjour qui soit dans notre “Guest House”. Qu’il s’agisse de l’accueil à votre arrivée, des différents services pendant votre séjour, des renseignements sur ce qu’il y a à faire dans les environs,… nous serons là pour vous accompagner vu que nous vivons sur place.
+Etes-vous prêts à découvrir le Portugal autrement, hors des sentiers battus et loin du tourisme de masse ?
       <br><br>A bien vite alors,
       <br><br>Gene & Didier"
 
@@ -171,7 +171,7 @@ fr:
             <br><br>
             Les arrivées le 1er jour sont prévues entre 15h et 20h. Si vous arrivez plus tôt, vous pouvez déjà utiliser les parties communes. Les départs le dernier jour se font pour 10h.
             <br><br>
-            <strong>Les prix comprennent:</strong> les serviettes de bain et de piscine, les draps de lit (lits faits à l’arrivée), le linge de cuisine, le bois pour le poêle (de novembre à mars), l’eau et l’électricité, le WIFI, la tva.
+            <strong>Les prix comprennent:</strong> les serviettes de bain et de piscine, les draps de lit (lits faits à l’arrivée), le linge de cuisine, le bois pour le poêle (de novembre à mars), l’eau et l’électricité, la tva.
             <br><br>
             <strong>Les prix ne comprennent pas:</strong> les repas, les boissons, les assurances (annulation, assistance,…) et les éventuelles taxes de séjour.
             <br><br>
@@ -187,36 +187,36 @@ fr:
 
   bookings:
     new:
-      title: "Votre réservation"
-      your_stay: "Période"
-      contact_details: "Vos coordonnées"
-      confirmation: "Confirmation"
-      succes: "Nous avons bien enregistré votre demande"
-      success_explanation_html: "Nous revenons vers vous dans les 24h pour confirmer si la période de réservation est libre"
-      button_next: "Suivant"
-      button_previous: "Précédent"
-      confirm: "Confirmer demande"
+      title: "Jouw boeking"
+      your_stay: "Periode"
+      contact_details: "Jouw contactgegevens"
+      confirmation: "Bevestiging"
+      succes: "We hebben jouw aanvraag goed ontvangen"
+      success_explanation_html: "We zullen binnen de 24h bevestigen of we in die periode nog een casa vrij hebben of niet."
+      button_next: "Volgende"
+      button_previous: "Vorige"
+      confirm: "Aanvraag bevestigen"
   activerecord:
     errors:
       models:
         formsubmission:
           attributes:
             email:
-              blank: "Veuillez remplir ce champs"
+              blank: "Gelieve alle velden in te vullen"
     attributes:
       booking:
-        email: "Adresse email"
-        phone: "Numéro de téléphone"
-        adults: "Nombre d'adultes"
-        childrens: "Nombre d'enfants"
-        baby_bed: "Avez-vous besoin d'un lit pour bébé?"
-        street: "Rue et numéro"
-        city: "Ville"
-        zipcode: "Code postal"
-        country: "Pays"
-        comment: "Avez-vous des demandes supplémentaires?"
-        arrival_date: "Date d'arrivée"
-        departure_date: "Date de départ"
-        range_date: "Période de réservation"
+        email: "Emailadres"
+        phone: "Telefoonnummer"
+        adults: "Aantal volwassenen"
+        childrens: "Aantal kinderen"
+        baby_bed: "Heb je een babybedje nodig?"
+        street: "Straat en nummer"
+        city: "Stad"
+        zipcode: "Postcode"
+        country: "Land"
+        comment: "Heb je nog speciale verzoeken?"
+        arrival_date: "Aankomstdatum"
+        departure_date: "Vertrekdatum"
+        range_date: "Boekingsperiode"
 
 
