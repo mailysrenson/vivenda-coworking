@@ -98,53 +98,50 @@ en:
       Swings are very popular in Portugal. There is one just down our Vivenda, in the 'serra do Açor'.
       This is an original way to photograph the amazing view points of Portugal, or to admire a beautiful sunset."
       coimbra_title: "Cidade histórica de Coimbra"
-      # stopped here
-      coimbra_explanation_html: " 55 minutes from the Vivenda: <br>
-      Coimbra est accrochée à une colline et surplombe le “rio Mondego”. Moins connue que Lisbonne et Porto, elle vaut pourtant franchement le détour ! Son centre historique est plein de charme.
-      C’est à Coimbra que fut construite la première université du Portugal. Elle compte parmi les plus anciennes d’Europe. Une des visites à ne surtout pas manquer est d’ailleurs sa bibliothèque “Joanina”.
-      Le fado de Coimbra est certainement la musique qui marque le rythme du cœur de la ville des étudiants. Il est régulièrement chanté dans des petits cafés et dans l’église."
+      coimbra_explanation_html: "55 minutes from the Vivenda: <br>
+      Although Coimbra is less famous than Porto or Lisbon, the visit is really worth it! The historical center is extremely charming.
+      The first university of Portugal was built in Coimbra, this university is also one of the oldest universities of Europe. One of the must see's in Coimbra is definitely its library 'Joanina'.<br>"
       aveiro_title: "Cidade de Aveiro"
-      aveiro_explanation_html: "A 1h15 de notre Vivenda: <br>
-      La petite Venise Portugaise !
-      Aveiro est traversée par un réseau de canaux, sur lesquels circulent les “barcos moliceiros”, bateaux traditionnels propres à la région, aux formes élancées et décorés de couleurs vives, souvent de façon humoristique, qui servaient autrefois à ramasser les algues. Aujourd’hui, ces embarcations sont utilisées pour les promenades touristiques sur les canaux.
-      Promenez-vous à pied le long des canaux et découvrez la ville et son architecture style “Art nouveau”. Pour ceux qui préfèrent pédaler, des vélos, appelés “bugas” , sont mis gratuitement à disposition."
+      aveiro_explanation_html: "1h15 from the Vivenda: <br>
+      Aveiro's surname is 'The Venice of Portugal'!<br>
+      Enjoy a stroll in this charming city and discover their traditional boats offering tours of the canal, the 'barcos moliceiros' and Aveiro's 'Art Nouveau' architecture. For those who prefer to bike, free bicycles are at your disposal."
       costa_title: "Praia da Costa Nova"
-      costa_explanation_html: "A 1h30 de notre Vivenda: <br>
-      Étendue de plage de sable connue pour ses maisons à rayures de couleurs vives, avec promenade et dunes. A 15 minutes seulement d’Aveiro, ça vaut la peine de faire le détour !"
+      costa_explanation_html: "1h30 from the Vivenda: <br>
+      This beach is famous for its striped houses with vivid colors. As it is only 15 minutes away from Aveiro, it's worth the detour."
       piodao_title: "Aldeia pitoresca de Piodão"
-      piodao_explanation_html: "A 45 minutes de notre Vivenda: <br>
-      Magnifique petit village typique de montagne plein de charme, situé au pied de la “serra do Açor”. Ses maisons, faites de schiste et d’ardoises, sont situées en amphithéâtre dans la colline.
-      Prenez le temps de déambuler dans ses petites ruelles étroites et escarpées."
+      piodao_explanation_html: "45 minutes from the Vivenda: <br>
+      Charming little mountain village, on the bottom of the 'serra do Açor'. The houses are made of shale and slates and are disposed like in an amphitheater in the mountain.
+      Take some time to walk around in the narrow streets of Piodão."
       egua_title: "Zona de lazer de Foz d’Egua"
-      egua_explanation_html: "A 55 minutes de notre Vivenda: <br>
-      Foz d’Egua est une merveille cachée dans le “serra do Açor”, à environ 10 minutes de Piodão. Un lieu incontournable !
-      Cette piscine fluviale naturelle est un petit coin de paradis au beau milieu de la nature. "
+      egua_explanation_html: "55 minutes from the Vivenda: <br>
+      Foz d’Egua is a hidden wonder of 'serra do Açor', and is only 10 minutes from Piodão. A must see!
+      This natural river beach is a small paradise in the middle of the nature."
       alva_title: "Restaurante Principe do Alva - Coja"
-      alva_explanation_html: " A 5 minutes de notre Vivenda: <br>
-        Un des meilleurs restaurants de la région ! Bonne cuisine, beau cadre et belle vue.
-        Cuisine portugaise et européenne. <br>
-        Prix: moyen. "
+      alva_explanation_html: "5 minutes from the Vivenda: <br>
+        One of the best restaurants in the region! Good cuisine, cosy atmosphere and beautiful view.<br>
+        Portuguese and European cuisine. <br>
+        Price: moderate. "
       azzurro_title: "Pizzeria Azzurro - Arganil"
-      azzurro_explanation_html: "A 10 minutes de notre Vivenda: <br>
-        Les propriétaires parlent plusieurs langues: français, allemand, italien et portugais.
-        Cuisine italienne et européenne. <br>
-        Prix: bon marché."
+      azzurro_explanation_html: "10 minutes from the Vivenda: <br>
+        The owners speak multiple languages: French, German, Italian and Portuguese.<br>
+        Italian and European cuisine. <br>
+        Price: inexpensive."
       sombri_title: "Restaurante Sombrinha do Alva - Secarias"
-      sombri_explanation_html: "A 9 minutes de notre Vivenda: <br>
-      Le long du fleuve Alva. Terrasse recouverte par des vignes super agréable en été.
-      N’hésitez pas à goûter leur “arroz de tamboril”, un plat traditionnel à base de riz et de lotte.
-      Cuisine portugaise et européenne. <br>
-      Prix: moyen. <br> "
+      sombri_explanation_html: "9 minutes from the Vivenda: <br>
+      On the riverside of the Alva river. The terrasse is covered by grapevines, which makes it a very nice place in the summer.<br>
+      Try their 'arroz de tamboril', a traditional dish with rice and monkfish.<br>
+      Portuguese and European cuisine. <br>
+      Price: moderate. <br> "
       mira_title: "Praia de Mira - ao longo do oceano Atlântico"
-      mira_explanation_html: "A 1h15 de notre Vivenda:
-      Si vous préférez le bon air de la mer, rejoignez la côte ouest du Portugal, le long de l’océan Atlantique.
-      Plus petite que la station balnéaire de Figueira da Foz, “Praia de Mira” est plus tranquille. Vous pourrez même y voir les pêcheurs travailler le matin. "
-
+      mira_explanation_html: "1h15 from the Vivenda:<br>
+      If you prefer the fresh sea air, you can easily reach the west-coast of Portugal, along the Atlantic Ocean.
+      'Praia de Mira' is a calmer beach than Figueira da Foz. In the morning, you can even spot some fishermen working."
+      # stopped here
     about_us:
       picture_alt: "Picture of Gene and Didier, the owners of Vivenda a nossa coroa."
       about_us: "About us"
-      about_us_description_html: "Belgian couple, both travel agents for 25 years, we decided to leave everything behind and follow our dream of living abroad. Since we both worked in the touristic sector, it followed naturally to continue in this sector. We fell in love with this “Vivenda” in the green heart of Portugal and went for it… <br><br>
-      The center of Portugal has many activities for nature lovers, from kayaking on the Mondego, to walking on the Serra da Estrella. Although we are not located near the sea, Portugal has plenty of “Praia fluvia”, river beaches. 
+      about_us_description_html: "Belgian couple, both travel agents in Belgium for 25 years, we decided to leave everything behind and follow our dream of living abroad in the beginning of 2020. Since we both worked in the touristic sector, it followed naturally to continue in this sector. We fell in love with this 'Vivenda' in the green heart of Portugal and went for it… <br><br>
+      The center of Portugal offers many activities for nature lovers, from kayaking on the Mondego, to walking on the Serra da Estrella and simply watching. Although we are not located near the sea, Portugal has plenty of “Praia fluvia”, river beaches. 
       We fell in love with this part of Portugal and we are convinced that you would feel at home instantly as well. 
       <br><br>So, see you soon we hope? 
       <br><br>Gene & Didier"
@@ -164,26 +161,26 @@ en:
       high_season: "High season"
       period_high: "From 01/07 until 31/08"
       price_week_high_html: "<strong>695€/</strong> week"
-      payment_html: "<strong>L’acompte est de 40% à la réservation et le solde est à payer 6 semaines avant l’arrivée.</strong>
-            Votre réservation n’est prise en compte qu’après réception de votre paiement.
+      payment_html: "<strong>A 40% deposit is requested at the time of reservation. The remaining balance is due 6 weeks before the arrival.</strong>
+            Your booking is only confirmed once we received your deposit.
             <br><br>
-            <strong>Jours d’arrivées et de départs:</strong> arrivées et départs libres (min 7 nuits en juillet/août et min 3 nuits aux autres périodes).
+            <strong>Arrival and departure days:</strong> free to choose (min stay of 3 nights, except for in July and August where the min stay is 7 nights).
             <br><br>
-            Les arrivées le 1er jour sont prévues entre 15h et 20h. Si vous arrivez plus tôt, vous pouvez déjà utiliser les parties communes. Les départs le dernier jour se font pour 10h.
+            Arrivals between 15h and 20h. If you arrive earlier, you can already use the common area's. On the last day, the bungalows need to be left by 10h in the morning.
             <br><br>
-            <strong>Les prix comprennent:</strong> les serviettes de bain et de piscine, les draps de lit (lits faits à l’arrivée), le linge de cuisine, le bois pour le poêle (de novembre à mars), l’eau et l’électricité, la tva.
+            <strong>The prices include:</strong> bath and swimming towels, bed linen (beds are made upon arrival), kitchen linen, wood for the stove (from November until March), water and electricity, WIFI, VAT.
             <br><br>
-            <strong>Les prix ne comprennent pas:</strong> les repas, les boissons, les assurances (annulation, assistance,…) et les éventuelles taxes de séjour.
+            <strong>The prices don't include:</strong> meals, refreshments, insurance (cancellation, emergency travel insurance,…) and potential tourist taxes.
             <br><br>
-            <strong>Nettoyage final (obligatoire):</strong> 50 € à payer sur place.
+            <strong>Final cleaning (mandatory):</strong> 50 € to be paid on the spot.
             <br><br>
-            Selon disponibilités et sur réservation (gratuit): lit bébé, chaise bébé.
+            Subject to availability and upon booking (for free): baby bed and chair.
             <br><br>
-            Sur demande et sous certaines conditions (gratuit): petits animaux de compagnie. Sauf en juillet/août.
+            On request and under certain conditions (for free): small pets. Except in July and August.
             <br><br>
-            Les bungalows sont totalement non fumeurs.
+            The bungalows are completely non-smoking.
             <br><br>
-            <strong>Conditions d’annulation:</strong> jusqu’à 6 semaines avant votre arrivée, 40% de frais d’annulation. Moins de 6 semaines avant votre arrivée, 100% de frais d’annulation. Nous vous conseillons donc de souscrire à une assurance annulation."
+            <strong>Cancellation policy:</strong> until 6 weeks before arrival, 40% cancellation fee. Less than 6 weeks before arrival, 100% cancellation fee. Therefore, we advise you to subscribe to a cancellation insurance."
 
 
 
