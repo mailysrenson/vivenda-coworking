@@ -113,7 +113,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-    address: "ssl0.ovh.net",
+    address: "mail.gandi.net",
     port: 587,
     authentication: "plain",
     enable_starttls_auto: true,
