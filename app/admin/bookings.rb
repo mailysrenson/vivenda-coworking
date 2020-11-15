@@ -105,7 +105,8 @@ ActiveAdmin.register Booking do
       f.input :city
       f.input :zipcode
       f.input :country
-      f.input :language
+      f.label :special_status
+      f.collection_select :special_status, Booking::SPECIAL, :to_s, :to_s
       f.label :state
       f.collection_select :state, Booking::STATE, :to_s, :to_s
       f.input :comment

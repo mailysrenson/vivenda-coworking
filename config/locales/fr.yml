@@ -218,6 +218,7 @@ fr:
         zipcode: "Code postal"
         country: "Pays"
         comment: "Avez-vous des demandes supplémentaires?"
+        special_status: "Statut spécial"
         arrival_date: "Date d'arrivée"
         departure_date: "Date de départ"
         range_date: "Période de réservation"
