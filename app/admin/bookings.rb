@@ -2,10 +2,14 @@ ActiveAdmin.register Booking do
   actions :all, :except => :destroy
   scope :pending
   scope :deposit_requested
-  scope :confirmed
+  scope :confirmed_waiting_for_payment
+  scope :confirmed_and_paid
   scope :closed
   scope :refund_pending
   scope :cancelled
+  scope :clients
+  scope :famille
+  scope :maintenance
 
   controller do
     def permitted_params
@@ -39,20 +43,32 @@ ActiveAdmin.register Booking do
     redirect_to admin_booking_path(booking)
     end
 
-    action_item :booking_confirm, only: :show,
+    action_item :booking_confirm_wait_for_payment, only: :show,
     if: proc{booking.state == 'waiting_for_deposit'}  do
-    link_to 'Acompte reçu', booking_confirm_admin_booking_path(booking), method: :put
+    link_to 'Acompte reçu', booking_confirm_wait_for_payment_admin_booking_path(booking), method: :put
     end
 
-    member_action :booking_confirm, method: :put  do
+    member_action :booking_confirm_wait_for_payment, method: :put  do
     booking = Booking.find(params[:id])
-    booking.confirm!
+    booking.confirm_wait_for_payment!
+    booking.save!
+    redirect_to admin_booking_path(booking)
+    end
+
+    action_item :booking_confirm_and_paid, only: :show,
+    if: proc{booking.state == 'confirmed_waiting_for_payment'}  do
+    link_to 'Paiement finalisé', booking_confirm_and_paid_admin_booking_path(booking), method: :put
+    end
+
+    member_action :booking_confirm_and_paid, method: :put  do
+    booking = Booking.find(params[:id])
+    booking.confirm_and_paid!
     booking.save!
     redirect_to admin_booking_path(booking)
     end
 
     action_item :booking_close, only: :show,
-    if: proc{booking.state == 'confirmed'}  do
+    if: proc{booking.state == 'confirmed_and_paid'}  do
     link_to 'Clôturer la réservation', booking_close_admin_booking_path(booking), method: :put
     end
 
@@ -105,7 +121,8 @@ ActiveAdmin.register Booking do
       f.input :city
       f.input :zipcode
       f.input :country
-      f.input :language
+      f.label :special_status
+      f.collection_select :special_status, Booking::SPECIAL, :to_s, :to_s
       f.label :state
       f.collection_select :state, Booking::STATE, :to_s, :to_s
       f.input :comment
@@ -119,6 +136,7 @@ ActiveAdmin.register Booking do
     column :arrival_date
     column :departure_date
     column :state
+    column :special_status
     actions
   end
   # See permitted parameters documentation:
