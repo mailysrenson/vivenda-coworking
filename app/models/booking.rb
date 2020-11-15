@@ -9,6 +9,9 @@ class Booking < ApplicationRecord
   scope :closed, ->{where(state: :closed)}
   scope :refund_pending, ->{where(state: :refund_pending)}
   scope :cancelled, ->{where(state: :cancelled)}
+  scope :famille, ->{where(special_status: "Famille")}
+  scope :clients, ->{where(special_status: "Aucun")}
+  scope :maintenance, ->{where(special_status: "Maintenance")}
 
   STATE = ['pending', 'waiting_for_deposit', 'confirmed', 'refund_pending', 'cancelled', 'denied', 'closed']
   SPECIAL = ['Aucun', 'Famille', 'Maintenance']

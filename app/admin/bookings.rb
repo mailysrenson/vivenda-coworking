@@ -6,6 +6,9 @@ ActiveAdmin.register Booking do
   scope :closed
   scope :refund_pending
   scope :cancelled
+  scope :clients
+  scope :famille
+  scope :maintenance
 
   controller do
     def permitted_params
