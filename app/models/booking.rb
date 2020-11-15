@@ -2,6 +2,7 @@ class Booking < ApplicationRecord
 
   validates :last_name, :first_name, :email, :phone, :adults, :childrens, :arrival_date, :departure_date, :street, :city, :zipcode, :country, presence: true
   validates :adults, :childrens, inclusion: { in: (0..5).to_a}
+  
   scope :pending, ->{where(state: :pending)}
   scope :deposit_requested, ->{where(state: :waiting_for_deposit)}
   scope :confirmed_and_paid, ->{where(state: :confirmed_and_paid)}

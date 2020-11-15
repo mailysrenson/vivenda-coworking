@@ -89,34 +89,25 @@
   </div>
 
 
-  <!-- Pictures -->
-  <div class="container" style="transform: translate(0.0% , 0%);">
-    <div class="my-grid-1" id="waterfall-container">
-      <div class="item">
-        <div class="card card-position" style="border: none;">
-          <%= image_tag 'domain.JPG', class:"card-img-waterfall", alt:"#{t('.domain_alt')}"%>
-        </div>
-      </div>
+  <!-- First grid of pictures -->
+  <div class="container-waterfall">
+    <div class="one">
+      <%= image_tag 'domain.JPG', class:"img-waterfall", alt:"#{t('.domain_alt')}"%>
+    </div>
+    <div class="two">
+      <%= image_tag 'casas.JPG', class:"img-waterfall", alt:"#{t('.casas_alt')}"%>
+    </div>
 
-      <div class="item">
-        <div class="card card-position" style="border: none;">
-          <%= image_tag 'casas.JPG', class:"card-img-waterfall", alt:"#{t('.casas_alt')}"%>
-        </div>
-      </div>
+    <div class="three">
+      <%= image_tag 'swimming_pool.jpg', class:"img-waterfall", alt:"#{t('.swimming_pool_alt')}"%>
+    </div>
 
-      <div class="item">
-        <div class="card card-position" style="border: none;">
-          <%= image_tag 'swimming_pool.jpg', class:"card-img-waterfall", alt:"#{t('.swimming_pool_alt')}"%>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card card-position" style="border: none;">
-          <%= image_tag 'flowers.JPG', class:"card-img-waterfall", alt:"#{t('.flowers_alt')}"%>
-        </div>
-      </div>
+    <div class="four">
+      <%= image_tag 'flowers.JPG', class:"img-waterfall", alt:"#{t('.flowers_alt')}"%>
     </div>
   </div>
+
+  <!-- Domain explanation  -->
   <div class="container">
     <div class="my-5 px-4">
       <div class="domain-home">
@@ -126,6 +117,26 @@
     </div>
   </div>
 
+  <!-- Second grid of picture-->
+
+  <div class="container-waterfall">
+    <div class="one">
+      <%= image_tag 'terrasse.JPG', class:"card-img-waterfall", alt:"#{t('.terrasse_alt')}"%>
+    </div>
+    <div class="two">
+      <%= image_tag 'living_room.JPG', class:"img-waterfall", alt:"#{t('.living_room_alt')}"%>
+    </div>
+
+    <div class="three">
+      <%= image_tag 'new_photo.JPG', class:"card-img-waterfall", alt:"#{t('.general_alt')}"%>
+    </div>
+
+    <div class="four">
+      <%= image_tag 'flowers.JPG', class:"img-waterfall", alt:"#{t('.flowers_alt')}"%>
+    </div>
+  </div>
+
+<!-- 
   <div class="container" style="transform: translate(0.0% , 0%);">
     <div class="my-grid-2" id="waterfall-container-2">
       <div class="item">
@@ -167,6 +178,7 @@
       </div>
     </div>
   </div>
+  -->
 
   <!-- Map of activities -->
 
@@ -807,11 +819,11 @@
 
     <script>
     imagesLoaded( document.querySelector('.container'), () => {
-      waterfall('.my-grid-1');
       waterfall('.my-grid-2');
     });
+
       window.addEventListener('resize', () => {
-          waterfall('.my-grid');
+       waterfall('.my-grid');
       });
   </script>
 
