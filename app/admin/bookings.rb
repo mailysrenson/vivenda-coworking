@@ -14,7 +14,7 @@ ActiveAdmin.register Booking do
   controller do
     def permitted_params
       params.permit(:utf8, :_method, :authenticity_token, :locale, :commit, :id,
-        booking: [:casas_id, :last_name, :first_name, :email, :phone, :adults, :childrens, :baby_bed, :arrival_date, :departure_date, :comment,:state, :street, :city, :zipcode, :country, :special_status]
+        booking: [:casa_assigned, :last_name, :first_name, :email, :phone, :adults, :childrens, :baby_bed, :arrival_date, :departure_date, :comment, :state, :street, :city, :zipcode, :country, :special_status]
       )
     end
   end
@@ -120,11 +120,13 @@ ActiveAdmin.register Booking do
       f.input :street
       f.input :city
       f.input :zipcode
-      f.input :country
+      f.input :country 
       f.label :special_status
       f.collection_select :special_status, Booking::SPECIAL, :to_s, :to_s
       f.label :state
       f.collection_select :state, Booking::STATE, :to_s, :to_s
+      f.label :casa_assigned
+      f.collection_select :casa_assigned, Booking::CASAS, :to_s, :to_s
       f.input :comment
       f.submit
     end
@@ -135,6 +137,7 @@ ActiveAdmin.register Booking do
     column :first_name
     column :arrival_date
     column :departure_date
+    column :casa_assigned
     column :state
     column :special_status
     actions

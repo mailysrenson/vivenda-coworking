@@ -17,6 +17,7 @@ class Booking < ApplicationRecord
 
   STATE = ['pending', 'waiting_for_deposit', 'confirmed_waiting_for_payment', 'confirmed_and_paid' 'refund_pending', 'cancelled', 'denied', 'closed']
   SPECIAL = ['Aucun', 'Famille', 'Maintenance']
+  CASAS = ['Savana', 'Bambu', 'Azulejos']
 
   # States: :pending, :waiting_for_deposit, :confirmed_waiting_for_payment, :refund_pending, :cancelled, :denied, :closed
 
