@@ -14,7 +14,7 @@ ActiveAdmin.register Booking do
   controller do
     def permitted_params
       params.permit(:utf8, :_method, :authenticity_token, :locale, :commit, :id,
-        booking: [:casas_id, :last_name, :first_name, :email, :phone, :adults, :childrens, :baby_bed, :arrival_date, :departure_date, :comment,:state, :street, :city, :zipcode, :country]
+        booking: [:casas_id, :last_name, :first_name, :email, :phone, :adults, :childrens, :baby_bed, :arrival_date, :departure_date, :comment,:state, :street, :city, :zipcode, :country, :special_status]
       )
     end
   end
