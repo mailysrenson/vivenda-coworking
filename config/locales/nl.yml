@@ -205,6 +205,8 @@ Etes-vous prêts à découvrir le Portugal autrement, hors des sentiers battus e
               blank: "Gelieve alle velden in te vullen"
     attributes:
       booking:
+        firt_name: "Voornaam"
+        last_name: "Naam"
         email: "Emailadres"
         phone: "Telefoonnummer"
         adults: "Aantal volwassenen"
@@ -218,5 +220,6 @@ Etes-vous prêts à découvrir le Portugal autrement, hors des sentiers battus e
         arrival_date: "Aankomstdatum"
         departure_date: "Vertrekdatum"
         range_date: "Boekingsperiode"
+        casa: "Casa"
 
 
