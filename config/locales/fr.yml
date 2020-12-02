@@ -197,6 +197,7 @@ fr:
       button_next: "Suivant"
       button_previous: "Précédent"
       confirm: "Confirmer demande"
+
   activerecord:
     errors:
       models:
@@ -204,14 +205,15 @@ fr:
           attributes:
             email:
               blank: "Veuillez remplir ce champs"
+
     attributes:
       booking:
         first_name: "Prénom"
         last_name: "Nom"
         email: "Adresse email"
         phone: "Numéro de téléphone"
-        adults: "Nombre d'adultes"
-        childrens: "Nombre d'enfants"
+        adults: "Adultes"
+        childrens: "Enfants"
         baby_bed: "Avez-vous besoin d'un lit pour bébé?"
         street: "Rue et numéro"
         city: "Ville"

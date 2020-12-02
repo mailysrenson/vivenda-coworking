@@ -1,0 +1,26 @@
+nl:
+  simple_form:
+    "yes": 'Ja'
+    "no": 'Neen'
+    required:
+      text: 'verplicht'
+      mark: '*'
+
+    labels:
+      booking:
+        first_name: "Voornaam"
+        last_name: "Naam"
+        email: "Email"
+        phone: "Telefoonnummer"
+        adults: "Aantal volwassenen"
+        childrens: "Aantal kinderen"
+        baby_bed: "Heb je een babybedje nodig?"
+        street: "Straat en nummer"
+        city: "Stad"
+        zipcode: "Postcode"
+        country: "Land"
+        comment: "Heb je nog speciale verzoeken?"
+        arrival_date: "Aankomstdatum"
+        departure_date: "Vertrekdatum"
+        range_date: "Boekingsperiode"
+        casa: "Casa"

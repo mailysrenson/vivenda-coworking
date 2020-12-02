@@ -1,189 +1,165 @@
 nl:
   global: #to use this full notation needs to be used as we don't use existing routes (global.navbar.test)
     navbar:
-      home: "Homepage"
+      home: "Startpagina"
       about_us: "Wie zijn wij"
       book: "Boeken"
-      rates: "Tarief"
+      rates: "Tarieven"
 
   booking_mailer:
     new_booking:
-      email_text_html: "Beste %{first_name}, <br><br> Nous confirmons la bonne réception de votre demande de réservation du %{arrival_date} au %{departure_date}.
-      <br><br>Nous revenons vers vous dans les 24h pour confirmer si nous avons bien une casa de libre pour cette période."
-      email_text: "Bonjour %{first_name},
-      Nous confirmons la bonne réception de votre demande de réservation du %{arrival_date} au %{departure_date}.
-      Nous revenons vers vous dans les 24h pour confirmer si nous avons bien une casa de libre pour cette période."
-      booking_summary: "Résumé de votre demande de réservation"
-      arrival_date: "Date d'arrivée"
-      departure_date: "Date de départ"
-      adults: "Nombre d'adultes"
-      childrens: "Nombre d'enfants"
-      baby_bed: "Avez-vous besoin d'un lit bébé?"
-      yes: "Oui"
-      no: "Non"
-      comment: "Demandes spéciales: "
-      contact_details: "Vos coordonnées"
-      name: "Nom"
+      email_text_html: "Beste %{first_name}, <br><br> Wij bevestigen de goede ontvangst van uw aanvraag tot reservatie, van %{arrival_date} tot %{departure_date}.
+      <br><br> We bevestigen binnen 24h omtrent de beschikbaarheid van onze casas voor deze periode."
+      email_text: "Beste %{first_name},
+      Wij bevestigen de goede ontvangst van uw aanvraag tot reservatie, van %{arrival_date} tot %{departure_date}.
+      We bevestigen binnen 24h omtrent de beschikbaarheid van onze casas voor deze periode."
+      booking_summary: "Overzicht van uw aanvraag tot reservatie"
+      arrival_date: "Aankomstdatum"
+      departure_date: "Vertrekdatum"
+      adults: "Aantal volwassenen"
+      childrens: "Aantal kinderen"
+      baby_bed: "Heeft u een kinderbedje nodig?"
+      yes: "Ja"
+      no: "Neen"
+      comment: "Speciale verzoeken:"
+      contact_details: "Uw contactgegevens"
+      name: "Naam"
       email: "Email"
-      phone: "Numéro de téléphone"
-      greeting: "Bien à vous,"
+      phone: "Telefoonnummer"
+      greeting: "Met vriendelijke groeten,"
 
   pages:
     home:
-      # Alt for images on homepage
-      domain_alt: "Le domaine se situe en pleine nature, ce qui lui donne une atmosphère calme et relaxante"
-      casas_alt: "Les 3 bungalows se trouvent au milieu d'arbres et de fleurs, et sont complètement aménagés"
-      swimming_pool_alt: "La grande piscine"
-      flowers_alt: "Les fleurs et les arbres entourent le domaine"
-      praia_fluvial_alt: "La plage fluviale de Coja, une plage aménagée, avec de l'eau douce, des toilettes et un bar/restaurant "
-      terrasse_alt: "Les bungalows ont deux terrasses, une à l'avant, une à l'arrière, pour profiter du soleil tout au long de la journée"
-      living_room: "Les bungalows ont tous un salon avec un fauteiul, du wifi et la TV"
-      main_bedroom: "Les bungalows ont deux chambres, chacune avec deux lits une personne. Les chambres offrent de belles vue sur la nature et les montagnes"
-      general_alt: "Les bungalows font 70 mètres carrés, avec cuisine équippée, un salon, une salle-à-manger, une salle-de-bain, 2 chambres et deux terrasses"
-      kitchen_alt: "Tous les bungalows ont une cuisine équipée"
-      vivenda_alt: "Notre vivenda se situe au centre du Portugal, une belle région avec beaucoup d'activités pour les amoureux de la nature. Aussi bien pour les enfants que les adultes"
-      # Text in carousel 
-      picture_one_html: "Locations de vacances avec piscine <br>- centre du Portugal -"
-      picture_two_html: "Hors des sentiers battus | Région authentique | Tourisme rural"
-      picture_three_html: "Proche de la nature | Loin du tourisme de masse | Calme et détente"
+      domain_alt: "Het domein ligt midden in de natuur, wat voor een een rustige en ontspannen sfeer zorgt"
+      casas_alt: "De 3 bungalows bevinden zich in het midden van het groen en de natuur, en zijn volledig uitgerust"
+      swimming_pool_alt: "Het grote zwembad"
+      flowers_alt: "Bloemen en bomen omringen het domein"
+      praia_fluvial_alt: "Het rivierstrand van Coja, een uitgerust strand, met zoet water, toiletten en een bar/restaurant"
+      terrasse_alt: "De bungalows hebben twee terrassen, één aan de voorkant en één aan de achterkant, zo kan men de hele dag van de zon genieten"
+      living_room: "De bungalows hebben allemaal een woonkamer met zetel, wifi en tv"
+      main_bedroom: "De bungalows hebben twee slaapkamers met elk twee éénpersoonsbedden. De slaapkamers bieden prachtig uitzicht op de natuur en de bergen"
+      general_alt: "De bungalows hebben een oppervlakte van 70 vierkante meter, met ingerichte keuken, woonkamer, eetkamer, badkamer, 2 slaapkamers en twee terrassen"
+      kitchen_alt: "Alle bungalows hebben een ingerichte keuken"
+      vivenda_alt: "Onze vivenda ligt in het midden van Portugal, een prachtige streek met veel activiteiten voor natuurliefhebbers. Zowel kinderen als volwassenen vinden er hun ding"
+      # Text in carousel
+      picture_one_html: "Vakantiehuizen met zwembad <br> - Centraal Portugal -"
+      picture_two_html: "Weg van de platgetreden paden | Authentieke regio | Landelijk toerisme"
+      picture_three_html: "Dicht bij de natuur | Ver weg van het massatoerisme | Rust en ontspanning"
       # Text within waterfall
-      domain: "Notre domaine"
+      domain: "Ons domein"
 
-      domain_explanation_html: "Petite structure de 3 <em>BUNGALOWS DE VACANCES</em> (plus 1 que nous occupons), situés côtes à côtes, dans le centre verdoyant du Portugal; avec <em>PISCINE</em> commune, et proche de <em>PLAGES FLUVIALES</em> - plages de sable aménagées le long des fleuves.
-      Domaine situé au calme, en pleine nature, à 5 minutes du charmant petit village de Côja, à 55 minutes de la ville historique de Coimbra et à 1h45 de l’aéroport de Porto.
-      Bungalows 2 chambres max 5 personnes, <em>TOUT EQUIPES</em>, spacieux et confortables !! <br><br>
-      A louer à l’unité ou à l’entièreté. Idéal aussi bien en couple qu’en groupe ou grande famille.
-      Situation très centrale, à mi-chemin entre la mer et la montagne, offrant de nombreuses possibilités d’activités pour les grands et les petits (sports, nature, randonnées, charmants petits villages, villes historiques,...).<br><br>
-      <em>Proche de la nature | Loin du tourisme de masse | Hors des sentiers battus | Région authentique | Tourisme rural | Calme et détente | Ressourcement</em>"
+      domain_explanation_html: "Kleine structuur van 3 <em> VAKANTIEBUNGALOWS </em> (alsook onze eigen woonst), naast elkaar gelegen, in het groene centrum van Portugal; met <em> ZWEMBAD </em>, en dicht bij <em>RIVIERSTRANDEN</em> - zandstranden langs rivieren. <br><br>
+      Domein gelegen in een rustige omgeving, omgeven door natuur, op 5 minuten van het charmante dorpje Côja, 55 minuten van de historische stad Coimbra en 1u45 van de luchthaven van Porto. <br><br>
+      Bungalows met 2 slaapkamers voor max 5 personen, <em> VOLLEDIG UITGERUST </em>, ruim en comfortabel!!
+      Te huur per bungalow of meerdere bungalows tegelijk. Ideaal voor koppels, groepen of grote gezinnen.<br><br>
+      Zeer centrale ligging, halverwege de route tussen de kust en de bergen, biedt vele mogelijkheden voor activiteiten voor jong en oud (sport, natuur, wandelen, gezellige dorpjes, historische stadjes, ...).<br><br>
+      <em> Dicht bij de natuur | Ver van het massatoerisme | Weg van de platgetreden paden | Authentieke regio | Landelijk toerisme | Rust en ontspanning | Herbronnen </em>"
       # Text within map of activities
       vivenda_title: "Bem vindo a Vivenda a Nossa Coroa"
-      vivenda_explanation_html: "La vivenda se trouve au centre du Portugal, une magnifique région pour les amoureux de la nature. <br>
-      Pendant votre séjour, découvrez les superbes 'Praia fluvials' portugaises, de chouettes plages aménagées, faites un tour en kayak sur le Mondego et allez vous promener dans la Sierra da Estrella."
+      vivenda_explanation_html: "Ruime keuze aan activiteiten binnen een straal van maximaal 1 uur rond onze Vivenda:
+      Drink een kopje koffie in een klein typisch dorp, slenter door de steegjes van het historische centrum van Coimbra, ruik de zalige geur van eucalyptusbomen, slenter door het prachtige natuurgebied van 'serra da Estrela', proef de Portugese gastronomie, verfris jezelf aan een rivierstrand, kajakken op de 'rio Mondego', ..."
 
       santaComba_title: "Eco-Pista do Dão - ciclovia de Viseu a Santa Comba Dão"
-      santaComba_explanation_html: "A 30 minutes de notre Vivenda:
-      Cette ancienne ligne de chemin de fer a été convertie en belle piste cyclable (ou aussi pédestre).
-      Parcourez tranquillement, quasi uniquement en pente douce, 20, 30 ou 47 km tout en découvrant des paysages magnifiques. On en prend plein les yeux et plein les jambes. Difficulté: facile."
+      santaComba_explanation_html: "Op 30 minuten van onze Vivenda:<br>
+      Deze oude spoorlijn is omgebouwd tot een mooi fietspad (of wandelpad voor voetgangers).
+      Fiets rustig op dit vlakke (licht dalend) traject langs de prachtige landschappen. U kan kiezen voor een route van 20, 30 of 47 km. Moeilijkheidsgraad: makkelijk"
       kayak_title: "O pioneiro do Mondego - descida do rio em kayak"
-      kayak_explanation_html: "A 35 minutes de notre Vivenda:
-      Descente (18 ou 25 km) du “rio Mondego” de Penacova à Coimbra en kayak. Combinez l’aventure, la nature et les sport. Difficulté: facile. "
+      kayak_explanation_html: "Op 35 minuten van onze Vivenda:<br>
+      Vaar de “rio Mondego” af per kayak (18 of 25 km) van Penacova tot Coimbra. Combineer avontuur, natuur en sport. Moeilijkheidsgraad: makkelijk"
       casca_title: "Praia fluvial da Cascalheira - Secarias"
-      casca_explanation_html: "A 9 minutes de notre Vivenda:
-      La plage fluviale de Secarias (plage de sable aménagée) est située sur le fleuve Alva et s’insère dans une région très boisée par des aulnes, ce qui rend l’endroit très ombragé et agréable lors des chaudes journées estivales.
-      Les plages fluviales sont idéales pour ceux qui recherchent un endroit rafraîchissant avec de l’eau douce et calme, dans un cadre verdoyant et entouré de forêts."
+      casca_explanation_html: "Op 10 minuten van onze Vivenda:<br>
+      Het Rivierstrand van Secarias (zandstrand) ligt aan de rivier de Alva en is ingevoegd in een gebied dat zwaar bebost is door elzen, wat de plaats erg schaduwrijk en aangenaam maakt op hete zomerdagen.
+      De rivierstranden zijn ideaal voor wie op zoek is naar een verfrissende plek met zacht, kalm water, in een groene omgeving en omgeven door bossen."
       estrella_title: "Lagoa Covao dos Conchos - Serra da Estrela"
-      estrella_explanation_html: "A 1 heure de notre Vivenda:
-      Un de nos coups de coeur !
-      Superbe balade d'environ 10km (aller-retour) au départ du lac 'Lagoa Comprido' jusqu'au trou sans fond du lac 'Covao dos Conchos', confortablement blotti dans la réserve naturelle de la  'Serra da Estrela'. Difficulté modérée.
-      Pour les amateurs de nature et de grands espaces. Les paysages sont à couper le souffle. "
+      estrella_explanation_html: "Op 1h van onze Vivenda:<br>
+      Een van onze favorieten!
+      Schitterende wandeling van ongeveer 10 km (heen en terug) van het meer 'Lagoa Comprido' naar het bodemloze gat van het meer 'Covao dos Conchos', comfortabel genesteld in het natuurreservaat 'Serra da Estrela'. Matige moeilijkheidsgraad.
+      Voor liefhebbers van natuur en grote open ruimtes. De landschappen zijn adembenemend."
       fraga_title: "Cascata da Fraga da Pena"
-      fraga_explanation_html: "A 25 minutes de notre Vivenda:
-      Chute d’eau de montagne, se trouvant près du village de Benfeita dans la 'serra do Açor'.
-      La pente de la cascade atteint 19 mètres de hauteur. L’eau, d’une pureté incroyable, est cependant très fraîche. Pour les moins frileux, il y a toutefois des zones pour se baigner.
-      Pour les plus sportifs, un sentier pédestre balisé part du village de Benfeita et passe par différentes petites cascades."
-      cabriz_title:
-      cabriz_explanation_html:
-      caminhos_title:
-      caminhos_explanation_html:
-      lemos_title:
-      lemos_explanation_html:
+      fraga_explanation_html: "Op 25 minuten van onze Vivenda:<br>
+      Bergwaterval, gelegen nabij het dorp Benfeita in de 'serra do Açor'.
+      De helling van de waterval bereikt een hoogte van 19 meter. Het water, van ongelooflijke zuiverheid, is echter heel fris. Voor wie hier tegen kan, zijn er echter leuke plekjes om te zwemmen.
+      Voor de meer sportieve mensen begint een gemarkeerd voetpad vanuit het dorp Benfeita en loopt via verschillende kleine watervallen."
       rio_title: "Praia fluvial do Caneiro de Côja"
-      rio_explanation_html: "A 5 minutes de notre Vivenda: <br>
-      La plage fluviale de Coja (plage de sable aménagée) est située sur le fleuve Alva et entourée de saules, peupliers et salguerinhas.
-      Les plages fluviales sont idéales pour passer des vacances différentes en pleine nature, avec des baignades dans les eaux calmes et douces des rivières pour échapper à la chaleur estivale."
+      rio_explanation_html: "Op 5 minuten van onze Vivenda:<br>
+      Het rivierstrand van Coja (aangelegd zandstrand) bevindt zich aan de Alva rivier en is omringd door wilgen, populieren en salguerinha's.
+      De rivierstranden zijn ideaal om een ​​vakantie door te brengen te midden van de natuur. Je kan er baden in het stille, zoete rivierwater  om aan de zomerse hitte te ontsnappen."
       baloico_title: "Baloiço da Carriça - Alqueve"
-      baloico_explanation_html: "A 15 minutes de notre Vivenda: <br>
-      Les balançoires sont la grande tendance 2020 au Portugal. Nous avons depuis cet été une balançoire juste au-dessus de chez nous, dans la “serra do Açor”.
-      Une belle façon originale de prendre en photo un superbe point de vue. Et pourquoi pas également en profiter pour admirer un magnifique coucher de soleil !"
+      baloico_explanation_html: "Op 15 minuten van onze Vivenda: <br>
+      Panoramaschommels zijn de grote trend van 2020 in Portugal. Sinds deze zomer hebben we een schommel net bij ons, in de “serra do Açor”.
+      Een leuke, originele manier om een ​​foto te maken van een prachtig uitzicht. Maak bovendien van de gelegenheid gebruik om een ​​schitterende zonsondergang te bewonderen!"
       coimbra_title: "Cidade histórica de Coimbra"
-      coimbra_explanation_html: " A 55 minutes de notre Vivenda: <br>
-      Coimbra est accrochée à une colline et surplombe le “rio Mondego”. Moins connue que Lisbonne et Porto, elle vaut pourtant franchement le détour ! Son centre historique est plein de charme.
-      C’est à Coimbra que fut construite la première université du Portugal. Elle compte parmi les plus anciennes d’Europe. Une des visites à ne surtout pas manquer est d’ailleurs sa bibliothèque “Joanina”.
-      Le fado de Coimbra est certainement la musique qui marque le rythme du cœur de la ville des étudiants. Il est régulièrement chanté dans des petits cafés et dans l’église."
+      coimbra_explanation_html: "Op 55 minuten van onze Vivenda:<br>
+      Coimbra leunt zich aan tegen een heuvelachtig gebied en kijkt uit over de “Rio Mondego”. Minder bekend dan Lissabon en Porto, maar de omweg zeker waard! Het historische centrum is heel charmevol.
+      De eerste universiteit van Portugal werd gebouwd in Coimbra. Het is een van de oudste van Europa. Een van de plaatsen die u niet mag missen, is de 'Joanina' -bibliotheek.
+      De 'fado do Coimbra' is zeker de muziek die het ritme van de studentenstad beheerst. Het wordt regelmatig gezongen in kleine cafés en in de kerk."
       aveiro_title: "Cidade de Aveiro"
-      aveiro_explanation_html: "A 1h15 de notre Vivenda: <br>
-      La petite Venise Portugaise !
-      Aveiro est traversée par un réseau de canaux, sur lesquels circulent les “barcos moliceiros”, bateaux traditionnels propres à la région, aux formes élancées et décorés de couleurs vives, souvent de façon humoristique, qui servaient autrefois à ramasser les algues. Aujourd’hui, ces embarcations sont utilisées pour les promenades touristiques sur les canaux.
-      Promenez-vous à pied le long des canaux et découvrez la ville et son architecture style “Art nouveau”. Pour ceux qui préfèrent pédaler, des vélos, appelés “bugas” , sont mis gratuitement à disposition."
+      aveiro_explanation_html: "Op 1h15 van onze Vivenda:<br>
+      Het kleine Venetië van Portugal!
+      Aveiro wordt doorkruist door een netwerk van kanalen, waarop de 'barcos moliceiros' rondvaren. Dit zijn traditionele boten die specifiek zijn voor de regio, met slanke vormen en vrolijk versierd, vaak op een humoristische manier, die ooit werden gebruikt om zeewier te verzamelen. Tegenwoordig worden deze boten gebruikt voor toeristische rondvaarten op de kanalen.
+      Maak een wandeling langs de kanalen en ontdek de stad en haar architectuur in 'Art Nouveau' -stijl. Voor degenen die liever fietsen, zijn er gratis fietsen (genaamd 'bugas') beschikbaar."
       costa_title: "Praia da Costa Nova"
-      costa_explanation_html: "A 1h30 de notre Vivenda: <br>
-      Étendue de plage de sable connue pour ses maisons à rayures de couleurs vives, avec promenade et dunes. A 15 minutes seulement d’Aveiro, ça vaut la peine de faire le détour !"
+      costa_explanation_html: "Op 1h30 van onze Vivenda:<br>
+      Zandstrand bekend om zijn felgekleurde gestreepte huizen en duinen. Slechts 15 minuten van Aveiro, de omweg zeker waard!"
       piodao_title: "Aldeia pitoresca de Piodão"
-      piodao_explanation_html: "A 45 minutes de notre Vivenda: <br>
-      Magnifique petit village typique de montagne plein de charme, situé au pied de la “serra do Açor”. Ses maisons, faites de schiste et d’ardoises, sont situées en amphithéâtre dans la colline.
-      Prenez le temps de déambuler dans ses petites ruelles étroites et escarpées."
+      piodao_explanation_html: "Op 45 minuten van onze Vivenda:<br>
+      Prachtig klein typisch bergdorpje vol charme, gelegen aan de voet van de 'serra do Açor'. De huizen, gemaakt van leisteen, vormen zich in een 'amfitheater' op de heuvel.
+      Neem de tijd om door de smalle, steile straatjes te slenteren."
       egua_title: "Zona de lazer de Foz d’Egua"
-      egua_explanation_html: "A 55 minutes de notre Vivenda: <br>
-      Foz d’Egua est une merveille cachée dans le “serra do Açor”, à environ 10 minutes de Piodão. Un lieu incontournable !
-      Cette piscine fluviale naturelle est un petit coin de paradis au beau milieu de la nature. "
-      alva_title: "Restaurante Principe do Alva - Coja"
-      alva_explanation_html: " A 5 minutes de notre Vivenda: <br>
-        Un des meilleurs restaurants de la région ! Bonne cuisine, beau cadre et belle vue.
-        Cuisine portugaise et européenne. <br>
-        Prix: moyen. "
-      azzurro_title: "Pizzeria Azzurro - Arganil"
-      azzurro_explanation_html: "A 10 minutes de notre Vivenda: <br>
-        Les propriétaires parlent plusieurs langues: français, allemand, italien et portugais.
-        Cuisine italienne et européenne. <br>
-        Prix: bon marché."
-      sombri_title: "Restaurante Sombrinha do Alva - Secarias"
-      sombri_explanation_html: "A 9 minutes de notre Vivenda: <br>
-      Le long du fleuve Alva. Terrasse recouverte par des vignes super agréable en été.
-      N’hésitez pas à goûter leur “arroz de tamboril”, un plat traditionnel à base de riz et de lotte.
-      Cuisine portugaise et européenne. <br>
-      Prix: moyen. <br> "
+      egua_explanation_html: "Op 55 minuten van onze Vivenda:<br>
+      Foz d´Egua is een verborgen wonder in de 'serra do Açor', ongeveer 10 minuten van Piodão. Een plek die je niet mag missen!
+      Dit natuurlijke rivierzwembad is een klein stukje paradijs midden in de natuur."
       mira_title: "Praia de Mira - ao longo do oceano Atlântico"
-      mira_explanation_html: "A 1h15 de notre Vivenda:
-      Si vous préférez le bon air de la mer, rejoignez la côte ouest du Portugal, le long de l’océan Atlantique.
-      Plus petite que la station balnéaire de Figueira da Foz, “Praia de Mira” est plus tranquille. Vous pourrez même y voir les pêcheurs travailler le matin. "
+      mira_explanation_html: "Op 1h15 van onze Vivenda:<br>
+      Als je meer van de frisse zeelucht houdt, ga dan naar de westkust van Portugal, langs de Atlantische Oceaan.
+      Kleiner dan de badplaats Figueira da Foz, bevindt zich het rustigere 'Praia de Mira'. Je kunt zelfs de vissers daar 's ochtends aan het werk zien."
 
 
     about_us:
-      picture_alt: "Picture of Gene and Didier, les propriétaires de Vivenda a nossa coroa."
-      about_us: "A propos"
+      picture_alt: "Foto van Gene and Didier, eigenaars van Vivenda a nossa coroa."
+      about_us: "Wie zijn wij"
 
-      about_us_description_html: "Couple belge et agents de voyages en Belgique pendant 25 ans, début 2020, nous avons décidé de tout quitter et d’accomplir notre rêve de partir vivre et travailler à l’étranger ! Etant dans le domaine du tourisme depuis toujours, il allait de soi que nous désirions continuer dans cette voie-là, quand nous avons eu un coup de coeur pour cette “Vivenda” à vendre.
-En ce qui nous concerne, nous sommes directement tombés sous le charme du centre du Portugal et sommes persuadés que vous aussi vous y sentirez comme chez vous au vu de l’accueil chaleureux des locaux, de la nature verdoyante et des magnifiques paysages dont regorge cette région du pays.
-Notre expérience en voyages nous permettra également de vous faire passer le meilleur séjour qui soit dans notre “Guest House”. Qu’il s’agisse de l’accueil à votre arrivée, des différents services pendant votre séjour, des renseignements sur ce qu’il y a à faire dans les environs,… nous serons là pour vous accompagner vu que nous vivons sur place.
-Etes-vous prêts à découvrir le Portugal autrement, hors des sentiers battus et loin du tourisme de masse ?
-      <br><br>A bien vite alors,
+      about_us_description_html: "We zijn een Belgisch koppel en gedurende 25jaar waren we reisagenten in België . Begin 2020 hebben we besloten om alles achter te laten en onze droom te verwezenlijken om in het buitenland te gaan wonen en werken! Omdat we lange tijd in het toerisme werkten, was het vanzelfsprekend dat we op deze weg verder wouden gaan. En plots was daar de Vivenda, die te koop stond. We werden meteen verliefd en besloten ervoor te gaan.
+      Wat ons betreft zijn wij direct in de ban geraakt van het centrum van Portugal en we zijn ervan overtuigd dat ook u zich daar thuis zult voelen, gezien de gastvrijheid van de lokale bevolking, de groene natuur en de prachtige landschappen die hier in overvloed aanwezig zijn.
+      Onze ervaring in de reissector stelt ons in staat om u het best mogelijke verblijf in ons gastenverblijf te bezorgen. Of het nu gaat om de ontvangst bij uw aankomst, de verschillende diensten tijdens uw verblijf, informatie over wat te doen in de omgeving, ... we zullen er zijn om u te begeleiden wanneer nodig, gezien ook wij op het domein verblijven.
+      Ben je klaar om Portugal op een andere manier te ontdekken, weg van de platgetreden paden en ver weg van het massatoerisme?
+      <br><br>Hopelijk tot binnenkort,
       <br><br>Gene & Didier"
 
     tarifs:
-      rates: "Tarifs"
-      low_season: "Basse saison"
-      period_low: "Du 16/10 au 31/03"
-      price_week_low_html: "<strong>395€/</strong> semaine"
-      price_night_low: "65 € / nuit"
-      price_month_low_html: "<strong>795€</strong> / 1er mois et <strong>695€</strong>/ àpd 2ème mois"
-      medium_season: "Moyenne saison"
-      period_medium: "Du 01/04 au 30/06 - du 01/09 au 15/10"
-      price_week_medium_html: "<strong>545€/</strong> semaine"
-      price_night_medium: "90 € / nuit"
+      rates: "Tarieven"
+      low_season: "Laagseizoen"
+      period_low: "Van 16/10 tot 31/03"
+      price_week_low_html: "<strong>395€/</strong> week"
+      price_night_low: "65 € / nacht"
+      price_month_low_html: "<strong>795€</strong> / maand <strong>695€</strong>/ vanaf 2de maand"
+      medium_season: "Tussenseizoen"
+      period_medium: "Van 01/04 tot 30/06 - van 01/09 tot 15/10"
+      price_week_medium_html: "<strong>545€/</strong> week"
+      price_night_medium: "90 € / nacht"
       price_month_medium_html: "/"
-      high_season: "Haute saison"
-      period_high: "Du 01/07 au 31/08"
-      price_week_high_html: "<strong>695€/</strong> semaine"
-      payment_html: "<strong>L’acompte est de 40% à la réservation et le solde est à payer 6 semaines avant l’arrivée.</strong>
-            Votre réservation n’est prise en compte qu’après réception de votre paiement.
+      high_season: "Hoogseizoen"
+      period_high: "Van 01/07 tot 31/08"
+      price_week_high_html: "<strong>695€/</strong> week"
+      payment_html: "<strong> Voorschot van 40% te betalen bij boeking. Het overige bedrag dient betaalt te worden ten laatste 6 weken voor aankomst.</strong>
+            Uw reservatie wordt pas officieel in rekening genomen na ontvangst van uw betaling.
             <br><br>
-            <strong>Jours d’arrivées et de départs:</strong> arrivées et départs libres (min 7 nuits en juillet/août et min 3 nuits aux autres périodes).
+            <strong>Aankomst- en Vertrekdagen:</strong> Dag van aankomst en vertrek zijn vrij te kiezen. Minimum boekingsperiode van 7 nachten in Juli/Augustus en 3 nachten tijdens andere perioden.
             <br><br>
-            Les arrivées le 1er jour sont prévues entre 15h et 20h. Si vous arrivez plus tôt, vous pouvez déjà utiliser les parties communes. Les départs le dernier jour se font pour 10h.
+            Check-in tussen 15h en 20h. Bij vroegere aankomst kan reeds gebruik gemaakt worden van de gemeenschappelijke ruimten/voorzieningen. Check-out voor 10h.
             <br><br>
-            <strong>Les prix comprennent:</strong> les serviettes de bain et de piscine, les draps de lit (lits faits à l’arrivée), le linge de cuisine, le bois pour le poêle (de novembre à mars), l’eau et l’électricité, la tva.
+            <strong>In prijzen inbegrepen:</strong> (bad)handdoeken, beddengoed (bedden zijn opgemaakt bij aankomst), keukenhanddoeken, hout voor kachel (November tot Maart), water en electriciteit, WIFI, taxen.
             <br><br>
-            <strong>Les prix ne comprennent pas:</strong> les repas, les boissons, les assurances (annulation, assistance,…) et les éventuelles taxes de séjour.
+            <strong>Niet in prijzen inbegrepen:</strong> maaltijden, dranken, verzekeringen (annulatie, pechverhelping,…) en eventuele toeristenbelastingen.
             <br><br>
-            <strong>Nettoyage final (obligatoire):</strong> 50 € à payer sur place.
+            <strong>Poetsdienst na verblijf (verplicht):</strong> 50€ ter plaatse te betalen <br><br>
+            Volgens beschikbaarheid en op aanvraag (gratis): kinderbed, kinderstoel
             <br><br>
-            Selon disponibilités et sur réservation (gratuit): lit bébé, chaise bébé.
+            Op aanvraag en onder bepaalde voorwaarden (gratis): kleine huisdieren. Met uitzondering van Juli/Augustus.
             <br><br>
-            Sur demande et sous certaines conditions (gratuit): petits animaux de compagnie. Sauf en juillet/août.
+            Het is strikt verboden te roken in de casas.
             <br><br>
-            Les bungalows sont totalement non fumeurs.
-            <br><br>
-            <strong>Conditions d’annulation:</strong> jusqu’à 6 semaines avant votre arrivée, 40% de frais d’annulation. Moins de 6 semaines avant votre arrivée, 100% de frais d’annulation. Nous vous conseillons donc de souscrire à une assurance annulation."
+            <strong>Annulatievoorwaarden:</strong> tot 6 weken voor aankomst, 40% annulatiekosten. Minder dan 6 weken voor aankomst, 100% annulatiekosten. Wij raden steeds aan om een annulatieverzekering te nemen."
 
   bookings:
     new:
@@ -196,6 +172,7 @@ Etes-vous prêts à découvrir le Portugal autrement, hors des sentiers battus e
       button_next: "Volgende"
       button_previous: "Vorige"
       confirm: "Aanvraag bevestigen"
+
   activerecord:
     errors:
       models:
@@ -209,8 +186,8 @@ Etes-vous prêts à découvrir le Portugal autrement, hors des sentiers battus e
         last_name: "Naam"
         email: "Emailadres"
         phone: "Telefoonnummer"
-        adults: "Aantal volwassenen"
-        childrens: "Aantal kinderen"
+        adults: "Volwassenen"
+        childrens: "Kinderen"
         baby_bed: "Heb je een babybedje nodig?"
         street: "Straat en nummer"
         city: "Stad"
