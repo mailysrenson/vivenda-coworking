@@ -197,6 +197,7 @@ fr:
       button_next: "Suivant"
       button_previous: "Précédent"
       confirm: "Confirmer demande"
+
   activerecord:
     errors:
       models:
@@ -204,6 +205,7 @@ fr:
           attributes:
             email:
               blank: "Veuillez remplir ce champs"
+              
     attributes:
       booking:
         first_name: "Prénom"
