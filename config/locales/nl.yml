@@ -172,7 +172,7 @@ nl:
       button_next: "Volgende"
       button_previous: "Vorige"
       confirm: "Aanvraag bevestigen"
-      
+
   activerecord:
     errors:
       models:
@@ -186,8 +186,8 @@ nl:
         last_name: "Naam"
         email: "Emailadres"
         phone: "Telefoonnummer"
-        adults: "Aantal volwassenen"
-        childrens: "Aantal kinderen"
+        adults: "Volwassenen"
+        childrens: "Kinderen"
         baby_bed: "Heb je een babybedje nodig?"
         street: "Straat en nummer"
         city: "Stad"

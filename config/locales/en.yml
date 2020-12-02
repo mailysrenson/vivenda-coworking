@@ -210,8 +210,8 @@ en:
       booking:
         email: "Email address"
         phone: "Phone number"
-        adults: "Number of adults"
-        childrens: "Number of children"
+        adults: "Adults"
+        childrens: "Children"
         baby_bed: " Do you need a baby bed?"
         street: "Street name and house number"
         city: "City"
