@@ -172,6 +172,20 @@ nl:
       button_next: "Volgende"
       button_previous: "Vorige"
       confirm: "Aanvraag bevestigen"
+      rates: "Tarieven"
+      low_season: "Laagseizoen"
+      period_low: "Van 16/10 tot 31/03"
+      price_week_low_html: "<strong>395€/</strong> week"
+      price_night_low: "65 € / nacht"
+      price_month_low_html: "<strong>795€</strong> / maand <strong>695€</strong>/ vanaf 2de maand"
+      medium_season: "Tussenseizoen"
+      period_medium: "Van 01/04 tot 30/06 - van 01/09 tot 15/10"
+      price_week_medium_html: "<strong>545€/</strong> week"
+      price_night_medium: "90 € / nacht"
+      price_month_medium_html: "/"
+      high_season: "Hoogseizoen"
+      period_high: "Van 01/07 tot 31/08"
+      more_information: "Tarieven bekijken"
 
   activerecord:
     errors:

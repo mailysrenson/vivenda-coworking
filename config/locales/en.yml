@@ -197,6 +197,21 @@ en:
       button_next: "Next step"
       button_previous: "Previous step"
       confirm: "Confirm request"
+      rates: "Rates"
+      low_season: "Low season"
+      period_low: "From 16/10 until 31/03"
+      price_week_low_html: "<strong>395€/</strong> week"
+      price_night_low: "65 € / night"
+      price_month_low_html: "<strong>795€</strong> / 1st month and <strong>695€</strong>/ from 2nd month"
+      medium_season: "Medium season"
+      period_medium: "From 01/04 until 30/06 - from 01/09 until 15/10"
+      price_week_medium_html: "<strong>545€/</strong> week"
+      price_night_medium: "90 € / night"
+      price_month_medium_html: "/"
+      high_season: "High season"
+      period_high: "From 01/07 until 31/08"
+      price_week_high_html: "<strong>695€/</strong> week"
+      more_information: "See the rates"
    
   activerecord:
     errors:

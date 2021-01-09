@@ -197,6 +197,21 @@ fr:
       button_next: "Suivant"
       button_previous: "Précédent"
       confirm: "Confirmer demande"
+      rates: "Tarifs"
+      low_season: "Basse saison"
+      period_low: "Du 16/10 au 31/03"
+      price_week_low_html: "<strong>395€/</strong> semaine"
+      price_night_low: "65 € / nuit"
+      price_month_low_html: "<strong>795€</strong> / 1er mois et <strong>695€</strong>/ àpd 2ème mois"
+      medium_season: "Moyenne saison"
+      period_medium: "Du 01/04 au 30/06 - du 01/09 au 15/10"
+      price_week_medium_html: "<strong>545€/</strong> semaine"
+      price_night_medium: "90 € / nuit"
+      price_month_medium_html: "/"
+      high_season: "Haute saison"
+      period_high: "Du 01/07 au 31/08"
+      price_week_high_html: "<strong>695€/</strong> semaine"
+      more_information: "Voir les tarifs"
 
   activerecord:
     errors:
