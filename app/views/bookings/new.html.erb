@@ -25,6 +25,55 @@
                   </ul>
                   <!-- fieldsets -->
                   <div class="first_info">
+                    <div id="rates-container">
+                      <div class="prices my-2">
+                        <div class="row py-2">
+                          <div class="col-4">
+                            <h3 class="titles-table"><%= t('.high_season') %></h3>
+                          </div>
+                          <div class="col-4">
+                            <h3 class="titles-table"><%= t('.low_season') %></h3>
+                          </div>
+                          <div class="col-4">
+                            <h3 class="titles-table"><%= t('.medium_season') %></h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <p class="period"><%= t('.period_high') %></p>
+                          </div>
+                          <div class="col-4">
+                            <p class="period"><%= t('.period_low') %></p>
+                          </div>
+                          <div class="col-4">
+                            <p class="period"><%= t('.period_medium') %></p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <p class="prices-table-new"><%= t('.price_week_high_html') %></p>
+                          </div>
+                          <div class="col-4">
+                            <p class="prices-table-new"><%= t('.price_week_low_html') %></p>
+                          </div>
+                          <div class="col-4">
+                            <p class="prices-table-new"><%= t('.price_week_medium_html') %></p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <p>/</p>
+                          </div>
+                          <div class="col-4">
+                            <p class="prices-table-new"><%= t('.price_night_low') %></p>
+                          </div>
+                          <div class="col-4">
+                            <p class="prices-table-new"><%= t('.price_night_medium') %></p>
+                          </div>
+                        </div>
+                      </div>
+                      <p><%= link_to t('.more_information'), tarifs_path %></p>
+                    </div>
                     <fieldset>
                       <div class="form-card">
                         <div class="auto">
