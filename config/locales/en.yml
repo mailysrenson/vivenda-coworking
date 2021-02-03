@@ -149,22 +149,29 @@ en:
     tarifs:
       rates: "Rates"
       low_season: "Low season"
-      period_low: "From 16/10 until 31/03"
-      price_week_low_html: "<strong>395€/</strong> week"
-      price_night_low: "65 € / night"
-      price_month_low_html: "<strong>795€</strong> / 1st month and <strong>695€</strong>/ from 2nd month"
+      period_low: "From 01/11 until 31/03"
+      price_week_low_html: "<strong>295€/</strong> week"
+      price_night_low: "50 € / night"
+      price_month_low_html: "<strong>795€/</strong> month*"
       medium_season: "Medium season"
-      period_medium: "From 01/04 until 30/06 - from 01/09 until 15/10"
-      price_week_medium_html: "<strong>545€/</strong> week"
-      price_night_medium: "90 € / night"
-      price_month_medium_html: "/"
+      period_medium: "From 01/04 until 30/06 - from 01/09 until 31/10"
+      price_week_medium_html: "<strong>445€/</strong> week"
+      price_night_medium: "75 € / night"
+      price_month_medium_html: "<strong>1195€/</strong> month**"
       high_season: "High season"
       period_high: "From 01/07 until 31/08"
       price_week_high_html: "<strong>695€/</strong> week"
+      price_night_high: "99 € / additional night"
+      long_stays: "Long-term stay prices"
+      additional_info_2_html: "<strong>Special offers for long-term stays:</strong> -10% (on month price) as from the second month.
+      <br><br>The prices are based on 1 or 2 people per casa. On request: possible to add a 3rd, 4th or 5th person at an extra charge.
+      <br><br>"
+      additional_info_1_html: "<strong>Arrival and departure days:</strong> free to choose (min stay of 3 nights, except for in July and August where the min stay is 7 nights).
+            <br><br><strong>On request</strong>: 5th person at an extra charge.
+            <br><br>"
+      details: "Details and payment"
       payment_html: "<strong>A 40% deposit is requested at the time of reservation. The remaining balance is due 6 weeks before the arrival.</strong>
             Your booking is only confirmed once we received your deposit.
-            <br><br>
-            <strong>Arrival and departure days:</strong> free to choose (min stay of 3 nights, except for in July and August where the min stay is 7 nights).
             <br><br>
             Arrivals between 15h and 20h. If you arrive earlier, you can already use the common area's. On the last day, the bungalows need to be left by 10h in the morning.
             <br><br>

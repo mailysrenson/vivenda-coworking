@@ -7,29 +7,45 @@
     <div class="prices my-5">
       <div class="row border-tarif">
         <div class="col-sm-12 col-lg-4">
+          <h3><%= t('.high_season') %></h3>
+          <p class="prices-table"><%= t('.period_high') %></p>
+          <p class="prices-table"><%= t('.price_week_high_html') %></p>
+          <p class="prices-table"><%= t('.price_night_high') %></p>
+        </div>
+        <div class="col-sm-12 col-lg-4">
           <h3><%= t('.low_season') %></h3>
           <p><%= t('.period_low') %></p>
           <p class="prices-table"><%= t('.price_week_low_html') %></p>
           <p class="prices-table"><%= t('.price_night_low') %></p>
-          <p class="prices-table"><%= t('.price_month_low_html') %></p>
         </div>
         <div class="col-sm-12 col-lg-4 ">
           <h3><%= t('.medium_season') %></h3>
           <p><%= t('.period_medium') %></p>
           <p class="prices-table"><%= t('.price_week_medium_html') %></p>
           <p class="prices-table"><%= t('.price_night_medium') %></p>
-          <p> / </p>
-        </div>
-        <div class="col-sm-12 col-lg-4">
-          <h3><%= t('.high_season') %></h3>
-          <p class="prices-table"><%= t('.period_high') %></p>
-          <p class="prices-table"><%= t('.price_week_high_html') %></p>
-          <p>/</p>
-          <p>/</p>
         </div>
       </div>
-      <div class="row justify-content-center mt-4">
-        <p class="col-12 mt-5">
+      <p class="mt-3"><%= t('.additional_info_1_html')%></p>
+      <h2 class="mt-5"><%= t('.long_stays') %></h2>
+      <div class="underline"></div>
+        <div class="row border-tarif">
+          <div class="col-sm-12 col-lg-4">
+            <h3><%= t('.low_season') %></h3>
+            <p><%= t('.period_low') %></p>
+            <p class="prices-table"><%= t('.price_month_low_html') %></p>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <h3><%= t('.medium_season') %></h3>
+            <p class="prices-table"><%= t('.period_medium') %></p>
+            <p class="prices-table"><%= t('.price_month_medium_html') %></p>
+          </div>
+        </div>
+        <p class="mt-3"><%= t('.additional_info_2_html')%></p>
+
+      <h2 class="mt-5"><%= t('.details') %></h2>
+      <div class="underline"></div>
+      <div class="row justify-content-center mt-1">
+        <p class="col-12 mt-1">
           <%= t('.payment_html') %>
         </p>
       </div>

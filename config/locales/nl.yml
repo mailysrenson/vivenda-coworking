@@ -129,22 +129,29 @@ nl:
     tarifs:
       rates: "Tarieven"
       low_season: "Laagseizoen"
-      period_low: "Van 16/10 tot 31/03"
-      price_week_low_html: "<strong>395€/</strong> week"
-      price_night_low: "65 € / nacht"
-      price_month_low_html: "<strong>795€</strong> / maand <strong>695€</strong>/ vanaf 2de maand"
+      period_low: "Van 01/11 tot 31/03"
+      price_week_low_html: "<strong>295€/</strong> week"
+      price_night_low: "50 € / nacht"
+      price_month_low_html: "<strong>795€/</strong> maand*"
       medium_season: "Tussenseizoen"
-      period_medium: "Van 01/04 tot 30/06 - van 01/09 tot 15/10"
-      price_week_medium_html: "<strong>545€/</strong> week"
-      price_night_medium: "90 € / nacht"
-      price_month_medium_html: "/"
+      period_medium: "Van 01/04 tot 30/06 - van 01/09 tot 31/10"
+      price_week_medium_html: "<strong>445€/</strong> week"
+      price_night_medium: "75 € / nacht"
+      price_month_medium_html: "<strong>1195€/</strong> maand**"
       high_season: "Hoogseizoen"
       period_high: "Van 01/07 tot 31/08"
       price_week_high_html: "<strong>695€/</strong> week"
+      price_night_high: "99 € / extra nacht"
+      long_stays: "Prijzen langdurig verblijf"
+      additional_info_2_html: "<strong>Speciaal offer voor langdurige verblijven:</strong> -10% (op maandprijs) vanaf tweede maand.
+      <br><br>Deze prijzen zijn gebaseerd op 1 of 2 personen per casa.<strong>Op aanvraag</strong>: 3de, 4de of 5de persoon tegen meerprijs.
+      <br><br>"
+      additional_info_1_html: "<strong>Aankomst- en Vertrekdagen:</strong> Dag van aankomst en vertrek zijn vrij te kiezen. Minimum boekingsperiode van 7 nachten in Juli/Augustus en 3 nachten tijdens andere perioden.
+            <br><br><strong>Op aanvraag</strong>: 5de persoon tegen meerprijs.
+            <br><br>"
+      details: "Details en betaling"
       payment_html: "<strong> Voorschot van 40% te betalen bij boeking. Het overige bedrag dient betaalt te worden ten laatste 6 weken voor aankomst.</strong>
             Uw reservatie wordt pas officieel in rekening genomen na ontvangst van uw betaling.
-            <br><br>
-            <strong>Aankomst- en Vertrekdagen:</strong> Dag van aankomst en vertrek zijn vrij te kiezen. Minimum boekingsperiode van 7 nachten in Juli/Augustus en 3 nachten tijdens andere perioden.
             <br><br>
             Check-in tussen 15h en 20h. Bij vroegere aankomst kan reeds gebruik gemaakt worden van de gemeenschappelijke ruimten/voorzieningen. Check-out voor 10h.
             <br><br>
