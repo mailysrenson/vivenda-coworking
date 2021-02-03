@@ -134,7 +134,7 @@ nl:
       price_night_low: "50 € / nacht"
       price_month_low_html: "<strong>795€/</strong> maand*"
       medium_season: "Tussenseizoen"
-      period_medium: "Van 01/04 tot 30/06 - van 01/09 tot 31/10"
+      period_medium: "Van 01/04 tot 30/06 en van 01/09 tot 31/10"
       price_week_medium_html: "<strong>445€/</strong> week"
       price_night_medium: "75 € / nacht"
       price_month_medium_html: "<strong>1195€/</strong> maand**"

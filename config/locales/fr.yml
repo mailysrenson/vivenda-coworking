@@ -158,7 +158,7 @@ fr:
       price_night_low: "50 € / nuit"
       price_month_low_html: "<strong>795€/</strong> mois*"
       medium_season: "Moyenne saison"
-      period_medium: "Du 01/04 au 30/06 - du 01/09 au 31/10"
+      period_medium: "Du 01/04 au 30/06 et du 01/09 au 31/10"
       price_week_medium_html: "<strong>445€/</strong> semaine"
       price_night_medium: "75 € / nuit"
       price_month_medium_html: "<strong>1195€/</strong> mois**"
