@@ -153,22 +153,29 @@ fr:
     tarifs:
       rates: "Tarifs"
       low_season: "Basse saison"
-      period_low: "Du 16/10 au 31/03"
-      price_week_low_html: "<strong>395€/</strong> semaine"
-      price_night_low: "65 € / nuit"
-      price_month_low_html: "<strong>795€</strong> / 1er mois et <strong>695€</strong>/ àpd 2ème mois"
+      period_low: "Du 01/11 au 31/03"
+      price_week_low_html: "<strong>295€/</strong> semaine"
+      price_night_low: "50 € / nuit"
+      price_month_low_html: "<strong>795€/</strong> mois*"
       medium_season: "Moyenne saison"
-      period_medium: "Du 01/04 au 30/06 - du 01/09 au 15/10"
-      price_week_medium_html: "<strong>545€/</strong> semaine"
-      price_night_medium: "90 € / nuit"
-      price_month_medium_html: "/"
+      period_medium: "Du 01/04 au 30/06 - du 01/09 au 31/10"
+      price_week_medium_html: "<strong>445€/</strong> semaine"
+      price_night_medium: "75 € / nuit"
+      price_month_medium_html: "<strong>1195€/</strong> mois**"
       high_season: "Haute saison"
       period_high: "Du 01/07 au 31/08"
       price_week_high_html: "<strong>695€/</strong> semaine"
+      price_night_high: "99 € / nuit supplémentaire"
+      long_stays: "Tarifs longs séjours"
+      additional_info_2_html: "<strong>Offre spéciale longs séjours:</strong> -10% (sur le mois) à partir du 2ème mois.
+            <br><br>Tarif sur base d'une occupation d'1 ou 2 personne(s). Sur demande: 3ème, 4ème ou 5ème personne moyennant supplément.
+            <br><br>"
+      details: "Détails et paiements"
+      additional_info_1_html: "<strong>Jours d’arrivées et de départs:</strong> arrivées et départs libres (min 7 nuits en juillet/août et min 3 nuits aux autres périodes).
+            <br><br><strong>Sur demande</strong>: 5ème personne moyennant supplément.
+            <br><br>"
       payment_html: "<strong>L’acompte est de 40% à la réservation et le solde est à payer 6 semaines avant l’arrivée.</strong>
             Votre réservation n’est prise en compte qu’après réception de votre paiement.
-            <br><br>
-            <strong>Jours d’arrivées et de départs:</strong> arrivées et départs libres (min 7 nuits en juillet/août et min 3 nuits aux autres périodes).
             <br><br>
             Les arrivées le 1er jour sont prévues entre 15h et 20h. Si vous arrivez plus tôt, vous pouvez déjà utiliser les parties communes. Les départs le dernier jour se font pour 10h.
             <br><br>
