@@ -195,7 +195,7 @@ fr:
 
   bookings:
     new:
-      title: "Votre réservation"
+      title: "Demande de réservation"
       your_stay: "Période"
       contact_details: "Vos coordonnées"
       confirmation: "Confirmation"

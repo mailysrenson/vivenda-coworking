@@ -170,7 +170,7 @@ nl:
 
   bookings:
     new:
-      title: "Jouw boeking"
+      title: "Boekingsaanvraag"
       your_stay: "Periode"
       contact_details: "Jouw contactgegevens"
       confirmation: "Bevestiging"

@@ -9,125 +9,65 @@
         <h2 class="font-text nossa-size-big color-to-white "> <%="- a Nossa Coroa -"%></h2>
       <% end %>
     </div>
-    <div class="row justify-content-center mt-0">
-      <div class="col-11 col-sm-9 col-md-7 col-lg-4 text-center p-0 mt-3 mb-2">
-        <div class="card px-0 pt-4 pb-0 mt-3 mb-3 card-booking">
-          <h2><strong><%= t(".title") %></strong></h2>
-          <div class="row">
-            <div class="col-md-12 mx-0 mx-auto">
-              <div id="msform">
-                <%= simple_form_for [@booking], id: "msform" do |f| %>
-                <!-- progressbar -->
-                  <ul id="progressbar">
-                    <li class="far fa-calendar-alt active" id="account" ><strong><%= t(".your_stay") %></strong></li>
-                    <li class="fas fa-portrait" id="personal"><strong><%= t('.contact_details') %></strong></li>
-                    <li class="fas fa-check" id="confirm"><strong><%= t('.confirmation') %></strong></li>
-                  </ul>
-                  <!-- fieldsets -->
-                  <div class="first_info">
-                    <div id="rates-container">
-                      <div class="prices my-2">
-                        <div class="row py-2">
-                          <div class="col-4">
-                            <h3 class="titles-table"><%= t('.high_season') %></h3>
-                          </div>
-                          <div class="col-4">
-                            <h3 class="titles-table"><%= t('.low_season') %></h3>
-                          </div>
-                          <div class="col-4">
-                            <h3 class="titles-table"><%= t('.medium_season') %></h3>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-4">
-                            <p class="period"><%= t('.period_high') %></p>
-                          </div>
-                          <div class="col-4">
-                            <p class="period"><%= t('.period_low') %></p>
-                          </div>
-                          <div class="col-4">
-                            <p class="period"><%= t('.period_medium') %></p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-4">
-                            <p class="prices-table-new"><%= t('.price_week_high_html') %></p>
-                          </div>
-                          <div class="col-4">
-                            <p class="prices-table-new"><%= t('.price_week_low_html') %></p>
-                          </div>
-                          <div class="col-4">
-                            <p class="prices-table-new"><%= t('.price_week_medium_html') %></p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-4">
-                            <p>/</p>
-                          </div>
-                          <div class="col-4">
-                            <p class="prices-table-new"><%= t('.price_night_low') %></p>
-                          </div>
-                          <div class="col-4">
-                            <p class="prices-table-new"><%= t('.price_night_medium') %></p>
-                          </div>
-                        </div>
-                      </div>
-                      <p><%= link_to t('.more_information'), tarifs_path %></p>
-                    </div>
-                    <fieldset>
-                      <div class="form-card">
-                        <div class="auto">
-                          <div class="col-auto booking-calendar"> <%= f.input :range_date, as: :string, input_html: {class: "datepicker-arrival pl-5", id: "arrival-date"}  %> </div>
-                            <%= f.input :arrival_date, as: :string, :as => :hidden, input_html: {class: "datepicker-disable", id: "arrival-date-input"}  %>
-                            <%= f.input :departure_date, as: :string, :as => :hidden, input_html: {class: "datepicker-departure", id: "departure-date-input"} %>
-                            <p class="missing_date" style="color:red; font-size:12px;">Ajouter une date de départ et arrivée</p>
-                            <div class="row">
-                              <div class="col-auto guest_amount">
-                                <%= f.input :adults, input_html: {id: "booking_adults"}, default: 0, collection: 0..5 %>
-                              </div>
-                              <div class="col-auto guest_amount">
-                                <%= f.input :childrens, input_html: {id: "booking_children"}, default: 0, collection: 0..5 %>
-                              </div>
-                            </div>
-                            <p class="missing_people" style="color:red; font-size:12px;">Ajouter le nombre d'adultes et enfants</p>
-                            <%= f.input :baby_bed, as: :boolean, boolean_style: :inline, input_html: {class: "label"} %>
-                          </div>
-                        </div> <input type="button" name="next" class="action-button first-validation next" value=<%="#{t('.button_next')}"%> />
-                      </div>
-                    </fieldset>
-                    <div class="second_info">
-                      <fieldset>
-                        <div class="form-card">
-                          <div>
-                            <div class="row">
-                              <div class="col"><%= f.input :first_name %> </div>
-                              <div class="col-auto"><%= f.input :last_name %></div>
-                            </div>
-                            <%= f.input :email %>
-                            <%= f.input :phone %>
-                            <%= f.input :street %>
-                            <div class="row">
-                              <div class="col-auto city-div" style="padding-right:5px;"> <%= f.input :city %> </div>
-                              <div class="col-auto zipcode-div"> <%= f.input :zipcode %> </div>
-                            </div>
-                            <%= f.input :country %>
-                            <%= f.input :comment, as: :text, :maxlength => 300 %>
-                          </div>
-                        </div>
-                        <input type="button" name="previous" class="previous action-button-previous" value=<%="#{t('.button_previous')}"%> />
-                        <input type="submit" name="next" class="submit-button action-button" id="submit-button" value=<%="#{t('.confirm')}"%> />
-                      </fieldset>
-                    </div>
-                  </div>
-                <% end %>
+    <div class="w-100 d-flex justify-content-center align-items-center align-self-end">
+      <div class="new-session-form col-10 col-md-6 shadow p-3 mb-5 bg-white rounded d-flex flex-column justify-content-center">
+        <h1 class="text-center pb-3 mb-0 op-7"><strong><%= t(".title") %></strong></h1>
+        <div class="inputs-container-registration px-4">
+          <%= simple_form_for [@booking] do |f| %>
+            <div class="booking-calendar">
+              <%= f.input :range_date, as: :string, input_html: {class: "datepicker-arrival pl-5", id: "arrival-date"}  %> </div>
+            </div>
+            <%= f.input :arrival_date, as: :string, :as => :hidden, input_html: {class: "datepicker-disable", id: "arrival-date-input"}  %>
+            <%= f.input :departure_date, as: :string, :as => :hidden, input_html: {class: "datepicker-departure", id: "departure-date-input"} %>
+            <div class="form-row px-4">
+              <div class="form-group col-md-6">
+                <%= f.input :adults, input_html: {id: "booking_adults"}, default: 0, collection: 0..5 %>
+              </div>
+              <div class="form-group col-md-6">
+                <%= f.input :childrens, input_html: {id: "booking_children"}, default: 0, collection: 0..5 %>
+              </div>
+              <%= f.input :baby_bed, as: :boolean, boolean_style: :inline, input_html: {class: "label"} %>
+            </div>
+            <div class="form-row px-4">
+              <div class="form-group col-md-6">
+                <%= f.input :first_name %>
+              </div>
+              <div class="form-group col-md-6">
+                <%= f.input :last_name %>
               </div>
             </div>
-          </div>
+            <div class="form-row px-4">
+              <div class="form-group col-md-6">
+                <%= f.input :email %>
+              </div>
+              <div class="form-group col-md-6">
+                <%= f.input :phone %>
+              </div>
+            </div>
+            <div class="form-row px-4">
+              <div class="form-group col-md-6">
+                <%= f.input :street %>
+              </div>
+              <div class="form-group col-md-6">
+                <%= f.input :city %>
+              </div>
+            </div>
+            <div class="form-row px-4">
+              <div class="form-group col-md-6">
+                <%= f.input :zipcode %>
+              </div>
+              <div class="form-group col-md-6">
+                <%= f.input :country %>
+              </div>
+            </div>
+            <div class="form-row px-4">
+              <%= f.input :comment, as: :text, :maxlength => 300  %>
+            </div>
+            <%= f.submit "#{t('.confirm')}", id:"booking-button" %>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-
-
+</div>               
+                      
