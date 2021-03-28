@@ -5,6 +5,33 @@
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
   border: 1px solid black;
 }
+
+.period-td {
+  padding-bottom: 1.2rem;
+  font-style: italic;
+}
+
+.prices-td {
+  padding-bottom: 0.7rem;
+}
+
+.prices-td span {
+  font-size: 1.2rem;
+}
+
+.prices-rows{
+  height: 12vh;
+}
+
+.full-price-table {
+  width: 100%;
+  border-top: 2px solid #678649;
+  border-bottom: 2px solid #678649;
+}
+
+.phone-price-table{
+  display: none;
+}
 ​
 .price-table td {
   border: 1px solid grey !important;
@@ -24,8 +51,8 @@
 }
 
 .border-tarif{
-border-bottom: 1px solid lightgrey;
-border-top: 1px solid lightgrey;
+  border-top: 2px solid #678649;
+  border-bottom: 2px solid #678649;
 }
 
 .footer-border{
@@ -35,4 +62,17 @@ border-top: 1px solid lightgrey;
 
 .prices-table {
   font-size: 110%;
+}
+
+
+@media (max-width: 750.98px) {
+  .full-price-table {
+    display: none;
+  }
+
+  .phone-price-table{
+    display: table;
+    width:100%;
+    border-top: 2px solid #678649;
+  }
 }
