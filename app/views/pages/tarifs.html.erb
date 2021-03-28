@@ -2,21 +2,21 @@
 <%= render "navbar"%>
 
 <div class="container">
-  <h1 class="mt-5"><%= t('.rates') %></h1>
+  <h1 class="mt-5" style="font-size: 2rem !important;"><%= t('.rates') %></h1>
   <div class="underline"></div>
     <div class="prices my-5">
-      <table class="w-100 full-price-table">
+      <table class="full-price-table">
         <tr>
-          <th><h4 class="mt-3"><%= t('.occupation') %></h4></th>
+          <th><h4 class="mt-3 "><%= t('.occupation') %></h4></th>
           <th><h3 class="mt-3"><%= t('.high_season') %></h3></th>
           <th><h3 class="mt-3"><%= t('.medium_season') %></h3></th>
           <th><h3 class="mt-3"><%= t('.low_season') %></h3></th>
         </tr>
         <tr>
-        <td></td>
-        <td class="period-td"><%= t('.period_high') %></td>
-        <td class="period-td"><%= t('.period_medium') %></td>
-        <td class="period-td"><%= t('.period_low') %></td>
+          <td></td>
+          <td class="period-td"><%= t('.period_high') %></td>
+          <td class="period-td"><%= t('.period_medium') %></td>
+          <td class="period-td"><%= t('.period_low') %></td>
         </tr>
         <tr class="prices-rows">
           <td><%= t('.one_two') %></td>
@@ -50,6 +50,79 @@
           <td class="prices-td"><span><%= t('.price_week_low_3_html') %></span><br>
           <%= t('.price_night_low_3_html') %>
           </td>
+        </tr>
+      </table>
+
+      <table class="phone-price-table">
+        <tr>
+          <th class="w-50"><h3 class="mt-3"><%= t('.high_season') %></h3></th>
+        </tr>
+        <tr>
+          <td class="period-td"><%= t('.period_high') %></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><%= t('.one_two') %></td>
+          <td class="prices-td"><span><%= t('.price_week_high_1_html') %></span><br>
+          <%= t('.price_night_high_1_html') %></td>
+        </tr>
+        <tr>
+          <td><%= t('.three') %></td>
+          <td class="prices-td"><span><%= t('.price_week_high_2_html') %></span><br>
+          <%= t('.price_night_high_2_html') %></td>
+        </tr>
+        <tr>
+          <td><%= t('.three') %></td>
+          <td class="prices-td"><span><%= t('.price_week_high_3_html') %></span><br>
+          <%= t('.price_night_high_3_html') %></td>
+        </tr>
+      </table>
+      <table class="phone-price-table">
+        <tr>
+          <th class="w-50"><h3 class="mt-3"><%= t('.medium_season') %></h3></th>
+        </tr>
+        <tr>
+          <td class="period-td"><%= t('.period_medium') %></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><%= t('.one_two') %></td>
+          <td class="prices-td"><span><%= t('.price_week_medium_1_html') %></span><br>
+          <%= t('.price_night_medium_1_html') %></td>
+        </tr>
+        <tr>
+          <td><%= t('.three') %></td>
+          <td class="prices-td"><span><%= t('.price_week_medium_2_html') %></span><br>
+          <%= t('.price_night_medium_2_html') %></td>
+        </tr>
+        <tr>
+          <td><%= t('.three') %></td>
+          <td class="prices-td"><span><%= t('.price_week_medium_3_html') %></span><br>
+          <%= t('.price_night_medium_3_html') %></td>
+        </tr>
+      </table>
+      <table class="phone-price-table">
+        <tr>
+          <th class="w-50"><h3 class="mt-3"><%= t('.low_season') %></h3></th>
+        </tr>
+        <tr>
+          <td class="period-td"><%= t('.period_low') %></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><%= t('.one_two') %></td>
+          <td class="prices-td"><span><%= t('.price_week_low_1_html') %></span><br>
+          <%= t('.price_night_low_1_html') %></td>
+        </tr>
+        <tr>
+          <td><%= t('.three') %></td>
+          <td class="prices-td"><span><%= t('.price_week_low_2_html') %></span><br>
+          <%= t('.price_night_low_2_html') %></td>
+        </tr>
+        <tr>
+          <td><%= t('.three') %></td>
+          <td class="prices-td"><span><%= t('.price_week_low_3_html') %></span><br>
+          <%= t('.price_night_low_3_html') %></td>
         </tr>
       </table>
       <p class="mt-3"><%= t('.additional_info_occupation_html')%></p>

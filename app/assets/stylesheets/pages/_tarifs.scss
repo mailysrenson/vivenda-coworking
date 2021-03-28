@@ -24,8 +24,13 @@
 }
 
 .full-price-table {
+  width: 100%;
   border-top: 2px solid #678649;
   border-bottom: 2px solid #678649;
+}
+
+.phone-price-table{
+  display: none;
 }
 ​
 .price-table td {
@@ -46,8 +51,8 @@
 }
 
 .border-tarif{
-border-bottom: 1px solid lightgrey;
-border-top: 1px solid lightgrey;
+  border-top: 2px solid #678649;
+  border-bottom: 2px solid #678649;
 }
 
 .footer-border{
@@ -57,4 +62,17 @@ border-top: 1px solid lightgrey;
 
 .prices-table {
   font-size: 110%;
+}
+
+
+@media (max-width: 750.98px) {
+  .full-price-table {
+    display: none;
+  }
+
+  .phone-price-table{
+    display: table;
+    width:100%;
+    border-top: 2px solid #678649;
+  }
 }
