@@ -2,16 +2,19 @@
   p {
     padding-top: 1vh; 
     padding-bottom: 0 !important;
+    color: white;
+    font-weight: bolder;
   }
   img {
     height:50px; 
     width: 50px;
     padding-top: 1vh;
+    filter: invert(1);
   }
 }
 
 .rounded-background {
-  background: rgba(40%, 53%, 29%, 0.3);
+  background: rgb(40%, 53%, 29%);
   border-radius: 50%;
   padding: 2vh 1vw 2vh 1vw;
   width:130px;
@@ -41,6 +44,7 @@
   width: 100%;
   text-align: center;
   color: white;
+  font-weight: light;
 }
 
 @media screen and (max-width: 1050px) {
