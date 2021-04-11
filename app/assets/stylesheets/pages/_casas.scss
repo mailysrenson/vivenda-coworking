@@ -51,4 +51,12 @@
   #text-casas p {
     padding: 2vh 5vw;
   }
+
+  .rounded-background {
+    background: rgb(40%, 53%, 29%);
+    border-radius: 50%;
+    padding: 1vh 0.5vw 1vh 0.5vw;
+    width: 110px;
+    height: 110px;
+  }
 }
