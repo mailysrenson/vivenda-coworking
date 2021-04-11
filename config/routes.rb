@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
     get "/about_us", to: "pages#about_us"
     get "/tarifs", to: "pages#tarifs"
+    get "/casas", to: "pages#casas"
 
     resources :bookings, only: [:new, :edit, :update, :create]
   end

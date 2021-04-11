@@ -150,6 +150,39 @@ fr:
       <br><br>A bien vite alors,
       <br><br>Gene & Didier"
 
+    casas:
+      casas: "Nos logements" 
+      equipped: "Tout équipés"
+      swimming_pool: "Piscine"
+      garden: "Jardin"
+      sun: "Soleil"
+      wifi: "Wifi"
+      countryside: "Campagne"
+      text-casas_html: "Casas/bungalows (T2) 2 chambres, maximum 4/5 personnes.
+      Spacieux (65 m2) et confortablement meublés. Situés côte à côte.
+      <br><br>
+      Idéal pour des vacances en couple, en famille ou même en groupe.
+      Louez donc 1, 2 ou les 3 Casas en fonction de vos besoins.
+      <br><br>
+      Passez l’hiver ici et profitez d’une météo bien plus clémente que dans le nord de l’Europe. Et bénéficiez de nos prix promotionnels pour des longs séjours en hiver."
+      same_equipment: "Aménagements identiques:"
+      same_equipment_txt_html: "- 1 cuisine entièrement équipée ( avec vaisselle, casseroles, four micro-ondes, frigo, lave-vaisselle, plaque de cuisson électrique, grille-pain, cafetière,…) <br>
+      - 1 coin à manger <br>
+      - 1 salon (Smart TV avec CHAINES FRANCOPHONES / PORTUGAISES) <br>
+      - 2 chambres avec des lits simples <br>
+      (avec ventilateur) <br>
+      - 1 salle de bain avec douche et bain (avec sèche-cheveux) <br>
+      - 2 terrasses: 1 grande sur l’avant, en partie couverte, avec table /chaises + 1 petite sur l’arrière avec accès vers le jardin et la piscine <br>
+      - WIFI très performant (gratuit) <br>
+      - Chauffage central et poêle à bois pour l’hiver (bois disponible) <br>
+      - Beaucoup d’intimité <br>
+      - Vues magnifiques sur la nature et les montagnes <br>
+      - Nettoyage renforcé <br>" 
+      common_spaces: "Espaces communs:"
+      common_spaces_txt_html: "- PISCINE commune de 10m/4m (avec transats et parasols), ouverte selon la météo d’avril à octobre <br>
+      - Grand jardin à la végétation luxuriante <br>
+      - Emplacements de parking <br>"
+
     tarifs:
       one_two: "1 ou 2 personnes*"
       three: "3 personnes*"

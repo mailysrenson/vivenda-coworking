@@ -1,0 +1,74 @@
+<%= render "navbar" %>
+
+<div class="container">
+  <h1 class="mt-5" style="font-size: 2rem !important;"><%= t('.casas') %></h1>
+  <div class="underline mb-5"></div>
+  <div class="row">
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+      <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon1_oven.png"%>
+        <p><%= t('.equipped') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+     <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon2.png"%>
+        <p><%= t('.swimming_pool') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+      <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon3.png"%>
+        <p><%= t('.garden') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+     <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon4.png"%>
+        <p><%= t('.sun') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+     <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon5.png"%>
+        <p><%= t('.wifi') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+      <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon6.png"%>
+        <p><%= t('.countryside') %></p>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-5" id="text-casas">
+    <p style="text-align: center; font-weight: bolder; padding: 2vh 5vw"><%= t('.text-casas_html') %></p>
+  </div>
+
+  <div class="row container-casas-cards mt-5 justify-content-center">
+    <div class="casa-card col-10 col-lg-3">
+      <%= image_tag 'savana_card.JPG', class:"card-picture" %>
+      <h3 class="title-casa">Casa Savana</h3>
+    </div>
+
+    <div class="casa-card col-10 col-lg-3">
+      <%= image_tag 'bambu_card.jpg', class:"card-picture" %>
+      <h3 class="title-casa">Casa Bambu</h3>
+    </div>
+
+    <div class="casa-card col-10 col-lg-3">
+      <%= image_tag 'azulejos_card.JPG', class:"card-picture" %>
+      <h3 class="title-casa">Casa Azulejos</h3>
+    </div>
+  </div>
+
+  <div class="description-casas-h my-5">
+    <h3><%= t('.same_equipment')%></h3>
+    <p><%= t('.same_equipment_txt_html') %></p>
+    <h3 class="mt-5"><%= t('.common_spaces')%></h3>
+    <p><%= t('.common_spaces_txt_html') %></p>
+  </div>
+</div>
+<div class="pb-3 mt-5">
+  <%= render "footer" %>
+</div>

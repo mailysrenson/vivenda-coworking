@@ -1,0 +1,62 @@
+.icones-casas {
+  p {
+    padding-top: 1vh; 
+    padding-bottom: 0 !important;
+    color: white;
+    font-weight: bolder;
+  }
+  img {
+    height:50px; 
+    width: 50px;
+    padding-top: 1vh;
+    filter: invert(1);
+  }
+}
+
+.rounded-background {
+  background: rgb(40%, 53%, 29%);
+  border-radius: 50%;
+  padding: 2vh 1vw 2vh 1vw;
+  width:130px;
+  height: 130px;
+}
+
+#text-casas {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  p {
+    text-align: center; font-weight: bolder; padding: 2vh 14vw;
+    font-size: 1.1em;
+  }
+}
+
+.card-picture {
+  height: 40vh;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.title-casa {
+  padding: 3vh 2vw;
+  border-radius: 0 0 5px 5px;
+  background-color:rgb(40%, 53%, 29%);
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: light;
+}
+
+@media screen and (max-width: 1050px) {
+  #text-casas p {
+    padding: 2vh 5vw;
+  }
+
+  .rounded-background {
+    background: rgb(40%, 53%, 29%);
+    border-radius: 50%;
+    padding: 1vh 0.5vw 1vh 0.5vw;
+    width: 110px;
+    height: 110px;
+  }
+}
