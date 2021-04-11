@@ -24,7 +24,23 @@
   justify-content: center;
   p {
     text-align: center; font-weight: bolder; padding: 2vh 14vw;
+    font-size: 1.1em;
   }
+}
+
+.card-picture {
+  height: 40vh;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.title-casa {
+  padding: 3vh 2vw;
+  border-radius: 0 0 5px 5px;
+  background-color:rgb(40%, 53%, 29%);
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 @media screen and (max-width: 1050px) {
