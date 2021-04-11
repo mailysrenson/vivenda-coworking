@@ -5,6 +5,7 @@ en:
       about_us: "About us"
       book: "Book now"
       rates: "Rates"
+      casas: "Our accomodations"
 
   booking_mailer:
     new_booking: 

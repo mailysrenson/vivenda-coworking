@@ -5,6 +5,7 @@ nl:
       about_us: "Wie zijn wij"
       book: "Boeken"
       rates: "Tarieven"
+      casas: "Onze accomodaties"
 
   booking_mailer:
     new_booking:
@@ -195,7 +196,7 @@ nl:
             <strong>Annulatievoorwaarden:</strong> tot 6 weken voor aankomst, 40% annulatiekosten. Minder dan 6 weken voor aankomst, 100% annulatiekosten. Wij raden steeds aan om een annulatieverzekering te nemen."
 
     casas:
-        casas: "Onze huisvestingen" 
+        casas: "Onze accomodaties" 
         equipped: "Volledig ingericht"
         swimming_pool: "Gedeeld zwembad"
         garden: "Tuin"

@@ -5,6 +5,7 @@ fr:
       about_us: "A propos"
       book: "Réserver"
       rates: "Tarifs"
+      casas: "Nos logements"
 
   booking_mailer:
     new_booking:
@@ -153,7 +154,7 @@ fr:
     casas:
       casas: "Nos logements" 
       equipped: "Tout équipés"
-      swimming_pool: "Piscine"
+      swimming_pool: "Piscine commune"
       garden: "Jardin"
       sun: "Soleil"
       wifi: "Wifi"
