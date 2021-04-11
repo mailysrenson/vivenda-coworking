@@ -1,0 +1,47 @@
+<%= render "navbar" %>
+
+<div class="container">
+  <h1 class="mt-5" style="font-size: 2rem !important;"><%= t('.casas') %></h1>
+  <div class="underline"></div>
+  <div class="row">
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+      <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon1_oven.png"%>
+        <p><%= t('.equipped') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+     <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon2.png"%>
+        <p><%= t('.swimming_pool') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+      <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon3.png"%>
+        <p><%= t('.garden') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+     <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon4.png"%>
+        <p><%= t('.sun') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+     <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon5.png"%>
+        <p><%= t('.wifi') %></p>
+      </div>
+    </div>
+    <div class="icones-casas col-4 col-lg-2 d-flex flex-column  align-items-center">
+      <div class="rounded-background d-flex flex-column align-items-center">
+        <%= image_tag "icon6.png"%>
+        <p><%= t('.countryside') %></p>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-5" id="text-casas">
+    <p style="text-align: center; font-weight: bolder; padding: 2vh 5vw"><%= t('.text-casas_html') %></p>
+  </div>
+</div>

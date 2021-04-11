@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
 
 
-
+  def casas
+  end
 
   def home
   end

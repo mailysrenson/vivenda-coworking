@@ -150,6 +150,22 @@ fr:
       <br><br>A bien vite alors,
       <br><br>Gene & Didier"
 
+    casas:
+      casas: "Nos logements" 
+      equipped: "Tout équipés"
+      swimming_pool: "Piscine"
+      garden: "Jardin"
+      sun: "Soleil"
+      wifi: "Wifi"
+      countryside: "Campagne"
+      text-casas_html: "Casas/bungalows (T2) 2 chambres, maximum 4/5 personnes.
+      Spacieux (65 m2) et confortablement meublés. Situés côte à côte.
+      <br><br>
+      Idéal pour des vacances en couple, en famille ou même en groupe.
+      Louez donc 1, 2 ou les 3 Casas en fonction de vos besoins.
+      <br><br>
+      Passez l’hiver ici et profitez d’une météo bien plus clémente que dans le nord de l’Europe. Et bénéficiez de nos prix promotionnels pour des longs séjours en hiver."
+
     tarifs:
       one_two: "1 ou 2 personnes*"
       three: "3 personnes*"
