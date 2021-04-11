@@ -4,6 +4,7 @@
     padding-bottom: 0 !important;
     color: white;
     font-weight: bolder;
+    text-align: center;
   }
   img {
     height:50px; 
@@ -16,7 +17,7 @@
 .rounded-background {
   background: rgb(40%, 53%, 29%);
   border-radius: 50%;
-  padding: 2vh 1vw 2vh 1vw;
+  padding: 2vh 3vw 2vh 3vw;
   width:130px;
   height: 130px;
 }
@@ -56,7 +57,12 @@
     background: rgb(40%, 53%, 29%);
     border-radius: 50%;
     padding: 1vh 0.5vw 1vh 0.5vw;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
+  }
+  .icones-casas {
+  p {
+    font-size: 0.8em;
+  }
   }
 }

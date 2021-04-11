@@ -145,6 +145,37 @@ en:
       We fell in love with this part of Portugal and we are convinced that you would feel at home instantly as well. 
       <br><br>So, see you soon we hope? 
       <br><br>Gene & Didier"
+
+    casas:
+      casas: "Our accomodations" 
+      equipped: "Fully equipped"
+      swimming_pool: "Common swimming pool"
+      garden: "Garden"
+      sun: "Sun"
+      wifi: "Wifi"
+      countryside: "Countryside"
+      text-casas_html: "Casas/bungalows (T2) 2 bedrooms, maximum 4/5 people.
+      Spacious (65 m2) and comfortable. Situated next to each other.
+      <br><br>
+      The estate is perfect for couples and families. Also favourable for groups or large families! Rent 1, 2, or 3 bungalows depending on your needs
+      <br><br>
+      The location is ideal to spend your time through winter and enjoy the milder climate of  Southern Europe. Also benefit from our reduced rates for longer stays throughout winter!"
+      same_equipment: "The bungalows are equipped with:"
+      same_equipment_txt_html: "- 1 fully equipped kitchen (including tableware, cooking pots, combi-oven, dishwasher, fridge, electrical cooking plate, toaster, coffee machine,..) <br>
+      - 1 dining area <br>
+      - 2 bedrooms (incl. fan): 1 with double bed, 1 with 2 (or 3) single beds. <br>
+      - 1 bathroom with shower and bath (+ hair dryer) <br>
+      - 2 terraces: 1 bigger terrace at the front (partly covered) - with table and chairs - with a breathtaking view on the “Serra da Estrela”. 1 smaller terrace at the back with access to the garden and swimming pool, here you can enjoy the sunset. <br>
+      - A lot of privacy. <br>
+      - WIFI (free of charge) <br>
+      - Central heating and wood burning stove for winter (free wood available) <br>
+      - Parking space.  <br>" 
+      common_spaces: "Common areas include:"
+      common_spaces_txt_html: "- Enjoyable pool (10m / 4m) with sunbeds and sunshades. Depending on weather, the pool is open from april to october. The UV-system guarantees clean, fresh water without abundance of chlorine or salt. <br>
+      - Big green garden <br>
+      -   Cozy outdoor (covered) bar, in which you can enjoy an occasional theme night. <br>
+      - Spacious recreational/reading room. Here you can find information about the surroundings. In case of need, here you can also find a laundry machine, cleaning equipment or ironing machine. <br>"
+
     
     tarifs:
       one_two: "1 or 2 people*"
