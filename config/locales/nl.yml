@@ -5,6 +5,7 @@ nl:
       about_us: "Wie zijn wij"
       book: "Boeken"
       rates: "Tarieven"
+      casas: "Onze accomodaties"
 
   booking_mailer:
     new_booking:
@@ -193,6 +194,38 @@ nl:
             Het is strikt verboden te roken in de casas.
             <br><br>
             <strong>Annulatievoorwaarden:</strong> tot 6 weken voor aankomst, 40% annulatiekosten. Minder dan 6 weken voor aankomst, 100% annulatiekosten. Wij raden steeds aan om een annulatieverzekering te nemen."
+
+    casas:
+        casas: "Onze accomodaties" 
+        equipped: "Volledig ingericht"
+        swimming_pool: "Gedeeld zwembad"
+        garden: "Tuin"
+        sun: "Zon"
+        wifi: "Wifi"
+        countryside: "Platteland"
+        text-casas_html: "Casas/bungalows (T2) 2 kamers, maximum 4/5 personen.
+        Ruim (65 m2) en comfortable. Naast elkaar gelegen.
+        <br><br>
+        Het domein is perfect voor koppels, gezinnen en groepen.
+        Huur dus 1, 2, of 3 bungalows afhankelijk van uw behoeften.
+        <br><br>
+        De locatie is ook ideaal om de winter door te brengen en te genieten van een milder klimaat dan het Noorden van Europa. Profiteer bovendien van onze verlaagde promotarieven voor verlengde verblijven doorheen de winter!"
+        same_equipment: "Deze bungalows zijn uitgerust met: "
+        same_equipment_txt_html: "- 1 volledig uitgeruste keuken (inclusief servies, kookpotten, combi-oven, koelkast, vaatwasser, elektrische kookplaat, broodrooster, koffiezetapparaat,..)
+        - 1 eethoek <br>
+        - 1 woonkamer (met CD-speler, radio en televisie) <br>
+        - 2 slaapkamers (met ventilator): 1 met 2 1-persoonsbedden, 1 met 2 (of 3) 1-persoonsbedden. <br>
+        - 1 badkamer met douche en bad (+ haardroger) <br>
+        - 2 terrassen: waarvan 1 groter aan de voorzijde (gedeeltelijk overdekt) - met tafel en stoelen - waardoor u een adembenemend zicht heeft op de “Serra da Estrela”. Aan de achterzijde bevindt zich een kleiner terras met toegang tot de tuin en het zwembad, hier kan u volop genieten van de zonsondergang <br>
+        - Veel privacy <br>
+        - Wifi (gratis) <br>
+        - Centrale verwarming en houtkachel voor in de winter (gratis hout beschikbaar) <br>
+        - Parkeerplaats <br>" 
+        common_spaces: "De gemeenschappelijke ruimtes bevatten:"
+        common_spaces_txt_html: "- Een aangenaam zwembad van 1Om / 4m (met ligbedden en parasols), afhankelijk van het weer geopend van april tot oktober. Het UV-systeem garandeert natuurlijk water, zonder overmaat aan chloor of zout. <br>
+        - Een grote tuin vol groen en bloemen. <br>
+        - Een gezellige overdekte buitenbar, waar u bij gelegenheid kan genieten van een leuke thema-avond. <br>
+        - Een grote recreatie-/leeszaal. Hier vindt u bovendien documentatie over de omgeving. Indien nodig is hier ook een wasmachine, schoonmaak- of strijkapparatuur aanwezig.<br>"
 
   bookings:
     new:
