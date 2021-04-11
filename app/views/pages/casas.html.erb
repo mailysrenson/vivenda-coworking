@@ -45,7 +45,7 @@
     <p style="text-align: center; font-weight: bolder; padding: 2vh 5vw"><%= t('.text-casas_html') %></p>
   </div>
 
-  <div class="row container-casas-cards mt-5">
+  <div class="row container-casas-cards mt-5 justify-content-center">
     <div class="casa-card col-10 col-lg-3">
       <%= image_tag 'DSC_0014.JPG', class:"card-picture" %>
       <h3 class="title-casa">Casa Savana</h3>
@@ -53,12 +53,20 @@
 
     <div class="casa-card col-10 col-lg-3">
       <%= image_tag 'DSC_0014.JPG', class:"card-picture" %>
-      <h3 class="title-casa">Casa Savana</h3>
+      <h3 class="title-casa">Casa Bambu</h3>
     </div>
 
     <div class="casa-card col-10 col-lg-3">
       <%= image_tag 'DSC_0014.JPG', class:"card-picture" %>
-      <h3 class="title-casa">Casa Savana</h3>
+      <h3 class="title-casa">Casa Azulejos</h3>
     </div>
   </div>
+
+  <div class="description-casas-h my-5">
+    <h3><%= t('.same_equipment')%></h3>
+    <p><%= t('.same_equipment_txt_html') %></p>
+    <h3 class="mt-5"><%= t('.common_spaces')%></h3>
+    <p><%= t('.common_spaces_txt_html') %></p>
+  </div>
 </div>
+<%= render "footer" %>
