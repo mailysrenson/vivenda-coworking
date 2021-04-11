@@ -18,8 +18,8 @@
   background: rgb(40%, 53%, 29%);
   border-radius: 50%;
   padding: 2vh 3vw 2vh 3vw;
-  width:130px;
-  height: 130px;
+  width:150px;
+  height: 150px;
 }
 
 #text-casas {
@@ -36,6 +36,7 @@
   height: 40vh;
   width: 100%;
   border-radius: 5px 5px 0 0;
+  object-fit: cover;
 }
 
 .title-casa {
